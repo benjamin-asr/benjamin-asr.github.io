@@ -1,0 +1,12 @@
+dev_addr: 127.0.0.1:8080
+site_name: Benjamin
+nav:
+    - Home: index.md
+    - ArBade: arbade.md
+    - BaTool: batool.md
+    - Mom: mom.md
+    - Rebound: rebound.md
+    - ENN: enn.md
+    - Chess: chess.md
+    - About: about.md
+theme: readthedocs
