@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>User Guide - Benjamin</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "User Guide";
+        var mkdocs_page_input_path = "arbade\\ug.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Benjamin
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../">ArBade</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../batool/">BaTool</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../mom/">Mom</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../rebound/">Rebound</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../enn/">ENN</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../chess/">Chess</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Benjamin</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>User Guide</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="user-guide">User Guide</h1>
+<p>Detailed description of <strong>ArBade</strong> functionalities is discussed in this document.</p>
+<ol>
+<li><a href="## Record">Record</a><ul>
+<li><a href="### Record Status">Record Status</a></li>
+<li><a href="### Record Parameters">Record Parameters</a></li>
+<li><a href="### Record Shortcuts">Record Shortcuts</a></li>
+</ul>
+</li>
+<li><a href="## Train">Train Procedure</a></li>
+<li><a href="## Verify">Verify</a><ul>
+<li><a href="### Verify Status">Verify Status</a></li>
+<li><a href="### Verify Parameters">Verify Parameters</a></li>
+<li><a href="### Verify Shortcuts">Verify Shortcuts</a></li>
+</ul>
+</li>
+</ol>
+<h2 id="record">Record</h2>
+<p>While recording the samples for training voice recognition engine, you should know status, parameters and shortcuts related to recording.</p>
+<h3 id="record-status">Record Status</h3>
+<ul>
+<li><span style="color:#f00">Rec</span>: Records your voice</li>
+<li><span style="color:#b17400">Pause</span>: Pause the Recording Procedure</li>
+<li><span style="color:#10b100">Stop</span>: Stop the record and navigate to statistics panel.</li>
+<li><span style="color:#008eca">Req Pause</span>: Requested pause will be commited after recording finished</li>
+<li><span style="color:#00b8d7">Break</span>: Time to let you read the words before recording started</li>
+</ul>
+<h3 id="record-parameters">Record Parameters</h3>
+<ul>
+<li>Category: these are directories to classify samples you record with different devices. exceptions are <code>unverified</code>, <code>online</code> and <code>efalse</code> that they are used by Benjamin.</li>
+<li>Pause Time: Break time that let you read the words before record started.</li>
+<li>Num of Words: Specify the number of words to display while recording.</li>
+<li>Rec Time: Defines the period of recording time. Tune this parameter with <code>Num of Words</code>.</li>
+<li>Count: Set this to total number of samples you want to record.</li>
+<li>Focus Word: Displayed set of words will contain the <code>Focus Word</code>.</li>
+<li>Power: After recording sample power of the voice will be displayed. Care about this parameter as this will be very low if recording device has any problem.</li>
+<li>Time: Shows how much time passed from <code>Rec Time</code></li>
+<li>Word: Shows the words you should say while recording</li>
+<li>Status: Shows recording status</li>
+</ul>
+<h3 id="record-shortcuts">Record Shortcuts</h3>
+<ul>
+<li><code>S</code>: set <code>Category</code></li>
+</ul>
+<h2 id="train">Train</h2>
+<h2 id="verify">Verify</h2>
+<h3 id="verify-status">Verify Status</h3>
+<h3 id="verify-parameters">Verify Parameters</h3>
+<h3 id="verify-shortcuts">Verify Shortcuts</h3>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
