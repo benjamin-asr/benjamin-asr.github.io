@@ -1,5 +1,23 @@
 # Mom
 
-This application is an accessibility tool to ease working in windows environment. when you run `mom.exe` a new taskbar will appear on top of desktop.
+This application is like [PolyBar](https://github.com/polybar/polybar) to manage different workspace, show system status and showing `BaTool` detection output. Benjamin uses Mom to show results. Mom reads its contents from labels inside path `Benjamin/Mom/Labels` with [PolyBar Application format](https://github.com/polybar/polybar/wiki/Formatting). 
+
+Mom has several widgets:
+
+1. Workspaces: you can switch between 6 workspaces showed with different icons.
+2. Word detection from `BaTool` and `ENN`.
+3. Date and time
+4. Music widget: Used to pause/play music. Also go to next/previous music.
+5. CPU usage
+6. Speaker: By clicking on this icon you can alter between speaker and headphone. By scrolling you can increase/decrease the volume.
+7. Focused application
+7. System status: Shows if system is running or sleeping or halted.
 
 ![Mom](img/mom.png)
+
+Color of detected word is set by `ENN` application and sorted from best detection accuracy to worst:
+
+* <span style="color:#00b8d7">Best</span>
+* <span style="color:#10b100">Good</span>
+* <span style="color:Orange">Lowest Confidence</span>
+* <span style="color:#f00">Wrong</span>

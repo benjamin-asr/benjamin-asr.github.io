@@ -98,8 +98,26 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="mom">Mom</h1>
-<p>This application is an accessibility tool to ease working in windows environment. when you run <code>mom.exe</code> a new taskbar will appear on top of desktop.</p>
+<p>This application is like <a href="https://github.com/polybar/polybar">PolyBar</a> to manage different workspace, show system status and showing <code>BaTool</code> detection output. Benjamin uses Mom to show results. Mom reads its contents from labels inside path <code>Benjamin/Mom/Labels</code> with <a href="https://github.com/polybar/polybar/wiki/Formatting">PolyBar Application format</a>. </p>
+<p>Mom has several widgets:</p>
+<ol>
+<li>Workspaces: you can switch between 6 workspaces showed with different icons.</li>
+<li>Word detection from <code>BaTool</code> and <code>ENN</code>.</li>
+<li>Date and time</li>
+<li>Music widget: Used to pause/play music. Also go to next/previous music.</li>
+<li>CPU usage</li>
+<li>Speaker: By clicking on this icon you can alter between speaker and headphone. By scrolling you can increase/decrease the volume.</li>
+<li>Focused application</li>
+<li>System status: Shows if system is running or sleeping or halted.</li>
+</ol>
 <p><img alt="Mom" src="../img/mom.png" /></p>
+<p>Color of detected word is set by <code>ENN</code> application and sorted from best detection accuracy to worst:</p>
+<ul>
+<li><span style="color:#00b8d7">Best</span></li>
+<li><span style="color:#10b100">Good</span></li>
+<li><span style="color:Orange">Lowest Confidence</span></li>
+<li><span style="color:#f00">Wrong</span></li>
+</ul>
               
             </div>
           </div><footer>

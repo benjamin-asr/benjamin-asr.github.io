@@ -137,13 +137,46 @@
 </ul>
 <h3 id="record-shortcuts">Record Shortcuts</h3>
 <ul>
-<li><code>S</code>: set <code>Category</code></li>
+<li><code>S</code>: Set <code>Category</code>, <code>unverified</code> and <code>efalse</code> are prohibited. Dialog will be shown and ask for desired <code>Category</code>. You can create a new <code>Category</code> or change between categories produced in past.</li>
+<li><code>Space</code>: Start or Pause recording.</li>
+<li><code>Up/Down</code>: Increase/Decrease <code>Pause Time</code>.</li>
+<li><code>Right/Left</code>: Increase/Decrease <code>Rec Time</code>.</li>
+<li><code>C</code>: Change count, dialog will be opened and ask for how many samples would you record.</li>
+<li><code>F</code>: Set <code>Focus Word</code>, then displayed words collection will contain <code>Focus Word</code>. Dialog will be opened and ask for id of <code>Focus Word</code>.</li>
+<li><code>J/K</code>: Decrease/Increase <code>Num of Words</code>.</li>
+<li><code>O</code>: Opens selected <code>Category</code> directory.</li>
 </ul>
 <h2 id="train">Train</h2>
 <h2 id="verify">Verify</h2>
+<p>By using Benjamin regularly, many samples will be created as online samples. But these samples are not labeled correctly. There is maybe some mistakes among words from a sample. These samples are accumulated in <code>unverified</code> directory and by verifying them, they will be moved to <code>online</code> directory.</p>
+<p>Verification is done by playing the samples in <code>unverified</code> directory. you can refer to this section to know all status, parameters and shortcuts related to verification.</p>
 <h3 id="verify-status">Verify Status</h3>
+<ul>
+<li><span style="color:#f00">Play</span>: Play <code>unverified</code> samples</li>
+<li><span style="color:#b17400">Pause</span>: Pause the playing sample</li>
+<li><span style="color:#10b100">Stop</span>: Stop the record and navigate to statistics panel.</li>
+<li><span style="color:#b17400">Decide Pause</span>: After each sample stopped from playing, there is a short time you can decide on what should happen to the sample</li>
+<li><span style="color:#00b8d7">Break</span>: Time to let you read the words before playing started</li>
+</ul>
 <h3 id="verify-parameters">Verify Parameters</h3>
+<ul>
+<li>Pause Time: Break time that let you read the words before record started.</li>
+<li>Status: Shows playing status</li>
+<li>Focus Word: By setting this, Player will only play the samples that contain the <code>Focus Word</code>.</li>
+<li>Count: Shows how many samples are in the <code>unverified</code> directory. By setting <code>Focus Word</code>, counts only samples that contain the word.</li>
+<li>Word: Shows the words you will check in the sample</li>
+<li>Time: Shows how much time passed from voice sample</li>
+<li>Power: Before playing sample, power of the voice will be displayed. Care about this parameter as this will be very low if recording device has any problem.</li>
+<li>Category is set to <code>unverified</code> and cannot be changed. <code>Count</code> is calculated from samples statistics and you cannot change it.</li>
+</ul>
 <h3 id="verify-shortcuts">Verify Shortcuts</h3>
+<ul>
+<li><code>Space</code>: Start or Pause playing.</li>
+<li><code>Up/Down</code>: Increase/Decrease <code>Pause Time</code>.</li>
+<li><code>F</code>: Set <code>Focus Word</code>, then displayed words collection will contain <code>Focus Word</code>. Dialog will be opened and ask for id of <code>Focus Word</code>.</li>
+<li><code>O</code>: Opens <code>unverified</code> directory.</li>
+<li><code>Z</code>: Press to move sample from <code>unverified</code> directory to <code>wrong</code> directory. By pressing <code>Z</code>, a dialog will be displayed and as</li>
+</ul>
               
             </div>
           </div><footer>
