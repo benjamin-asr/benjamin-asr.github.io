@@ -13,7 +13,7 @@ Mom has several widgets:
 7. Focused application
 7. System status: Shows if system is running or sleeping or halted.
 
-![Mom](img/mom.png)
+![Mom](img/mom.jpg)
 
 Color of detected word is set by `ENN` application and sorted from best detection accuracy to worst:
 
