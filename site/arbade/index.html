@@ -47,13 +47,7 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">ArBade</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#table-of-contents">Table of Contents</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#1-quick-start">1. Quick Start</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#2-user-guide">2. User Guide</a>
-    </li>
-        </ul>
+    <li class="toctree-l2"><a class="reference internal" href="#user-guide">User Guide</a>
     </li>
     </ul>
                 </li>
@@ -106,15 +100,52 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="arbade">ArBade</h1>
-<p>This application is designed as an interface to fulfill these expectations:</p>
+<p>ArBade provides:</p>
 <ul>
 <li>Building dataset for voice recognition engine by recording voice samples</li>
 <li>Handy tool to train and test voice samples</li>
-<li>Environment to verify online samples generated while using Benjamin</li>
+<li>Environment to verify online samples generated while using BaTool</li>
 </ul>
-<h2 id="table-of-contents">Table of Contents</h2>
-<h3 id="1-quick-start">1. <a href="quick/">Quick Start</a></h3>
-<h3 id="2-user-guide">2. <a href="ug/">User Guide</a></h3>
+<h2 id="user-guide"><a href="ug/">User Guide</a></h2>
+<h1 id="quick-start">Quick Start</h1>
+<p>At very first glance you confront this environment:</p>
+<p><img alt="FirstView" src="../img/first_view.png" /></p>
+<p>ArBade is a shortcut based application. There is a topbar in the application, that list most useful shortcuts.</p>
+<p><img alt="TopBar" src="../img/top_bar.png" /></p>
+<p>To see all shortcuts, press <code>/</code>.</p>
+<p><img alt="HelpWin" src="../img/help_win.png" /></p>
+<p>First step is to train a model from your voice.</p>
+<h2 id="record-samples">Record Samples</h2>
+<ol>
+<li>
+<p>specify a category name by pressing <code>S</code>. category name is used to distinguish between speaker or microphone.</p>
+</li>
+<li>
+<p>Start to record by pressing <code>space</code>. Say the words specified between <code>&lt;&gt;</code> while status is <code>Rec</code>.</p>
+</li>
+</ol>
+<p><img alt="Record" src="../img/record.png" /></p>
+<p>You can pause the Record procedure any time by using <code>space</code> and get out of record panel by pressing <code>Escape</code>. Then Statistics will be updated.</p>
+<ol>
+<li>Arbitrary name of category.</li>
+<li>Record list showing the samples recorded.</li>
+<li>Word list showing how many samples include the specific word.</li>
+<li>sample count in specific category.</li>
+</ol>
+<p><img alt="Stat" src="../img/stat.png" /></p>
+<p>Detailed description about record parameters and procedure can be found in <a href="ug.md">User Guide</a></p>
+<h2 id="train-model">Train Model</h2>
+<p>After recording around <code>10 x Wordlist</code> samples, you are ready to train your first model by Pressing <code>T</code>.</p>
+<p><img alt="Train" src="../img/train.png" /></p>
+<p>At any time outside of terminal, by pressing <code>P</code> you can access the results of running train scripts in terminal. All the train procedure is automatic and you should only wait for the dialog indicating train is finished and now it's ENN samples generation turn.</p>
+<p><img alt="GenENN" src="../img/gen_enn.png" /></p>
+<p>Detailed description about train steps and procedure can be found in <a href="ug.md">User Guide</a></p>
+<h2 id="verification">Verification</h2>
+<p>When you are using Benjamin regularly, samples will be generated when issueing commands. all of these samples are useful for training, but you need to assure that these samples are matched with detected words. for verifying such samples you can press <code>V</code> to change verification mode and press <code>space</code> to start verification process.</p>
+<p><img alt="Verify" src="../img/verify.png" /></p>
+<p>If the sample is wrong press <code>Z</code> to delete sample while playing, or at <code>Decide Pause</code> status after voice stopped. By default after playing each sample in <code>unverified</code> category, if there wasn't any key press, the sample will be verified. you can change this behaviour by pressing <code>R</code>.</p>
+<p>Detailed description about verification parameters and procedure can be found in <a href="ug.md">User Guide</a></p>
+<p>Congrats! Now you know the very initial steps to train your model!</p>
               
             </div>
           </div><footer>
