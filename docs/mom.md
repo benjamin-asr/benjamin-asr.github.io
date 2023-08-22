@@ -1,6 +1,6 @@
 # Mom
 
-This application is like [PolyBar](https://github.com/polybar/polybar) to manage different workspace, show system status and showing `BaTool` detection output. Benjamin uses Mom to show results. Mom reads its contents from labels inside path `Benjamin/Mom/Labels` with [PolyBar Application format](https://github.com/polybar/polybar/wiki/Formatting). 
+Mom is like [PolyBar](https://github.com/polybar/polybar), it manages different workspace, shows system status and `BaTool` detection output. Mom is named after the fact that it will spawn all the child applications (BaTool, Chess, Rebound). Mom reads BaTool detection from `Benjamin/Mom/Labels` with [PolyBar Application format](https://github.com/polybar/polybar/wiki/Formatting). 
 
 Mom has several widgets:
 

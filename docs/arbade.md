@@ -1,11 +1,68 @@
 # ArBade
 
-This application is designed as an interface to fulfill these expectations:
+ArBade provides:
 
 * Building dataset for voice recognition engine by recording voice samples
 * Handy tool to train and test voice samples
-* Environment to verify online samples generated while using Benjamin
+* Environment to verify online samples generated while using BaTool
 
-## Table of Contents
-### 1. [Quick Start](arbade/quick.md)
-### 2. [User Guide](arbade/ug.md)
+## [User Guide](arbade/ug.md)
+
+# Quick Start
+
+At very first glance you confront this environment:
+
+![FirstView](../img/first_view.png)
+
+ArBade is a shortcut based application. There is a topbar in the application, that list most useful shortcuts.
+
+![TopBar](../img/top_bar.png)
+
+To see all shortcuts, press `/`.
+
+![HelpWin](../img/help_win.png)
+
+First step is to train a model from your voice.
+
+## Record Samples
+
+1. specify a category name by pressing `S`. category name is used to distinguish between speaker or microphone.
+
+2. Start to record by pressing `space`. Say the words specified between `<>` while status is `Rec`.
+
+![Record](../img/record.png)
+
+You can pause the Record procedure any time by using `space` and get out of record panel by pressing `Escape`. Then Statistics will be updated.
+
+1. Arbitrary name of category.
+2. Record list showing the samples recorded.
+3. Word list showing how many samples include the specific word.
+4. sample count in specific category.
+
+![Stat](../img/stat.png)
+
+Detailed description about record parameters and procedure can be found in [User Guide](ug.md)
+
+## Train Model
+
+After recording around `10 x Wordlist` samples, you are ready to train your first model by Pressing `T`.
+
+![Train](../img/train.png)
+
+At any time outside of terminal, by pressing `P` you can access the results of running train scripts in terminal. All the train procedure is automatic and you should only wait for the dialog indicating train is finished and now it's ENN samples generation turn.
+
+![GenENN](../img/gen_enn.png)
+
+Detailed description about train steps and procedure can be found in [User Guide](ug.md)
+
+## Verification
+
+When you are using Benjamin regularly, samples will be generated when issueing commands. all of these samples are useful for training, but you need to assure that these samples are matched with detected words. for verifying such samples you can press `V` to change verification mode and press `space` to start verification process.
+
+![Verify](../img/verify.png)
+
+If the sample is wrong press `Z` to delete sample while playing, or at `Decide Pause` status after voice stopped. By default after playing each sample in `unverified` category, if there wasn't any key press, the sample will be verified. you can change this behaviour by pressing `R`.
+
+Detailed description about verification parameters and procedure can be found in [User Guide](ug.md)
+
+Congrats! Now you know the very initial steps to train your model!
