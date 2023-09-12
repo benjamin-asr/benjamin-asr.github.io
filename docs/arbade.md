@@ -1,6 +1,6 @@
 # ArBade
 
-ArBade provides:
+Features:
 
 * Building dataset for voice recognition engine by recording voice samples
 * Handy tool to train and test voice samples
@@ -10,11 +10,9 @@ ArBade provides:
 
 # Quick Start
 
-At very first glance you confront this environment:
-
 ![FirstView](../img/first_view.png)
 
-ArBade is a shortcut based application. There is a topbar in the application, that list most useful shortcuts.
+ArBade is a shortcut based application. Shortcuts are listed in the application topbar.
 
 ![TopBar](../img/top_bar.png)
 
@@ -34,18 +32,18 @@ First step is to train a model from your voice.
 
 You can pause the Record procedure any time by using `space` and get out of record panel by pressing `Escape`. Then Statistics will be updated.
 
+![Stat](../img/stat.png)
+
 1. Arbitrary name of category.
 2. Record list showing the samples recorded.
 3. Word list showing how many samples include the specific word.
 4. sample count in specific category.
 
-![Stat](../img/stat.png)
-
-Detailed description about record parameters and procedure can be found in [User Guide](ug.md)
+Detailed description about record parameters and procedure can be found in the [User Guide](ug.md)
 
 ## Train Model
 
-After recording around `10 x Wordlist` samples, you are ready to train your first model by Pressing `T`.
+After recording around `10 x Wordlist` samples, you are ready to train your model by Pressing `T`.
 
 ![Train](../img/train.png)
 
@@ -57,7 +55,7 @@ Detailed description about train steps and procedure can be found in [User Guide
 
 ## Verification
 
-When you are using Benjamin regularly, samples will be generated when issueing commands. all of these samples are useful for training, but you need to assure that these samples are matched with detected words. for verifying such samples you can press `V` to change verification mode and press `space` to start verification process.
+When you are using Benjamin regularly, samples will be generated when issueing commands. To use these samples, you need to assure that they are matched with the detected words. For verifying these samples you can press `V` to change the verification mode and press `space` to start verification process.
 
 ![Verify](../img/verify.png)
 
