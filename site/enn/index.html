@@ -63,6 +63,14 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">ENN</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#enn-train">ENN Train</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#parameters">Parameters</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#enn-sample-link">ENN Sample Link</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#enn-command-line-options">ENN Command Line Options</a>
     </li>
     </ul>
@@ -107,6 +115,45 @@
 <p>ENN generates neural network model from ENN samples. ENN samples are cepstrums that were normalized and aligned to a single word saved as a simple 40x40 binary array.</p>
 <p>we feed this to a convolutional neural network followed by a fully connected layer to detect out of vocabulary words.</p>
 <p>ENN is an optional feature that brings more accuracy and let you leave the system on always, so you dont need to say wake up words.</p>
+<p>ENN user interface includes these main tabs:</p>
+<ul>
+<li>Train</li>
+<li>Sample Link</li>
+</ul>
+<h2 id="enn-train">ENN Train</h2>
+<p>In Train Tab you can watch the learning procedure of each word. In train Panel, learning loss and test loss is shown for first 4 words in wordlist panel. You can watch other word loss plots by pressing Up/Down arrow keys on keyboard. Hover on each word in word list panel to see how many samples are trained from total samples.</p>
+<h3 id="parameters">Parameters</h3>
+<ul>
+<li>
+<p>Thread Num: Number of concurrent words to learn. (Be careful to set it lower than your number of CPU cores to prevent windows freeze)</p>
+</li>
+<li>
+<p>Learning rate: Base learning rate for each word to start training.</p>
+</li>
+<li>
+<p>Target Loss: Loss that model is considered learned.</p>
+</li>
+<li>
+<p>Param Num: Number of parameters the model has to learn.</p>
+</li>
+<li>
+<p>Data Count: Number of ENN samples in enn directory.</p>
+</li>
+<li>
+<p>Learned Count: Number of words that their loss become less than target loss.</p>
+</li>
+<li>
+<p>Loop Count: Training for each word takes 200 epoch, if target loss not reached. Then next word's training procedure starts. After all words training finished, program will start from first word and increases loop count.</p>
+</li>
+<li>
+<p>Train Time: Time that program is training words.</p>
+</li>
+</ul>
+<p><img alt="train" src="../img/enn_train.png" /></p>
+<h2 id="enn-sample-link">ENN Sample Link</h2>
+<p>In sample link tab all sample cepstrums are ploted in images. In this way you can find out why training for a word has large loss and not reaches the target loss.
+By using direction arrow keys you can select then play the wave related to each sample. Also change the word to see its samples. (Train procedure is not stopped while sample link is active)</p>
+<p><img alt="sampleLink" src="../img/enn_sample_link.png" /></p>
 <h2 id="enn-command-line-options">ENN Command Line Options</h2>
 <ul>
 <li><code>-u</code>: Set UI mode, to see the samples' image created from binary array.</li>
@@ -123,8 +170,6 @@
 </code></pre>
 </li>
 </ul>
-<p><img alt="sampleLink" src="../img/enn_sample_link.png" /></p>
-<p><img alt="train" src="../img/enn_train.png" /></p>
               
             </div>
           </div><footer>
