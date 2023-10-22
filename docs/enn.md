@@ -18,3 +18,8 @@ ENN is an optional feature that brings more accuracy and let you leave the syste
 * `-w`: Followed by a string to set the word you want to train. By using this option, training will be done only on the specified word.
 
         enn.exe -w sierra
+
+![sampleLink](../img/enn_sample_link.png)
+
+
+![train](../img/enn_train.png)

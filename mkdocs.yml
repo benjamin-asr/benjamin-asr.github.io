@@ -9,4 +9,5 @@ nav:
     - ENN: enn.md
     - Chess: chess.md
     - About: about.md
+    - GitHub: https://github.com/bijanbina/Benjamin
 theme: readthedocs
