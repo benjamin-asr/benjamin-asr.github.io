@@ -1,20 +1,25 @@
 # User Guide
 
-Detailed description of **ArBade** functionalities is discussed in this document.
+A detailed description of **ArBade** functionalities is discussed in this document.
 
 1. [Record](## Record)
     * [Record Status](### Record Status)
     * [Record Parameters](### Record Parameters)
     * [Record Shortcuts](### Record Shortcuts)
-2. [Train Procedure](## Train)
-3. [Verify](## Verify)
+2. [Verify](## Verify)
     * [Verify Status](### Verify Status)
     * [Verify Parameters](### Verify Parameters)
     * [Verify Shortcuts](### Verify Shortcuts)
+3. [Sleep](## Sleep)
+4. [Wrong](## Wrong)
+5. [False](## False)
+6. [Test](## Test)
+7. [Enn False](## Enn False)
+8. [Console](## Console)
 
 ## Record
 
-While recording the samples for training voice recognition engine, you should know status, parameters and shortcuts related to recording.
+While recording the samples for training the voice recognition engine, you should know the status, parameters and shortcuts related to recording.
 
 ### Record Status
 
@@ -26,59 +31,62 @@ While recording the samples for training voice recognition engine, you should kn
 
 ### Record Parameters
 
-* Category: these are directories to classify samples you record with different devices. exceptions are `unverified`, `online` and `efalse` that they are used by Benjamin.
-* Pause Time: Break time that let you read the words before record started.
-* Num of Words: Specify the number of words to display while recording.
-* Rec Time: Defines the period of recording time. Tune this parameter with `Num of Words`.
-* Count: Set this to total number of samples you want to record.
-* Focus Word: Displayed set of words will contain the `Focus Word`.
-* Power: After recording sample power of the voice will be displayed. Care about this parameter as this will be very low if recording device has any problem.
-* Time: Shows how much time passed from `Rec Time`
-* Word: Shows the words you should say while recording
-* Status: Shows recording status
+* **Category**: Directories to classify samples you record with different devices. exceptions are `unverified`, `online`, `sleep`, `wrong`, `test`, `enn` and `efalse` which are used internally by Benjamin.
+* **Pause Time**: Break time that lets you read the words before record process starts.
+* **Num of Words**: Specify the number of words for recording samples.
+* **Rec Time**: Defines the period of recording time.
+* **Count**: Set this to the total number of samples you want to record in a single round.
+* **Focus Word**: A displayed set of words will contain the `Focus Word`.
+* **Power**: After recording the sample power of the voice will be displayed. Care about this parameter as this will be very low if the recording device has any problem.
+* **Time**: Shows how much time passed from `Rec Time`
+* **Word**: Shows the words you should say while recording
+* **Status**: Shows recording status
 
 ### Record Shortcuts
 
-* `S`: Set `Category`, `unverified` and `efalse` are prohibited. Dialog will be shown and ask for desired `Category`. You can create a new `Category` or change between categories produced in past.
+* `S`: Set `Category`, `unverified` and `efalse` are prohibited. A dialog will be shown and ask for the desired `Category`. You can create a new `Category` or change between categories produced in the past.
 * `Space`: Start or Pause recording.
 * `Up/Down`: Increase/Decrease `Pause Time`.
 * `Right/Left`: Increase/Decrease `Rec Time`.
-* `C`: Change count, dialog will be opened and ask for how many samples would you record.
-* `F`: Set `Focus Word`, then displayed words collection will contain `Focus Word`. Dialog will be opened and ask for id of `Focus Word`.
-* `J/K`: Decrease/Increase `Num of Words`.
+* `C`: Change count, a dialog will be opened and ask for how many samples would you record.
+* `F`: Set `Focus Word`, then the displayed words collection will contain `Focus Word`. A dialog will be opened and ask for the id of `Focus Word`.
+* `W`: Opens a dialog to ask `Num of Words`.
 * `O`: Opens selected `Category` directory.
-
-## Train
 
 ## Verify
 
-By using Benjamin regularly, many samples will be created as online samples. But these samples are not labeled correctly. There is maybe some mistakes among words from a sample. These samples are accumulated in `unverified` directory and by verifying them, they will be moved to `online` directory.
+By using Benjamin regularly, many samples will be created as online samples. However, these samples are not labeled correctly. There may be some mistakes among words from a sample. These samples are accumulated in `unverified` directory and by verifying them, they will be moved to `online` directory.
 
 Verification is done by playing the samples in `unverified` directory. you can refer to this section to know all status, parameters and shortcuts related to verification.
-
-### Verify Status
-
-* <span style="color:#f00">Play</span>: Play `unverified` samples
-* <span style="color:#b17400">Pause</span>: Pause the playing sample
-* <span style="color:#10b100">Stop</span>: Stop the record and navigate to statistics panel.
-* <span style="color:#b17400">Decide Pause</span>: After each sample stopped from playing, there is a short time you can decide on what should happen to the sample
-* <span style="color:#00b8d7">Break</span>: Time to let you read the words before playing started
-
-### Verify Parameters
-
-* Pause Time: Break time that let you read the words before record started.
-* Status: Shows playing status
-* Focus Word: By setting this, Player will only play the samples that contain the `Focus Word`.
-* Count: Shows how many samples are in the `unverified` directory. By setting `Focus Word`, counts only samples that contain the word.
-* Word: Shows the words you will check in the sample
-* Time: Shows how much time passed from voice sample
-* Power: Before playing sample, power of the voice will be displayed. Care about this parameter as this will be very low if recording device has any problem.
-* Category is set to `unverified` and cannot be changed. `Count` is calculated from samples statistics and you cannot change it.
 
 ### Verify Shortcuts
 
 * `Space`: Start or Pause playing.
 * `Up/Down`: Increase/Decrease `Pause Time`.
-* `F`: Set `Focus Word`, then displayed words collection will contain `Focus Word`. Dialog will be opened and ask for id of `Focus Word`.
+* `F`: Set `Focus Word`, then the displayed words collection will contain `Focus Word`. A dialog will be opened and ask for the id of `Focus Word`.
 * `O`: Opens `unverified` directory.
-* `Z`: Press to move sample from `unverified` directory to `wrong` directory. By pressing `Z`, a dialog will be displayed and as
+* `Z`: Press to move the sample from the `unverified` directory to the `wrong` directory.
+* `R`: Changes default decision/action for verifying samples. Copy mode means after the `Decide Pause` timeout, the sample will be copied to the `online` directory. In the same way in Delete mode, timeout will cause sample removal.
+
+## Sleep
+
+Verify samples recorded in sleep mode. In this mode listen to the recorded samples, if they contain any true samples press `Z` to get rid of them. All other samples will automatically moved to the `wrong` directory and they will be used to train the enn model.
+
+## Wrong
+
+These are verified samples from the `sleep` directory. They are verified to be wrong samples, not true ones! In this mode, you will be able to review them and check if some samples are moved to this directory by accident.
+
+## False
+
+During generating Enn samples, some of the samples in the `train` directory will not detect correctly, these samples will be moved to the `efalse` directory. In this mode, you can listen to these samples and judge whether they are real samples or the wrong ones which you should get rid of them.
+
+## Test
+
+After training on samples, the model is evaluated through test samples. Word error rate (WER) and Sentence error rate (SER) are calculated by predicting test samples. Then false detected samples are listed in this tab and you can listen to them to figure out what went wrong.
+
+## Enn False
+
+`BaTool` generates enn samples, from both train samples and wrong samples. The `enn` directory is the destination of this process. Enn files from the `train` directory are located in `enn/true` and `wrong` directory-related files are in `enn/false`. In the `Enn False` tab, only false statistics are shown. By clicking the trash icon, all Enn samples will be deleted.
+## Console
+
+Training on samples is started by pressing `T`. After training is finished, a dialog pops up and asks to generate enn samples from audio samples. Neural Network will be trained from these enn samples. When generating Enn Samples is finished, another dialog arises and asks about verifying generated engine false detected samples. Engine false detected samples, abbreviated as `efalse` samples, are collected in the `efalse` directory. They are generated after training, and while testing samples in the `test` directory. You can verify them by switching to `False` and `Test` tabs.
