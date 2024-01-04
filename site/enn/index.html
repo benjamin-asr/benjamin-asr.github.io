@@ -71,7 +71,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#enn-sample-link">ENN Sample Link</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#enn-command-line-options">ENN Command Line Options</a>
+    <li class="toctree-l2"><a class="reference internal" href="#wrong">Wrong</a>
     </li>
     </ul>
                 </li>
@@ -119,9 +119,10 @@
 <ul>
 <li>Train</li>
 <li>Sample Link</li>
+<li>Wrong</li>
 </ul>
 <h2 id="enn-train">ENN Train</h2>
-<p>In Train Tab you can watch the learning procedure of each word. In train Panel, learning loss and test loss is shown for first 4 words in wordlist panel. You can watch other word loss plots by pressing Up/Down arrow keys on keyboard. Hover on each word in word list panel to see how many samples are trained from total samples.</p>
+<p>In Train Tab you can watch the learning procedure of each word. In train Panel, learning loss and test loss is shown for first 4 words in wordlist panel. You can watch other word loss plots by pressing Up/Down arrow keys on keyboard. Hover on each word in word list panel to see how many samples are trained from total samples. Also you can sort the model statistics based on train precision, test precision and loss by clicking relevant table header (to reset the sort method click on ID header). Learned models will be saved in <code>Model</code> directory.</p>
 <h3 id="parameters">Parameters</h3>
 <ul>
 <li>
@@ -137,7 +138,10 @@
 <p>Param Num: Number of parameters the model has to learn.</p>
 </li>
 <li>
-<p>Data Count: Number of ENN samples in enn directory.</p>
+<p>True Count: Number of ENN samples in <code>enn/true</code> directory.</p>
+</li>
+<li>
+<p>False Count: Number of ENN samples in <code>enn/false</code> directory.</p>
 </li>
 <li>
 <p>Learned Count: Number of words that their loss become less than target loss.</p>
@@ -151,25 +155,11 @@
 </ul>
 <p><img alt="train" src="../img/enn_train.png" /></p>
 <h2 id="enn-sample-link">ENN Sample Link</h2>
-<p>In sample link tab all sample cepstrums are ploted in images. In this way you can find out why training for a word has large loss and not reaches the target loss.
+<p>In sample link tab all true sample cepstrums are ploted in images. In this way you can find out why training for a word has large loss and not reaches the target loss.
 By using direction arrow keys you can select then play the wave related to each sample. Also change the word to see its samples. (Train procedure is not stopped while sample link is active)</p>
 <p><img alt="sampleLink" src="../img/enn_sample_link.png" /></p>
-<h2 id="enn-command-line-options">ENN Command Line Options</h2>
-<ul>
-<li><code>-u</code>: Set UI mode, to see the samples' image created from binary array.</li>
-<li><code>-t</code>: Set Test mode</li>
-<li><code>-f</code>: Testing reading file to create a dataset</li>
-<li>
-<p><code>-l</code>: Followed by a number to set learning rate for training neural network. e.g:</p>
-<pre><code>enn.exe -l 0.001
-</code></pre>
-</li>
-<li>
-<p><code>-w</code>: Followed by a string to set the word you want to train. By using this option, training will be done only on the specified word.</p>
-<pre><code>enn.exe -w sierra
-</code></pre>
-</li>
-</ul>
+<h2 id="wrong">Wrong</h2>
+<p>In training procedure, some samples couldn't be learned, they will be stored in <code>Models/Wrong</code> directory. For each model there is a relevant <code>.wrong</code> file that is filled by all failed samples. In the same way as <code>Sample Link</code> you can watch wrong detected sample cepstrums and here relevant recorded wave. The label for each sample is shown in right bottom corner of its cepstrum.</p>
               
             </div>
           </div><footer>

@@ -10,10 +10,11 @@ ENN user interface includes these main tabs:
 
 * Train
 * Sample Link
+* Wrong
 
 ## ENN Train
 
-In Train Tab you can watch the learning procedure of each word. In train Panel, learning loss and test loss is shown for first 4 words in wordlist panel. You can watch other word loss plots by pressing Up/Down arrow keys on keyboard. Hover on each word in word list panel to see how many samples are trained from total samples.
+In Train Tab you can watch the learning procedure of each word. In train Panel, learning loss and test loss is shown for first 4 words in wordlist panel. You can watch other word loss plots by pressing Up/Down arrow keys on keyboard. Hover on each word in word list panel to see how many samples are trained from total samples. Also you can sort the model statistics based on train precision, test precision and loss by clicking relevant table header (to reset the sort method click on ID header). Learned models will be saved in `Model` directory.
 
 ### Parameters
 
@@ -25,7 +26,9 @@ In Train Tab you can watch the learning procedure of each word. In train Panel, 
 
 * Param Num: Number of parameters the model has to learn.
 
-* Data Count: Number of ENN samples in enn directory.
+* True Count: Number of ENN samples in `enn/true` directory.
+
+* False Count: Number of ENN samples in `enn/false` directory.
 
 * Learned Count: Number of words that their loss become less than target loss.
 
@@ -37,20 +40,11 @@ In Train Tab you can watch the learning procedure of each word. In train Panel, 
 
 ## ENN Sample Link
 
-In sample link tab all sample cepstrums are ploted in images. In this way you can find out why training for a word has large loss and not reaches the target loss.
+In sample link tab all true sample cepstrums are ploted in images. In this way you can find out why training for a word has large loss and not reaches the target loss.
 By using direction arrow keys you can select then play the wave related to each sample. Also change the word to see its samples. (Train procedure is not stopped while sample link is active)
 
 ![sampleLink](../img/enn_sample_link.png)
 
-## ENN Command Line Options
+## Wrong
 
-* `-u`: Set UI mode, to see the samples' image created from binary array.
-* `-t`: Set Test mode
-* `-f`: Testing reading file to create a dataset
-* `-l`: Followed by a number to set learning rate for training neural network. e.g:
-
-        enn.exe -l 0.001
-
-* `-w`: Followed by a string to set the word you want to train. By using this option, training will be done only on the specified word.
-
-        enn.exe -w sierra
+In training procedure, some samples couldn't be learned, they will be stored in `Models/Wrong` directory. For each model there is a relevant `.wrong` file that is filled by all failed samples. In the same way as `Sample Link` you can watch wrong detected sample cepstrums and here relevant recorded wave. The label for each sample is shown in right bottom corner of its cepstrum.
