@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Acc Commands - Benjamin</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Table of Content", url: "#_top", children: [
+              {title: "\u25c4 Acc Script", url: "#acc-script" },
+          ]},
+          {title: "acc_getVal", url: "#acc_getval", children: [
+          ]},
+          {title: "acc_setVal", url: "#acc_setval", children: [
+          ]},
+          {title: "acc_list", url: "#acc_list", children: [
+              {title: "", url: "#_1" },
+          ]},
+          {title: "acc_listChild", url: "#acc_listchild", children: [
+              {title: "", url: "#_2" },
+          ]},
+          {title: "acc_getParent", url: "#acc_getparent", children: [
+          ]},
+          {title: "acc_getChild", url: "#acc_getchild", children: [
+          ]},
+          {title: "acc_search", url: "#acc_search", children: [
+              {title: "", url: "#_3" },
+          ]},
+          {title: "acc_getType", url: "#acc_gettype", children: [
+          ]},
+          {title: "acc_getState", url: "#acc_getstate", children: [
+          ]},
+          {title: "acc_getName", url: "#acc_getname", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../AppCommands/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../AppCommands/" class="btn btn-xs btn-link">
+        Application Commands
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../AccScript/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../AccScript/" class="btn btn-xs btn-link">
+        Script
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h2 id="table-of-content">Table of Content</h2>
+<ul>
+<li><a href="#acc_getVal">acc_getVal</a></li>
+<li><a href="#acc_setVal">acc_setVal</a></li>
+<li><a href="#acc_list">acc_list</a></li>
+<li><a href="#acc_listChild">acc_listChild</a></li>
+<li><a href="#acc_getParent">acc_getParent</a></li>
+<li><a href="#acc_getChild">acc_getChild</a></li>
+<li><a href="#acc_search">acc_search</a></li>
+<li><a href="#acc_getType">acc_getType</a></li>
+<li><a href="#acc_getState">acc_getState</a></li>
+<li><a href="#acc_getName">acc_getName</a></li>
+</ul>
+<h3 id="acc-script"><a href="../AccScript/">◄ Acc Script</a></h3>
+<h2 id="acc_getval">acc_getVal</h2>
+<pre><code>string acc_getVal(&quot;acc_path&quot;)
+</code></pre>
+<p>Get value from an <code>acc_path</code></p>
+<h2 id="acc_setval">acc_setVal</h2>
+<pre><code>void acc_setVal(&quot;acc_path&quot;, &quot;value&quot;)
+</code></pre>
+<p>Set value for an <code>acc_path</code></p>
+<h2 id="acc_list">acc_list</h2>
+<pre><code>void acc_list(&quot;acc_path&quot;)
+</code></pre>
+<p>List all children in a recursive manner</p>
+<h3 id="_1"><acc_path></h3>
+<p><code>optional</code></p>
+<p>Acc path is the parent acc that the listing process begins, can be remained empty.</p>
+<h2 id="acc_listchild">acc_listChild</h2>
+<pre><code>void acc_listChild(&quot;acc_path&quot;)
+</code></pre>
+<p>List all children of acc from <code>acc_path</code></p>
+<h3 id="_2"><acc_path></h3>
+<p><code>optional</code></p>
+<p>Acc path is the parent acc that the listing process begins, can be remained empty.</p>
+<h2 id="acc_getparent">acc_getParent</h2>
+<pre><code>string acc_getParent(&quot;acc_path&quot;)
+</code></pre>
+<p>Get parent path of <code>acc_path</code></p>
+<h2 id="acc_getchild">acc_getChild</h2>
+<pre><code>string acc_getParent(&quot;acc_path&quot;, &quot;name&quot;)
+</code></pre>
+<p>Get child match with <code>name</code> and from path of <code>acc_path</code></p>
+<h2 id="acc_search">acc_search</h2>
+<pre><code>string acc_search(&quot;acc_path&quot;, &quot;name&quot;)
+</code></pre>
+<p>Search path by replacing <code>?</code> with possible cases of <code>acc_path</code> 
+to find acc match with <code>name</code>, then returns true path</p>
+<h3 id="_3"><acc_path></h3>
+<p>Acc path is a known path with only few unknown steps represented by <code>?</code></p>
+<h2 id="acc_gettype">acc_getType</h2>
+<pre><code>string acc_getParent(&quot;acc_path&quot;)
+</code></pre>
+<p>Get type of acc from path of <code>acc_path</code></p>
+<h2 id="acc_getstate">acc_getState</h2>
+<pre><code>string acc_getState(&quot;acc_path&quot;)
+</code></pre>
+<p>Get State of acc from path of <code>acc_path</code></p>
+<h2 id="acc_getname">acc_getName</h2>
+<pre><code>string acc_getName(&quot;acc_path&quot;)
+</code></pre>
+<p>Get name of acc from path of <code>acc_path</code></p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../AppCommands/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../AppCommands/" class="btn btn-xs btn-link">
+        Application Commands
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../AccScript/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../AccScript/" class="btn btn-xs btn-link">
+        Script
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Uia Commands - Benjamin</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Table of Content", url: "#_top", children: [
+              {title: "\u25c4 Acc Script", url: "#acc-script" },
+          ]},
+          {title: "uia_getVal", url: "#uia_getval", children: [
+          ]},
+          {title: "uia_setVal", url: "#uia_setval", children: [
+          ]},
+          {title: "uia_list", url: "#uia_list", children: [
+              {title: "", url: "#_1" },
+          ]},
+          {title: "uia_listChild", url: "#uia_listchild", children: [
+              {title: "", url: "#_2" },
+          ]},
+          {title: "uia_getParent", url: "#uia_getparent", children: [
+          ]},
+          {title: "uia_getChild", url: "#uia_getchild", children: [
+          ]},
+          {title: "uia_search", url: "#uia_search", children: [
+              {title: "", url: "#_3" },
+          ]},
+          {title: "uia_getType", url: "#uia_gettype", children: [
+          ]},
+          {title: "uia_getState", url: "#uia_getstate", children: [
+          ]},
+          {title: "uia_getName", url: "#uia_getname", children: [
+          ]},
+          {title: "uia_toggle", url: "#uia_toggle", children: [
+          ]},
+          {title: "uia_toggle", url: "#uia_toggle_1", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../Examples/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../Examples/" class="btn btn-xs btn-link">
+        Examples
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ProgCommands/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ProgCommands/" class="btn btn-xs btn-link">
+        Programming Commands
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h2 id="table-of-content">Table of Content</h2>
+<ul>
+<li><a href="#uia_getVal">uia_getVal</a></li>
+<li><a href="#uia_setVal">uia_setVal</a></li>
+<li><a href="#uia_list">uia_list</a></li>
+<li><a href="#uia_listChild">uia_listChild</a></li>
+<li><a href="#uia_getParent">uia_getParent</a></li>
+<li><a href="#uia_getChild">uia_getChild</a></li>
+<li><a href="#uia_search">uia_search</a></li>
+<li><a href="#uia_getType">uia_getType</a></li>
+<li><a href="#uia_getState">uia_getState</a></li>
+<li><a href="#uia_getName">uia_getName</a></li>
+<li><a href="#uia_toggle">uia_toggle</a></li>
+<li><a href="#uia_getToggle">uia_getToggle</a></li>
+</ul>
+<h3 id="acc-script"><a href="../AccScript/">◄ Acc Script</a></h3>
+<h2 id="uia_getval">uia_getVal</h2>
+<pre><code>string uia_getVal(&quot;uia_path&quot;)
+</code></pre>
+<p>Get value from an <code>uia_path</code></p>
+<h2 id="uia_setval">uia_setVal</h2>
+<pre><code>void uia_setVal(&quot;uia_path&quot;, &quot;value&quot;)
+</code></pre>
+<p>Set value for an <code>uia_path</code></p>
+<h2 id="uia_list">uia_list</h2>
+<pre><code>void uia_list(&quot;uia_path&quot;)
+</code></pre>
+<p>List all children in a recursive manner</p>
+<h3 id="_1"><uia_path></h3>
+<p><code>optional</code></p>
+<p>Uia path is the parent uia that the listing process begins, can be remained empty.</p>
+<h2 id="uia_listchild">uia_listChild</h2>
+<pre><code>void uia_listChild(&quot;uia_path&quot;)
+</code></pre>
+<p>List all children of uia from <code>uia_path</code></p>
+<h3 id="_2"><uia_path></h3>
+<p><code>optional</code></p>
+<p>Uia path is the parent uia that the listing process begins, can be remained empty.</p>
+<h2 id="uia_getparent">uia_getParent</h2>
+<pre><code>string uia_getParent(&quot;uia_path&quot;)
+</code></pre>
+<p>Get parent path of <code>uia_path</code></p>
+<h2 id="uia_getchild">uia_getChild</h2>
+<pre><code>string uia_getParent(&quot;uia_path&quot;, &quot;name&quot;)
+</code></pre>
+<p>Get child match with <code>name</code> and from path of <code>uia_path</code></p>
+<h2 id="uia_search">uia_search</h2>
+<pre><code>string uia_search(&quot;uia_path&quot;, &quot;name&quot;)
+</code></pre>
+<p>Search path by replacing <code>?</code> with possible cases of <code>uia_path</code> 
+to find uia match with <code>name</code>, then returns true path</p>
+<h3 id="_3"><uia_path></h3>
+<p>Uia path is a known path with only few unknown steps represented by <code>?</code></p>
+<h2 id="uia_gettype">uia_getType</h2>
+<pre><code>string uia_getParent(&quot;uia_path&quot;)
+</code></pre>
+<p>Get type of uia from path of <code>uia_path</code></p>
+<h2 id="uia_getstate">uia_getState</h2>
+<pre><code>string uia_getState(&quot;uia_path&quot;)
+</code></pre>
+<p>Get State of uia from path of <code>uia_path</code></p>
+<h2 id="uia_getname">uia_getName</h2>
+<pre><code>string uia_getName(&quot;uia_path&quot;)
+</code></pre>
+<p>Get name of uia from path of <code>uia_path</code></p>
+<h2 id="uia_toggle">uia_toggle</h2>
+<pre><code>void uia_toggle(&quot;uia_path&quot;)
+</code></pre>
+<p>Toggle value of component from path of <code>uia_path</code>, if it supports UIA_ToggleToggleStatePropertyId.</p>
+<h2 id="uia_toggle_1">uia_toggle</h2>
+<pre><code>string uia_getToggle(&quot;uia_path&quot;)
+</code></pre>
+<p>Get toggle value of component from path of <code>uia_path</code>, if it supports UIA_ToggleToggleStatePropertyId.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../Examples/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../Examples/" class="btn btn-xs btn-link">
+        Examples
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ProgCommands/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ProgCommands/" class="btn btn-xs btn-link">
+        Programming Commands
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
