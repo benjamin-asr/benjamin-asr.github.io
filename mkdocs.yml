@@ -1,32 +1,20 @@
 dev_addr: 127.0.0.1:8080
-site_name: Benjamin
+site_name: Benjamin-ASR
 nav:
   - Home: index.md
-  - ArBade:
-      - Description: arbade.md
-      - User Guide: arbade/ug.md
+  - Quick Start Guide: start.md
+  - ArBade: arbade.md
   - BaTool: batool.md
-  - AccJoon: 
-    - Description: accjoon.md
-    - Script:
-      - Script: accjoon/AccScript.md
-      - Acc Commands: accjoon/AccCommands.md
-      - Application Commands: accjoon/AppCommands.md
-      - Name Pipe Commands: accjoon/NPCommands.md
-      - Miscellaneous Commands: accjoon/MiscCommands.md
-      - Programming Commands: accjoon/ProgCommands.md
-      - Uia Commands: accjoon/UiaCommands.md
-      - Examples: accjoon/Examples.md
   - Mom: mom.md
   - Rebound: rebound.md
   - ENN: enn.md
   - Chess: chess.md
-  - About: about.md
   - GitHub: https://github.com/bijanbina/Benjamin
+  - Developer: https://benjamin-int.github.io
+  - About: about.md
 theme: 
-  name: windmill
+  name: readthedocs
   palette:
     primary: 'indigo'
     accent: 'pink'
-  logo: 'img/favicon.ico'
   favicon: 'img/favicon.ico'
