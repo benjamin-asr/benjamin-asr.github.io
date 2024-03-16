@@ -1,8 +1,7 @@
 # Getting Started
 ### 1. Install mkdocs
 ```
-pip install mkdocs
-pip install mkdocs-windmill
+pip install mkdocs mkdocs-windmill mkdocstrings markdown-callouts
 ```
 
 ### 2. open cmd in project directory and run

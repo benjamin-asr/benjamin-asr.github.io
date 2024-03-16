@@ -2,7 +2,7 @@ dev_addr: 127.0.0.1:8080
 site_name: Benjamin-ASR
 nav:
   - Home: index.md
-  - Quick Start Guide: start.md
+  - Quick Start Guide: Quick-Start-Guide/
   - ArBade: arbade.md
   - BaTool: batool.md
   - Mom: mom.md
@@ -12,9 +12,21 @@ nav:
   - GitHub: https://github.com/bijanbina/Benjamin
   - Developer: https://benjamin-int.github.io
   - About: about.md
+
 theme: 
   name: readthedocs
+  highlightjs: true
   palette:
     primary: 'indigo'
     accent: 'pink'
   favicon: 'img/favicon.ico'
+  hljs_languages:
+    - yaml
+    - django
+
+markdown_extensions:
+  - toc:
+      permalink: 
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - callouts
