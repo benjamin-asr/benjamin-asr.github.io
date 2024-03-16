@@ -2,11 +2,13 @@ dev_addr: 127.0.0.1:8080
 site_name: Benjamin-ASR
 nav:
   - Home: index.md
+  - Installation: installation.md
   - Quick Start Guide: Quick-Start-Guide/
   - ArBade: arbade.md
   - BaTool: batool.md
   - Mom: mom.md
-  - Rebound: rebound.md
+  - Controlling Keyboard: Controlling-Keyboard/
+  - Controlling Mouse: Controlling-Mouse/
   - ENN: enn.md
   - Chess: chess.md
   - GitHub: https://github.com/bijanbina/Benjamin

@@ -21,6 +21,8 @@
       <script src="../../js/html5shiv.min.js"></script>
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/django.min.js"></script>
       <script>hljs.highlightAll();</script> 
 </head>
 
@@ -44,7 +46,11 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../../start.md">Quick Start Guide</a>
+                <li class="toctree-l1"><a class="reference internal" href="../../installation/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../Quick-Start-Guide/">Quick Start Guide</a>
                 </li>
               </ul>
               <ul>
@@ -60,7 +66,11 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../rebound/">Rebound</a>
+                <li class="toctree-l1"><a class="" href="../../Controlling-Keyboard/">Controlling Keyboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../Controlling-Mouse/">Controlling Mouse</a>
                 </li>
               </ul>
               <ul>
@@ -106,7 +116,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="user-guide">User Guide</h1>
+                <h1 id="user-guide">User Guide<a class="headerlink" href="#user-guide" title="Permanent link"></a></h1>
 <p>A detailed description of <strong>ArBade</strong> functionalities is discussed in this document.</p>
 <ol>
 <li><a href="## Record">Record</a><ul>
@@ -128,9 +138,9 @@
 <li><a href="## Enn False">Enn False</a></li>
 <li><a href="## Console">Console</a></li>
 </ol>
-<h2 id="record">Record</h2>
+<h2 id="record">Record<a class="headerlink" href="#record" title="Permanent link"></a></h2>
 <p>While recording the samples for training the voice recognition engine, you should know the status, parameters and shortcuts related to recording.</p>
-<h3 id="record-status">Record Status</h3>
+<h3 id="record-status">Record Status<a class="headerlink" href="#record-status" title="Permanent link"></a></h3>
 <ul>
 <li><span style="color:#f00">Rec</span>: Records your voice</li>
 <li><span style="color:#b17400">Pause</span>: Pause the Recording Procedure</li>
@@ -138,7 +148,7 @@
 <li><span style="color:#008eca">Req Pause</span>: Requested pause will be commited after recording finished</li>
 <li><span style="color:#00b8d7">Break</span>: Time to let you read the words before recording started</li>
 </ul>
-<h3 id="record-parameters">Record Parameters</h3>
+<h3 id="record-parameters">Record Parameters<a class="headerlink" href="#record-parameters" title="Permanent link"></a></h3>
 <ul>
 <li><strong>Category</strong>: Directories to classify samples you record with different devices. exceptions are <code>unverified</code>, <code>online</code>, <code>sleep</code>, <code>wrong</code>, <code>test</code>, <code>enn</code> and <code>efalse</code> which are used internally by Benjamin.</li>
 <li><strong>Pause Time</strong>: Break time that lets you read the words before record process starts.</li>
@@ -151,7 +161,7 @@
 <li><strong>Word</strong>: Shows the words you should say while recording</li>
 <li><strong>Status</strong>: Shows recording status</li>
 </ul>
-<h3 id="record-shortcuts">Record Shortcuts</h3>
+<h3 id="record-shortcuts">Record Shortcuts<a class="headerlink" href="#record-shortcuts" title="Permanent link"></a></h3>
 <ul>
 <li><code>S</code>: Set <code>Category</code>, <code>unverified</code> and <code>efalse</code> are prohibited. A dialog will be shown and ask for the desired <code>Category</code>. You can create a new <code>Category</code> or change between categories produced in the past.</li>
 <li><code>Space</code>: Start or Pause recording.</li>
@@ -162,10 +172,10 @@
 <li><code>W</code>: Opens a dialog to ask <code>Num of Words</code>.</li>
 <li><code>O</code>: Opens selected <code>Category</code> directory.</li>
 </ul>
-<h2 id="verify">Verify</h2>
+<h2 id="verify">Verify<a class="headerlink" href="#verify" title="Permanent link"></a></h2>
 <p>By using Benjamin regularly, many samples will be created as online samples. However, these samples are not labeled correctly. There may be some mistakes among words from a sample. These samples are accumulated in <code>unverified</code> directory and by verifying them, they will be moved to <code>online</code> directory.</p>
 <p>Verification is done by playing the samples in <code>unverified</code> directory. you can refer to this section to know all status, parameters and shortcuts related to verification.</p>
-<h3 id="verify-shortcuts">Verify Shortcuts</h3>
+<h3 id="verify-shortcuts">Verify Shortcuts<a class="headerlink" href="#verify-shortcuts" title="Permanent link"></a></h3>
 <ul>
 <li><code>Space</code>: Start or Pause playing.</li>
 <li><code>Up/Down</code>: Increase/Decrease <code>Pause Time</code>.</li>
@@ -174,17 +184,17 @@
 <li><code>Z</code>: Press to move the sample from the <code>unverified</code> directory to the <code>wrong</code> directory.</li>
 <li><code>R</code>: Changes default decision/action for verifying samples. Copy mode means after the <code>Decide Pause</code> timeout, the sample will be copied to the <code>online</code> directory. In the same way in Delete mode, timeout will cause sample removal.</li>
 </ul>
-<h2 id="sleep">Sleep</h2>
+<h2 id="sleep">Sleep<a class="headerlink" href="#sleep" title="Permanent link"></a></h2>
 <p>Verify samples recorded in sleep mode. In this mode listen to the recorded samples, if they contain any true samples press <code>Z</code> to get rid of them. All other samples will automatically moved to the <code>wrong</code> directory and they will be used to train the enn model.</p>
-<h2 id="wrong">Wrong</h2>
+<h2 id="wrong">Wrong<a class="headerlink" href="#wrong" title="Permanent link"></a></h2>
 <p>These are verified samples from the <code>sleep</code> directory. They are verified to be wrong samples, not true ones! In this mode, you will be able to review them and check if some samples are moved to this directory by accident.</p>
-<h2 id="false">False</h2>
+<h2 id="false">False<a class="headerlink" href="#false" title="Permanent link"></a></h2>
 <p>During generating Enn samples, some of the samples in the <code>train</code> directory will not detect correctly, these samples will be moved to the <code>efalse</code> directory. In this mode, you can listen to these samples and judge whether they are real samples or the wrong ones which you should get rid of them.</p>
-<h2 id="test">Test</h2>
+<h2 id="test">Test<a class="headerlink" href="#test" title="Permanent link"></a></h2>
 <p>After training on samples, the model is evaluated through test samples. Word error rate (WER) and Sentence error rate (SER) are calculated by predicting test samples. Then false detected samples are listed in this tab and you can listen to them to figure out what went wrong.</p>
-<h2 id="enn-false">Enn False</h2>
+<h2 id="enn-false">Enn False<a class="headerlink" href="#enn-false" title="Permanent link"></a></h2>
 <p><code>BaTool</code> generates enn samples, from both train samples and wrong samples. The <code>enn</code> directory is the destination of this process. Enn files from the <code>train</code> directory are located in <code>enn/true</code> and <code>wrong</code> directory-related files are in <code>enn/false</code>. In the <code>Enn False</code> tab, only false statistics are shown. By clicking the trash icon, all Enn samples will be deleted.</p>
-<h2 id="console">Console</h2>
+<h2 id="console">Console<a class="headerlink" href="#console" title="Permanent link"></a></h2>
 <p>Training on samples is started by pressing <code>T</code>. After training is finished, a dialog pops up and asks to generate enn samples from audio samples. Neural Network will be trained from these enn samples. When generating Enn Samples is finished, another dialog arises and asks about verifying generated engine false detected samples. Engine false detected samples, abbreviated as <code>efalse</code> samples, are collected in the <code>efalse</code> directory. They are generated after training, and while testing samples in the <code>test</code> directory. You can verify them by switching to <code>False</code> and <code>Test</code> tabs.</p>
               
             </div>

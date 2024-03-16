@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>BaTool - Benjamin-ASR</title>
+    <title>Controlling Keyboard - Benjamin-ASR</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "BaTool";
-        var mkdocs_page_input_path = "batool.md";
+        var mkdocs_page_name = "Controlling Keyboard";
+        var mkdocs_page_input_path = "Controlling-Keyboard.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -57,22 +57,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../arbade/">ArBade</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">BaTool</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#batool-conf">BaTool Conf</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#model-section">Model Section:</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#decoder-section">Decoder Section:</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#captain-section">Captain Section:</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#miscellaneous-section">Miscellaneous Section:</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../batool/">BaTool</a>
                 </li>
               </ul>
               <ul>
@@ -80,7 +66,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../Controlling-Keyboard/">Controlling Keyboard</a>
+                <li class="toctree-l1"><a class="" href="./">Controlling Keyboard</a>
                 </li>
               </ul>
               <ul>
@@ -121,7 +107,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">BaTool</li>
+      <li class="breadcrumb-item active">Controlling Keyboard</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -130,45 +116,159 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="batool">BaTool<a class="headerlink" href="#batool" title="Permanent link"></a></h1>
-<p>BaTool is a real-time speech recognition engine, that gets a triphone Kaldi model and do a low latency speech recognition on the data coming from the system default microphone.</p>
-<h2 id="batool-conf">BaTool Conf<a class="headerlink" href="#batool-conf" title="Permanent link"></a></h2>
-<p>Batool is configurable via <code>conf</code> file next to BaTool application. It has 4 main sections to configure:</p>
-<h3 id="model-section">Model Section:<a class="headerlink" href="#model-section" title="Permanent link"></a></h3>
-<p>This section defines the location of Kaldi model files. The addresses are relative to where BaTool application exists.</p>
-<pre class="highlight"><code>; Model path
-[model]
-fst = "Model/HCLG.fst"
-mdl = "Model/final.oalimdl"
-word = "Model/words.txt"
-cmvn = "Model/global_cmvn.stats"</code></pre>
-<h3 id="decoder-section">Decoder Section:<a class="headerlink" href="#decoder-section" title="Permanent link"></a></h3>
-<p>Kaldi related decoder settings.</p>
-<pre class="highlight"><code>max_active = 900
-min_active = 200
-train_max = 5
-ac_scale = 0.05
-min_sil = 20</code></pre>
-<ul>
-<li><code>train_max</code>: Maximum number of same samples for later training.</li>
-<li><code>min_sil</code>: Minimum silence before detection. This value directly connected with accuracy and latency.</li>
-</ul>
-<h3 id="captain-section">Captain Section:<a class="headerlink" href="#captain-section" title="Permanent link"></a></h3>
-<pre class="highlight"><code>; Threshold for detecting words
-[captain]
-hard_threshold = 0.35</code></pre>
-<h3 id="miscellaneous-section">Miscellaneous Section:<a class="headerlink" href="#miscellaneous-section" title="Permanent link"></a></h3>
-<pre class="highlight"><code>; Miscellaneous parameters
-[misc]
-mic = "Sennheiser"
-channel = "com_binaee_rebound"</code></pre>
+                <table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Action</th>
+<th>Command</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>arch</code></td>
+<td>a</td>
+<td><code>november</code></td>
+<td>n</td>
+</tr>
+<tr>
+<td><code>bravo</code></td>
+<td>b</td>
+<td><code>oscar</code></td>
+<td>o</td>
+</tr>
+<tr>
+<td><code>catalina</code></td>
+<td>c</td>
+<td><code>papa</code></td>
+<td>p</td>
+</tr>
+<tr>
+<td><code>delta</code></td>
+<td>d</td>
+<td><code>quebec</code></td>
+<td>q</td>
+</tr>
+<tr>
+<td><code>echo</code></td>
+<td>e</td>
+<td><code>romeo</code></td>
+<td>r</td>
+</tr>
+<tr>
+<td><code>fish</code></td>
+<td>f</td>
+<td><code>sierra</code></td>
+<td>s</td>
+</tr>
+<tr>
+<td><code>golf</code></td>
+<td>g</td>
+<td><code>tango</code></td>
+<td>t</td>
+</tr>
+<tr>
+<td><code>hotel</code></td>
+<td>h</td>
+<td><code>u</code></td>
+<td>u</td>
+</tr>
+<tr>
+<td><code>india</code></td>
+<td>i</td>
+<td><code>vpn</code></td>
+<td>v</td>
+</tr>
+<tr>
+<td><code>jordan</code></td>
+<td>j</td>
+<td><code>wake</code></td>
+<td>w</td>
+</tr>
+<tr>
+<td><code>kilo</code></td>
+<td>k</td>
+<td><code>eggs</code></td>
+<td>x</td>
+</tr>
+<tr>
+<td><code>limo</code></td>
+<td>l</td>
+<td><code>yankee</code></td>
+<td>y</td>
+</tr>
+<tr>
+<td><code>mike</code></td>
+<td>m</td>
+<td><code>zed</code></td>
+<td>z</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Action</th>
+<th>Command</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sim</code></td>
+<td>Space</td>
+<td><code>plus</code></td>
+<td>+</td>
+</tr>
+<tr>
+<td><code>end</code></td>
+<td>end</td>
+<td><code>slash</code></td>
+<td>/</td>
+</tr>
+<tr>
+<td><code>home</code></td>
+<td>home</td>
+<td><code>canals</code></td>
+<td>\</td>
+</tr>
+<tr>
+<td><code>semi</code></td>
+<td>;</td>
+<td><code>edge</code></td>
+<td>Menu key</td>
+</tr>
+<tr>
+<td><code>period</code></td>
+<td>.</td>
+<td><code>bracket</code></td>
+<td>[]</td>
+</tr>
+<tr>
+<td><code>comma</code></td>
+<td>,</td>
+<td><code>curly</code></td>
+<td>{}</td>
+</tr>
+<tr>
+<td><code>dash</code></td>
+<td>-</td>
+<td><code>quote</code></td>
+<td>""</td>
+</tr>
+<tr>
+<td><code>level</code></td>
+<td>=</td>
+<td><code>github</code></td>
+<td>Caps lock</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../arbade/" class="btn btn-neutral float-left" title="ArBade"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../mom/" class="btn btn-neutral float-right" title="Mom">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
 
   <hr/>
 
@@ -190,10 +290,6 @@ channel = "com_binaee_rebound"</code></pre>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../arbade/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../mom/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

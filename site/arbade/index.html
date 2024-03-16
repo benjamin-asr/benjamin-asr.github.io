@@ -21,6 +21,8 @@
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/django.min.js"></script>
       <script>hljs.highlightAll();</script> 
 </head>
 
@@ -44,7 +46,11 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../start.md">Quick Start Guide</a>
+                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../Quick-Start-Guide/">Quick Start Guide</a>
                 </li>
               </ul>
               <ul class="current">
@@ -64,7 +70,11 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../rebound/">Rebound</a>
+                <li class="toctree-l1"><a class="" href="../Controlling-Keyboard/">Controlling Keyboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../Controlling-Mouse/">Controlling Mouse</a>
                 </li>
               </ul>
               <ul>
@@ -110,7 +120,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="arbade">ArBade</h1>
+                <h1 id="arbade">ArBade<a class="headerlink" href="#arbade" title="Permanent link"></a></h1>
 <p>Features:</p>
 <ul>
 <li>Building dataset for voice recognition engine by recording voice samples</li>
@@ -121,8 +131,8 @@
 <li>Verify triphone engine misclassified samples.</li>
 <li>Console environment to train on samples.</li>
 </ul>
-<h2 id="user-guide"><a href="ug/">User Guide</a></h2>
-<h1 id="quick-start">Quick Start</h1>
+<h2 id="user-guide"><a href="ug/">User Guide</a><a class="headerlink" href="#user-guide" title="Permanent link"></a></h2>
+<h1 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link"></a></h1>
 <p>ArBade has many tabs, explained in the following. To change tab click or press numbers on keyboard starting from 1.</p>
 <p><img alt="FirstView" src="../img/first_view.jpg" /></p>
 <p>ArBade is a shortcut based application. Shortcuts are listed in the application topbar.</p>
@@ -130,7 +140,7 @@
 <p>To see all shortcuts, press <code>/</code>.</p>
 <p><img alt="HelpWin" src="../img/help_win.png" /></p>
 <p>First step is to train a model from your voice.</p>
-<h2 id="record-samples">Record Samples</h2>
+<h2 id="record-samples">Record Samples<a class="headerlink" href="#record-samples" title="Permanent link"></a></h2>
 <ol>
 <li>
 <p>specify a category name by pressing <code>S</code>. category name is used to distinguish between speaker or microphone.</p>
@@ -149,7 +159,7 @@
 <li>sample count in specific category.</li>
 </ol>
 <p>Detailed description about record parameters and procedure can be found in the <a href="ug.md">User Guide</a></p>
-<h2 id="train-model">Train Model</h2>
+<h2 id="train-model">Train Model<a class="headerlink" href="#train-model" title="Permanent link"></a></h2>
 <p>After recording around <code>10 x Wordlist</code> samples, you are ready to train your model by Pressing <code>T</code>.</p>
 <p><img alt="Train" src="../img/train.jpg" /></p>
 <p>At any time outside of terminal, by pressing <code>P</code> or clicking on <code>Console</code> tab, you can access the results of running train scripts in terminal. All the train procedure is automatic and you should only wait for the dialog indicating train is finished and now it's ENN samples generation turn.</p>
@@ -157,7 +167,7 @@
 <p>And verifying engine false generated samples.</p>
 <p><img alt="EFalse" src="../img/efalse.jpg" /></p>
 <p>Detailed description about train steps and procedure can be found in <a href="ug.md">User Guide</a></p>
-<h2 id="verification">Verification</h2>
+<h2 id="verification">Verification<a class="headerlink" href="#verification" title="Permanent link"></a></h2>
 <p>When you are using Benjamin regularly, samples will be generated when issueing commands or recorded when in sleep mode saying ordinary words. To use these samples, you need to assure that they are matched with the detected words. For verifying these samples you can switch to Verify tab and press <code>space</code> to start verification process. While verifying sleep mode samples, make sure that all words are detected wrong. Verifying </p>
 <p><img alt="Verify" src="../img/verify.jpg" /></p>
 <p>If the sample is wrong press <code>Z</code> to delete sample, while playing or at <code>Decide Pause</code> status after voice stopped. By default after playing each sample in <code>unverified</code> category, if there wasn't any key press, the sample will be verified. you can change this behaviour by pressing <code>R</code>.</p>
@@ -167,7 +177,7 @@
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../installation/" class="btn btn-neutral float-left" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../batool/" class="btn btn-neutral float-right" title="BaTool">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -191,7 +201,7 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../installation/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../batool/" style="color: #fcfcfc">Next &raquo;</a></span>
