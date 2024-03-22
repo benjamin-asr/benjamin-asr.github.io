@@ -1,6 +1,6 @@
 # Features
 
-- Speak Recognition Engine without connection to any cloud or external server.
+- Speech Recognition Engine without connection to cloud or external server.
 - Ultra low latency recognition that can reach down to less than 100ms.
 - Remove the requirement of wake-up word for every command.
 - Enable local training of the model and fine-tune it for individual voices.
@@ -12,9 +12,9 @@
 - Ready to use product without any requirement for customization and coding skill.
 
 # Origin of Design
-Benjamin began as a voice control interface to control a PC without any interaction through hands. numerous other products exist on the market, offering specific application solutions. What sets Benjamin apart from these projects is its tailored design for individuals with handicap to use this system 24/7 to interact with a PC. This requirement stress over highest level of accuracy and focus on decreasing latency as many command and control actions require quick response time.
+Benjamin began as a voice control interface to control a PC without any interaction through hands. numerous other products exist on the market, offering specific application solutions. What sets Benjamin apart from these projects is its tailored design for individuals with handicap to use this system to interact with a PC all day long. This requirement stress over highest level of accuracy and focus on decreasing latency as many command and control actions require quick response time.
 
-One notable product for comparison is the Google Speech Recognition Engine integrated into YouTube's subtitle generator. This engine prioritizes accuracy across a diverse range of accents found in the general population. However, if user accent is a minority, the accuracy of these off-the-shelf engines may diminish rapidly.
+One notable product for comparison is the Google Speech Recognition Engine integrated into YouTube's subtitle generator. This engine prioritizes accuracy across a diverse range of accents found in the general population. However, if user accent is a minority, the accuracy will compromise.
 
 Another critical assumption in the YouTube ASR engine is the availability of future voice data ([non causal](https://en.wikipedia.org/wiki/Causality)), with no stringent requirement on output latency. This drastically alters the architecture of ASR engine design to maximize the accuracy.
 

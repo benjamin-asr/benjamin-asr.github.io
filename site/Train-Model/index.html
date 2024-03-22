@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Quick Start Guide - Benjamin-ASR</title>
+    <title>Train Model - Benjamin-ASR</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Quick Start Guide";
-        var mkdocs_page_input_path = "Quick-Start-Guide.md";
+        var mkdocs_page_name = "Train Model";
+        var mkdocs_page_input_path = "Train-Model.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -50,18 +50,18 @@
                 <li class="toctree-l1"><a class="reference internal" href="../Installation/">Installation</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Quick Start Guide</a>
-    <ul class="current">
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Quick-Start-Guide/">Quick Start Guide</a>
                 </li>
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../Capture-Audio-Samples/">Capture Audio Samples</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../Train-Model/">Train Model</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Train Model</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -110,7 +110,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-      <li>Quick Start Guide</li>
+      <li>Train Model</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -119,33 +119,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="overview">Overview</h2>
-<p>Here are the steps you need to take to make Benjamin-ASR operational.
-Typically, it takes about a week to record all the required samples to make a fully functional model. However in less than an hour, you should be able to create a small demo model to checkout the accuracy and get an idea of the whole process.</p>
-<p><strong>1. Decide on Your Wordlist: <code>less than 20 mins</code></strong></p>
-<p>First you need to decide if you want to train a full model or just a demo model. Training a full model requires significantly more time, therefore if you are a new user, it is recommended to start with a demo model.</p>
-<ul>
-<li><strong>Demo Case:</strong> Keep all the numbers from zero to nine, remove all the words in the vocabulary.</li>
-<li><strong>Default Case:</strong> No changes need to be made.</li>
-<li><strong>Customized Case:</strong> Add or remove words as you please. However keep in mind that to achieve decent performance from the engine, you need to train <code>Count^2</code> times, where <code>Count</code> represents the number of words in your word list.</li>
-</ul>
-<p><strong>2. Record Audio Samples: <code>1hr / 1week</code></strong></p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>
-The number of samples depend on the user but generally the more the merrier. For the small demo model <strong>400 samples</strong> should be enough. However for full functional model usually at least <strong>5K samples</strong> is needed. Sample means an audio <code>.wav</code> file consisted of three spoken words.</p>
-</div>
-<p><strong>3. Train a Model: <code>30 mins</code></strong></p>
-<p>Open <em>Trainer</em> and train a model.</p>
-<p><strong>4. Learn How to Use and Improve the Model</strong></p>
-<p>Next step is to learn how to control mouse and keyboard and special features Benjamin provides to ease use of common application like Firefox, Slack and ... .
-Benjamin also records all the samples while you use the software so you can later train on these samples too.</p>
+                <p>Now if you have enough samples, you can train your model by Pressing <code>T</code>.</p>
+<p><img alt="Train" src="../img/train.jpg" /></p>
+<p>At any time outside of terminal, by pressing <code>P</code> or clicking on <code>Console</code> tab, you can access the results of running train scripts in terminal. All the train procedure is automatic and you should only wait for the dialog indicating train is finished and now it's ENN samples generation turn.</p>
+<p><img alt="GenENN" src="../img/gen_enn.jpg" /></p>
+<p>And verifying engine false generated samples.</p>
+<p><img alt="EFalse" src="../img/efalse.jpg" /></p>
+<p>Detailed description about train steps and procedure can be found in <a href="ug.md">User Guide</a></p>
+<h2 id="verification">Verification</h2>
+<p>When you are using Benjamin regularly, samples will be generated when issueing commands or recorded when in sleep mode saying ordinary words. To use these samples, you need to assure that they are matched with the detected words. For verifying these samples you can switch to Verify tab and press <code>space</code> to start verification process. While verifying sleep mode samples, make sure that all words are detected wrong. Verifying </p>
+<p><img alt="Verify" src="../img/verify.jpg" /></p>
+<p>If the sample is wrong press <code>Z</code> to delete sample, while playing or at <code>Decide Pause</code> status after voice stopped. By default after playing each sample in <code>unverified</code> category, if there wasn't any key press, the sample will be verified. you can change this behaviour by pressing <code>R</code>.</p>
+<p>Detailed description about verification parameters and procedure can be found in <a href="ug.md">User Guide</a></p>
+<p>Congrats! Now you know the very initial steps to train your model!</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../Installation/" class="btn btn-neutral float-left" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../Capture-Audio-Samples/" class="btn btn-neutral float-right" title="Capture Audio Samples">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../Capture-Audio-Samples/" class="btn btn-neutral float-left" title="Capture Audio Samples"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../First-Time-Bring-Up/" class="btn btn-neutral float-right" title="First Time Bring-up">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -168,10 +160,10 @@ Benjamin also records all the samples while you use the software so you can late
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../Installation/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../Capture-Audio-Samples/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../Capture-Audio-Samples/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../First-Time-Bring-Up/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

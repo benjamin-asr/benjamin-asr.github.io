@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Mom - Benjamin-ASR</title>
+    <title>First Time Bring-up - Benjamin-ASR</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Mom";
-        var mkdocs_page_input_path = "mom.md";
+        var mkdocs_page_name = "First Time Bring-up";
+        var mkdocs_page_input_path = "First-Time-Bring-Up.md";
         var mkdocs_page_url = null;
       </script>
     
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/django.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/django.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -42,45 +43,49 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Index/">Home</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Installation/">Installation</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../Quick-Start-Guide/">Quick Start Guide</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Quick-Start-Guide/">Quick Start Guide</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../arbade/">ArBade</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Capture-Audio-Samples/">Capture Audio Samples</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../batool/">BaTool</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Train-Model/">Train Model</a>
                 </li>
               </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Mom</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">First Time Bring-up</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#model-section">Model Section:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#decoder-section">Decoder Section:</a>
+    </li>
     </ul>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../Controlling-Keyboard/">Controlling Keyboard</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Controlling-Keyboard/">Controlling Keyboard</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../Controlling-Mouse/">Controlling Mouse</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Controlling-Mouse/">Controlling Mouse</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../enn/">ENN</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Additional-Commands/">Additional Commands</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../chess/">Chess</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Train-Neural-Network/">Train Neural Network</a>
                 </li>
               </ul>
               <ul>
@@ -92,7 +97,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                <li class="toctree-l1"><a class="reference internal" href="../About/">About</a>
                 </li>
               </ul>
       </div>
@@ -108,8 +113,8 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Mom</li>
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>First Time Bring-up</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -118,7 +123,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="mom">Mom<a class="headerlink" href="#mom" title="Permanent link"></a></h1>
+                <p>BaTool is a real-time speech recognition engine, that gets a triphone Kaldi model and do a low latency speech recognition on the data coming from the system default microphone.</p>
+<h2 id="batool-conf">BaTool Conf</h2>
+<p>Batool is configurable via <code>conf</code> file next to BaTool application. It has 4 main sections to configure:</p>
+<h3 id="model-section">Model Section:</h3>
+<p>This section defines the location of Kaldi model files. The addresses are relative to where BaTool application exists.</p>
+<pre><code>; Model path
+[model]
+fst = "Model/HCLG.fst"
+mdl = "Model/final.oalimdl"
+word = "Model/words.txt"
+cmvn = "Model/global_cmvn.stats"
+</code></pre>
+<h3 id="decoder-section">Decoder Section:</h3>
+<p>Kaldi related decoder settings.</p>
+<pre><code>max_active = 900
+min_active = 200
+train_max = 5
+ac_scale = 0.05
+min_sil = 20
+</code></pre>
+<ul>
+<li><code>train_max</code>: Maximum number of same samples for later training.</li>
+<li><code>min_sil</code>: Minimum silence before detection. This value directly connected with accuracy and latency.</li>
+</ul>
+<h2 id="topbar">Topbar</h2>
 <p>Mom is like <a href="https://github.com/polybar/polybar">PolyBar</a>, it manages different workspace, shows system status and <code>BaTool</code> detection output. Mom is named after the fact that it will spawn all the child applications (BaTool, Chess, Rebound). Mom reads BaTool detection from <code>Benjamin/Mom/Labels</code> with <a href="https://github.com/polybar/polybar/wiki/Formatting">PolyBar Application format</a>. </p>
 <p>Mom has several widgets:</p>
 <ol>
@@ -143,8 +172,8 @@
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../batool/" class="btn btn-neutral float-left" title="BaTool"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../enn/" class="btn btn-neutral float-right" title="ENN">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../Train-Model/" class="btn btn-neutral float-left" title="Train Model"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Controlling-Keyboard/" class="btn btn-neutral float-right" title="Controlling Keyboard">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -167,22 +196,21 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../batool/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../Train-Model/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../enn/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../Controlling-Keyboard/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
-        });
+        };
     </script>
 
 </body>

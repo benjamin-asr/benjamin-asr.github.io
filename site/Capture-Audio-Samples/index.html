@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Quick Start Guide - Benjamin-ASR</title>
+    <title>Capture Audio Samples - Benjamin-ASR</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Quick Start Guide";
-        var mkdocs_page_input_path = "Quick-Start-Guide.md";
+        var mkdocs_page_name = "Capture Audio Samples";
+        var mkdocs_page_input_path = "Capture-Audio-Samples.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -50,14 +50,14 @@
                 <li class="toctree-l1"><a class="reference internal" href="../Installation/">Installation</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Quick Start Guide</a>
-    <ul class="current">
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Quick-Start-Guide/">Quick Start Guide</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../Capture-Audio-Samples/">Capture Audio Samples</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Capture Audio Samples</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -110,7 +110,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-      <li>Quick Start Guide</li>
+      <li>Capture Audio Samples</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -119,33 +119,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="overview">Overview</h2>
-<p>Here are the steps you need to take to make Benjamin-ASR operational.
-Typically, it takes about a week to record all the required samples to make a fully functional model. However in less than an hour, you should be able to create a small demo model to checkout the accuracy and get an idea of the whole process.</p>
-<p><strong>1. Decide on Your Wordlist: <code>less than 20 mins</code></strong></p>
-<p>First you need to decide if you want to train a full model or just a demo model. Training a full model requires significantly more time, therefore if you are a new user, it is recommended to start with a demo model.</p>
-<ul>
-<li><strong>Demo Case:</strong> Keep all the numbers from zero to nine, remove all the words in the vocabulary.</li>
-<li><strong>Default Case:</strong> No changes need to be made.</li>
-<li><strong>Customized Case:</strong> Add or remove words as you please. However keep in mind that to achieve decent performance from the engine, you need to train <code>Count^2</code> times, where <code>Count</code> represents the number of words in your word list.</li>
-</ul>
-<p><strong>2. Record Audio Samples: <code>1hr / 1week</code></strong></p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>
-The number of samples depend on the user but generally the more the merrier. For the small demo model <strong>400 samples</strong> should be enough. However for full functional model usually at least <strong>5K samples</strong> is needed. Sample means an audio <code>.wav</code> file consisted of three spoken words.</p>
-</div>
-<p><strong>3. Train a Model: <code>30 mins</code></strong></p>
-<p>Open <em>Trainer</em> and train a model.</p>
-<p><strong>4. Learn How to Use and Improve the Model</strong></p>
-<p>Next step is to learn how to control mouse and keyboard and special features Benjamin provides to ease use of common application like Firefox, Slack and ... .
-Benjamin also records all the samples while you use the software so you can later train on these samples too.</p>
+                <h3 id="user-guide"><a href="ug/">User Guide</a></h3>
+<h2 id="quick-start">Quick Start</h2>
+<p>ArBade has many tabs, explained in the following. To change tab click or press numbers on keyboard starting from 1.</p>
+<p><img alt="FirstView" src="../img/first_view.jpg" /></p>
+<p>ArBade is a shortcut based application. Shortcuts are listed in the application topbar.</p>
+<p><img alt="TopBar" src="../img/top_bar.jpg" /></p>
+<p>To see all shortcuts, press <code>/</code>.</p>
+<p><img alt="HelpWin" src="../img/help_win.png" /></p>
+<p>First step is to train a model from your voice.</p>
+<h2 id="record-samples">Record Samples</h2>
+<ol>
+<li>
+<p>specify a category name by pressing <code>S</code>. category name is used to distinguish between speaker or microphone.</p>
+</li>
+<li>
+<p>Start to record by pressing <code>space</code>. Say the words specified between <code>&lt;&gt;</code> while status is <code>Rec</code>.</p>
+</li>
+</ol>
+<p><img alt="Record" src="../img/record.jpg" /></p>
+<p>You can pause the Record procedure any time by using <code>space</code> and get out of record panel by pressing <code>Escape</code>. Then Statistics will be updated.</p>
+<p><img alt="Stat" src="../img/stat.png" /></p>
+<ol>
+<li>Arbitrary name of category.</li>
+<li>Record list showing the samples recorded.</li>
+<li>Word list showing how many samples include the specific word.</li>
+<li>sample count in specific category.</li>
+</ol>
+<p>Detailed description about record parameters and procedure can be found in the <a href="ug.md">User Guide</a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../Installation/" class="btn btn-neutral float-left" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../Capture-Audio-Samples/" class="btn btn-neutral float-right" title="Capture Audio Samples">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../Quick-Start-Guide/" class="btn btn-neutral float-left" title="Quick Start Guide"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Train-Model/" class="btn btn-neutral float-right" title="Train Model">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -168,10 +175,10 @@ Benjamin also records all the samples while you use the software so you can late
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../Installation/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../Quick-Start-Guide/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../Capture-Audio-Samples/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../Train-Model/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -1,19 +1,19 @@
 dev_addr: 127.0.0.1:8080
 site_name: Benjamin-ASR
 nav:
-  - Home: index.md
-  - Installation: installation.md
-  - Quick Start Guide: Quick-Start-Guide/
-  - ArBade: arbade.md
-  - BaTool: batool.md
-  - Mom: mom.md
-  - Controlling Keyboard: Controlling-Keyboard/
-  - Controlling Mouse: Controlling-Mouse/
-  - ENN: enn.md
-  - Chess: chess.md
+  - Home: Index.md
+  - Installation: Installation.md
+  - Quick Start Guide: Quick-Start-Guide.md
+  - Capture Audio Samples: Capture-Audio-Samples.md
+  - Train Model: Train-Model.md
+  - First Time Bring-up: First-Time-Bring-Up.md
+  - Controlling Keyboard: Controlling-Keyboard.md
+  - Controlling Mouse: Controlling-Mouse.md
+  - Additional Commands: Additional-Commands.md
+  - Train Neural Network: Train-Neural-Network.md
   - GitHub: https://github.com/bijanbina/Benjamin
   - Developer: https://benjamin-int.github.io
-  - About: about.md
+  - About: About.md
 
 theme: 
   name: readthedocs
@@ -27,8 +27,6 @@ theme:
     - django
 
 markdown_extensions:
-  - toc:
-      permalink: 
   - pymdownx.snippets
   - pymdownx.superfences
   - callouts

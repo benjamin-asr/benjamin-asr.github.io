@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>ENN - Benjamin-ASR</title>
+    <title>Train Neural Network - Benjamin-ASR</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "ENN";
-        var mkdocs_page_input_path = "enn.md";
+        var mkdocs_page_name = "Train Neural Network";
+        var mkdocs_page_input_path = "Train-Neural-Network.md";
         var mkdocs_page_url = null;
       </script>
     
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/django.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/django.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -42,39 +43,43 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Index/">Home</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Installation/">Installation</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../Quick-Start-Guide/">Quick Start Guide</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Quick-Start-Guide/">Quick Start Guide</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../arbade/">ArBade</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Capture-Audio-Samples/">Capture Audio Samples</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../batool/">BaTool</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Train-Model/">Train Model</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../mom/">Mom</a>
+                <li class="toctree-l1"><a class="reference internal" href="../First-Time-Bring-Up/">First Time Bring-up</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../Controlling-Keyboard/">Controlling Keyboard</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Controlling-Keyboard/">Controlling Keyboard</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../Controlling-Mouse/">Controlling Mouse</a>
+                <li class="toctree-l1"><a class="reference internal" href="../Controlling-Mouse/">Controlling Mouse</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Additional-Commands/">Additional Commands</a>
                 </li>
               </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">ENN</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Train Neural Network</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#enn-train">ENN Train</a>
         <ul>
@@ -90,10 +95,6 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../chess/">Chess</a>
-                </li>
-              </ul>
-              <ul>
                 <li class="toctree-l1"><a class="" href="https://github.com/bijanbina/Benjamin">GitHub</a>
                 </li>
               </ul>
@@ -102,7 +103,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                <li class="toctree-l1"><a class="reference internal" href="../About/">About</a>
                 </li>
               </ul>
       </div>
@@ -118,8 +119,8 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">ENN</li>
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Train Neural Network</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -128,7 +129,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="enn">ENN<a class="headerlink" href="#enn" title="Permanent link"></a></h1>
+                <h1 id="enn">ENN</h1>
 <p>ENN generates neural network model from ENN samples. ENN samples are cepstrums that were normalized and aligned to a single word saved as a simple 40x40 binary array.</p>
 <p>we feed this to a convolutional neural network followed by a fully connected layer to detect out of vocabulary words.</p>
 <p>ENN is an optional feature that brings more accuracy and let you leave the system on always, so you dont need to say wake up words.</p>
@@ -138,9 +139,9 @@
 <li>Sample Link</li>
 <li>Wrong</li>
 </ul>
-<h2 id="enn-train">ENN Train<a class="headerlink" href="#enn-train" title="Permanent link"></a></h2>
+<h2 id="enn-train">ENN Train</h2>
 <p>In Train Tab you can watch the learning procedure of each word. In train Panel, learning loss and test loss is shown for first 4 words in wordlist panel. You can watch other word loss plots by pressing Up/Down arrow keys on keyboard. Hover on each word in word list panel to see how many samples are trained from total samples. Also you can sort the model statistics based on train precision, test precision and loss by clicking relevant table header (to reset the sort method click on ID header). Learned models will be saved in <code>Model</code> directory.</p>
-<h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link"></a></h3>
+<h3 id="parameters">Parameters</h3>
 <ul>
 <li>
 <p>Thread Num: Number of concurrent words to learn. (Be careful to set it lower than your number of CPU cores to prevent windows freeze)</p>
@@ -171,18 +172,18 @@
 </li>
 </ul>
 <p><img alt="train" src="../img/enn_train.png" /></p>
-<h2 id="enn-sample-link">ENN Sample Link<a class="headerlink" href="#enn-sample-link" title="Permanent link"></a></h2>
+<h2 id="enn-sample-link">ENN Sample Link</h2>
 <p>In sample link tab all true sample cepstrums are ploted in images. In this way you can find out why training for a word has large loss and not reaches the target loss.
 By using direction arrow keys you can select then play the wave related to each sample. Also change the word to see its samples. (Train procedure is not stopped while sample link is active)</p>
 <p><img alt="sampleLink" src="../img/enn_sample_link.png" /></p>
-<h2 id="wrong">Wrong<a class="headerlink" href="#wrong" title="Permanent link"></a></h2>
+<h2 id="wrong">Wrong</h2>
 <p>In training procedure, some samples couldn't be learned, they will be stored in <code>Models/Wrong</code> directory. For each model there is a relevant <code>.wrong</code> file that is filled by all failed samples. In the same way as <code>Sample Link</code> you can watch wrong detected sample cepstrums and here relevant recorded wave. The label for each sample is shown in right bottom corner of its cepstrum.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../mom/" class="btn btn-neutral float-left" title="Mom"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../chess/" class="btn btn-neutral float-right" title="Chess">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../Additional-Commands/" class="btn btn-neutral float-left" title="Additional Commands"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../About/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -205,22 +206,21 @@ By using direction arrow keys you can select then play the wave related to each 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../mom/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../Additional-Commands/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../chess/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../About/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
-        });
+        };
     </script>
 
 </body>
