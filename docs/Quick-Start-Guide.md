@@ -7,9 +7,9 @@ Typically, it takes about a week to record all the required samples to make a fu
 
 First you need to decide if you want to train a full model or just a demo model. Training a full model requires significantly more time, therefore if you are a new user, it is recommended to start with a demo model.
 
-- **Demo Case:** Keep all the numbers from zero to nine, remove all the words in the vocabulary.
+- **Demo Case:** Keep all the numbers from zero to nine, remove all other words in the vocabulary.
 - **Default Case:** No changes need to be made.
-- **Customized Case:** Add or remove words as you please. However keep in mind that to achieve decent performance from the engine, you need to train `Count^2` times, where `Count` represents the number of words in your word list.
+- **Customized Case:** Add or remove words as you please. However keep in mind that to achieve decent performance from the engine, you need to train `Count^2` samples, where `Count` represents the number of words in your word list.
 
 **2. Record Audio Samples: `1hr / 1week`**
 

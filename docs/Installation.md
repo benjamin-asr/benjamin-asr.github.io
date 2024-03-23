@@ -1,7 +1,7 @@
 
 
 WARNING:
-At the moment Benjamin-ASR prioritizes enabling user and increase the productivity. Unfortunately due to lack of resources, security receiving less attention. Therefore, it is not advisable to install this software on end-user machines where security is a concern.
+At the moment Benjamin-ASR prioritizes enabling user and increase the productivity. Unfortunately due to lack of resources, security received less attention. Therefore, it is not advisable to install this software on a end-user machines where security is a concern.
 
 # Requirements
 
@@ -19,7 +19,7 @@ At the moment Benjamin-ASR prioritizes enabling user and increase the productivi
     Firefox only allows extensions that are signed by Mozilla to be installed in firefox since version 92. Unfortunately we don't like their ideas of monopoly on web extensions and the hassle of sending code each time to Mozilla and waiting for them to sign. To bypass this feature, the only way is to install firefox developer edition.
 
     HINT:
-    Our extension is open sourced and not obfuscated, so you are always welcome to review it by yourself raise any comments in GitHub issues.
+    Our extension is open sourced and not obfuscated, so you are always welcome to review it yourself and raise any comments in [GitHub issues](https://github.com/benjamin-asr/benjamin-asr.github.io/issues).
 
 2. Install extension
     - Download [Benjfox.xpi](https://github.com/benjamin-asr/Release/releases/download/v0.1/BenjFox.xpi) extension
