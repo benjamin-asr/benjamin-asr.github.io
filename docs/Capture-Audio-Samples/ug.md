@@ -1,21 +1,26 @@
 # User Guide
 
-A detailed description of **ArBade** functionalities is discussed in this document.
+1. [Overview](#overview)
+1. [Record](#record)
+    * [Record Status](#record-status)
+    * [Record Parameters](#record-parameters)
+    * [Record Shortcuts](#record-shortcuts)
+1. [Verify](#verify)
+    * [Verify Status](#verify-status)
+    * [Verify Parameters](#verify-parameters)
+    * [Verify Shortcuts](#verify-shortcuts)
+1. [Sleep](#sleep)
+1. [Wrong](#wrong)
+1. [False](#false)
+1. [Test](#test)
+1. [Enn False](#enn-false)
+1. [Console](#console)
 
-1. [Record](## Record)
-    * [Record Status](### Record Status)
-    * [Record Parameters](### Record Parameters)
-    * [Record Shortcuts](### Record Shortcuts)
-2. [Verify](## Verify)
-    * [Verify Status](### Verify Status)
-    * [Verify Parameters](### Verify Parameters)
-    * [Verify Shortcuts](### Verify Shortcuts)
-3. [Sleep](## Sleep)
-4. [Wrong](## Wrong)
-5. [False](## False)
-6. [Test](## Test)
-7. [Enn False](## Enn False)
-8. [Console](## Console)
+## Overview
+
+ArBade is a shortcut based application. You can see the common shortcuts on the top bar or press `/` to see all the shortcuts.
+
+![TopBar](img/top_bar.jpg)
 
 ## Record
 
@@ -26,7 +31,7 @@ While recording the samples for training the voice recognition engine, you shoul
 * <span style="color:#f00">Rec</span>: Records your voice
 * <span style="color:#b17400">Pause</span>: Pause the Recording Procedure
 * <span style="color:#10b100">Stop</span>: Stop the record and navigate to statistics panel.
-* <span style="color:#008eca">Req Pause</span>: Requested pause will be commited after recording finished
+* <span style="color:#008eca">Req Pause</span>: Requested pause will be committed after recording finished
 * <span style="color:#00b8d7">Break</span>: Time to let you read the words before recording started
 
 ### Record Parameters

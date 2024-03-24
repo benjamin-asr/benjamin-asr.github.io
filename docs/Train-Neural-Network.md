@@ -1,10 +1,10 @@
 # ENN
 
-ENN generates neural network model from ENN samples. ENN samples are cepstrums that were normalized and aligned to a single word saved as a simple 40x40 binary array.
+ENN generates neural network model from ENN samples. ENN samples are Cepstrums that were normalized and aligned to a single word saved as a simple 40x40 binary array.
 
 we feed this to a convolutional neural network followed by a fully connected layer to detect out of vocabulary words.
 
-ENN is an optional feature that brings more accuracy and let you leave the system on always, so you dont need to say wake up words.
+ENN is an optional feature that brings more accuracy and let you leave the system on always, so you don't need to say wake up words.
 
 ENN user interface includes these main tabs:
 
@@ -36,15 +36,15 @@ In Train Tab you can watch the learning procedure of each word. In train Panel, 
 
 * Train Time: Time that program is training words.
 
-![train](../img/enn_train.png)
+![train](img/enn_train.png)
 
 ## ENN Sample Link
 
-In sample link tab all true sample cepstrums are ploted in images. In this way you can find out why training for a word has large loss and not reaches the target loss.
+In sample link tab all true sample Cepstrums are plotted in images. In this way you can find out why training for a word has large loss and not reaches the target loss.
 By using direction arrow keys you can select then play the wave related to each sample. Also change the word to see its samples. (Train procedure is not stopped while sample link is active)
 
-![sampleLink](../img/enn_sample_link.png)
+![sampleLink](img/enn_sample_link.png)
 
 ## Wrong
 
-In training procedure, some samples couldn't be learned, they will be stored in `Models/Wrong` directory. For each model there is a relevant `.wrong` file that is filled by all failed samples. In the same way as `Sample Link` you can watch wrong detected sample cepstrums and here relevant recorded wave. The label for each sample is shown in right bottom corner of its cepstrum.
+In training procedure, some samples couldn't be learned, they will be stored in `Models/Wrong` directory. For each model there is a relevant `.wrong` file that is filled by all failed samples. In the same way as `Sample Link` you can watch wrong detected sample Cepstrums and here relevant recorded wave. The label for each sample is shown in right bottom corner of its Cepstrum.

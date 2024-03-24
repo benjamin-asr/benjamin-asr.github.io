@@ -129,19 +129,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="enn">ENN</h1>
-<p>ENN generates neural network model from ENN samples. ENN samples are cepstrums that were normalized and aligned to a single word saved as a simple 40x40 binary array.</p>
+                <h1 id="enn">ENN<a class="headerlink" href="#enn" title="Permanent link"></a></h1>
+<p>ENN generates neural network model from ENN samples. ENN samples are Cepstrums that were normalized and aligned to a single word saved as a simple 40x40 binary array.</p>
 <p>we feed this to a convolutional neural network followed by a fully connected layer to detect out of vocabulary words.</p>
-<p>ENN is an optional feature that brings more accuracy and let you leave the system on always, so you dont need to say wake up words.</p>
+<p>ENN is an optional feature that brings more accuracy and let you leave the system on always, so you don't need to say wake up words.</p>
 <p>ENN user interface includes these main tabs:</p>
 <ul>
 <li>Train</li>
 <li>Sample Link</li>
 <li>Wrong</li>
 </ul>
-<h2 id="enn-train">ENN Train</h2>
+<h2 id="enn-train">ENN Train<a class="headerlink" href="#enn-train" title="Permanent link"></a></h2>
 <p>In Train Tab you can watch the learning procedure of each word. In train Panel, learning loss and test loss is shown for first 4 words in wordlist panel. You can watch other word loss plots by pressing Up/Down arrow keys on keyboard. Hover on each word in word list panel to see how many samples are trained from total samples. Also you can sort the model statistics based on train precision, test precision and loss by clicking relevant table header (to reset the sort method click on ID header). Learned models will be saved in <code>Model</code> directory.</p>
-<h3 id="parameters">Parameters</h3>
+<h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link"></a></h3>
 <ul>
 <li>
 <p>Thread Num: Number of concurrent words to learn. (Be careful to set it lower than your number of CPU cores to prevent windows freeze)</p>
@@ -172,12 +172,12 @@
 </li>
 </ul>
 <p><img alt="train" src="../img/enn_train.png" /></p>
-<h2 id="enn-sample-link">ENN Sample Link</h2>
-<p>In sample link tab all true sample cepstrums are ploted in images. In this way you can find out why training for a word has large loss and not reaches the target loss.
+<h2 id="enn-sample-link">ENN Sample Link<a class="headerlink" href="#enn-sample-link" title="Permanent link"></a></h2>
+<p>In sample link tab all true sample Cepstrums are plotted in images. In this way you can find out why training for a word has large loss and not reaches the target loss.
 By using direction arrow keys you can select then play the wave related to each sample. Also change the word to see its samples. (Train procedure is not stopped while sample link is active)</p>
 <p><img alt="sampleLink" src="../img/enn_sample_link.png" /></p>
-<h2 id="wrong">Wrong</h2>
-<p>In training procedure, some samples couldn't be learned, they will be stored in <code>Models/Wrong</code> directory. For each model there is a relevant <code>.wrong</code> file that is filled by all failed samples. In the same way as <code>Sample Link</code> you can watch wrong detected sample cepstrums and here relevant recorded wave. The label for each sample is shown in right bottom corner of its cepstrum.</p>
+<h2 id="wrong">Wrong<a class="headerlink" href="#wrong" title="Permanent link"></a></h2>
+<p>In training procedure, some samples couldn't be learned, they will be stored in <code>Models/Wrong</code> directory. For each model there is a relevant <code>.wrong</code> file that is filled by all failed samples. In the same way as <code>Sample Link</code> you can watch wrong detected sample Cepstrums and here relevant recorded wave. The label for each sample is shown in right bottom corner of its Cepstrum.</p>
               
             </div>
           </div><footer>

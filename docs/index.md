@@ -1,15 +1,13 @@
 # Features
 
 - Speech Recognition Engine without connection to cloud or external server.
-- Ultra low latency recognition that can reach down to less than 100ms.
-- Remove the requirement of wake-up word for every command.
+- Low latency recognition reaching down to less than 100ms.
+- Remove wake-up word for every command.
 - Enable local training of the model and fine-tune it for individual voices.
-- Provide an environment for recording samples and verifying the recorded audio data.
-- Achieve 99% accuracy thanks to the small set of words and adapt to the user's accent.
+- Up to 99% accuracy thanks to the small set of words and adapt to the user's accent.
 - Offer full customization of the word list and control over the training setup.
 - Provide easy integration with other softwares through `DBus` (Linux) and `Named-Pipe` (Windows) platform.
-- Allow voice control interface for Windows 10 and Linux running with custom setup of [Awesome-WM](https://awesomewm.org/) and [Polybar](https://github.com/polybar/polybar).
-- Ready to use product without any requirement for customization and coding skill.
+- Ready to use voice control interface for Windows or Linux running with custom setup of [Awesome-WM](https://awesomewm.org/) and [Polybar](https://github.com/polybar/polybar).
 
 # Origin of Design
 Benjamin began as a voice control interface to control a PC without any interaction through hands. numerous other products exist on the market, offering specific application solutions. What sets Benjamin apart from these projects is its tailored design for individuals with handicap to use this system to interact with a PC all day long. This requirement stress over highest level of accuracy and focus on decreasing latency as many command and control actions require quick response time.

@@ -124,9 +124,9 @@
             <div class="section" itemprop="articleBody">
               
                 <p>BaTool is a real-time speech recognition engine, that gets a triphone Kaldi model and do a low latency speech recognition on the data coming from the system default microphone.</p>
-<h2 id="batool-conf">BaTool Conf</h2>
+<h2 id="batool-conf">BaTool Conf<a class="headerlink" href="#batool-conf" title="Permanent link"></a></h2>
 <p>Batool is configurable via <code>conf</code> file next to BaTool application. It has 4 main sections to configure:</p>
-<h3 id="model-section">Model Section:</h3>
+<h3 id="model-section">Model Section:<a class="headerlink" href="#model-section" title="Permanent link"></a></h3>
 <p>This section defines the location of Kaldi model files. The addresses are relative to where BaTool application exists.</p>
 <pre><code>; Model path
 [model]
@@ -135,7 +135,7 @@ mdl = "Model/final.oalimdl"
 word = "Model/words.txt"
 cmvn = "Model/global_cmvn.stats"
 </code></pre>
-<h3 id="decoder-section">Decoder Section:</h3>
+<h3 id="decoder-section">Decoder Section:<a class="headerlink" href="#decoder-section" title="Permanent link"></a></h3>
 <p>Kaldi related decoder settings.</p>
 <pre><code>max_active = 900
 min_active = 200
@@ -147,7 +147,7 @@ min_sil = 20
 <li><code>train_max</code>: Maximum number of same samples for later training.</li>
 <li><code>min_sil</code>: Minimum silence before detection. This value directly connected with accuracy and latency.</li>
 </ul>
-<h2 id="topbar">Topbar</h2>
+<h2 id="topbar">Topbar<a class="headerlink" href="#topbar" title="Permanent link"></a></h2>
 <p>Mom is like <a href="https://github.com/polybar/polybar">PolyBar</a>, it manages different workspace, shows system status and <code>BaTool</code> detection output. Mom is named after the fact that it will spawn all the child applications (BaTool, Chess, Rebound). Mom reads BaTool detection from <code>Benjamin/Mom/Labels</code> with <a href="https://github.com/polybar/polybar/wiki/Formatting">PolyBar Application format</a>. </p>
 <p>Mom has several widgets:</p>
 <ol>

@@ -27,6 +27,8 @@ theme:
     - django
 
 markdown_extensions:
+  - toc:
+      permalink: 
   - pymdownx.snippets
   - pymdownx.superfences
   - callouts
