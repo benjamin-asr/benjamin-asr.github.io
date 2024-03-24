@@ -10,6 +10,7 @@ nav:
   - Controlling Keyboard: Controlling-Keyboard.md
   - Controlling Mouse: Controlling-Mouse.md
   - Additional Commands: Additional-Commands.md
+  - Global Shortcuts: Global-Shortcuts.md
   - Train Neural Network: Train-Neural-Network.md
   - GitHub: https://github.com/bijanbina/Benjamin
   - Developer: https://benjamin-int.github.io
@@ -26,9 +27,16 @@ theme:
     - yaml
     - django
 
+extra_css:
+  - css/extra.css
+  
 markdown_extensions:
   - toc:
       permalink: 
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.snippets
   - pymdownx.superfences
   - callouts

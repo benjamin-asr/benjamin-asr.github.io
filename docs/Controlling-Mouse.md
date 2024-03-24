@@ -5,14 +5,14 @@
 | `Mouse Mike`    | Middle Click           |                                         |
 | `Mouse Up`      | Scroll Up              |                                         |
 | `Mouse Down`    | Scroll Down            |                                         |
-| `Mouse Papa`    |                        | Primary Monitor                         |
-| `Mouse Sierra`  |                        | Secondary Monitor                       |
-| `Mouse Limo`    |                        | Primary Monitor Left Side               |
-| `Mouse Romeo`   |                        | Primary Monitor Right Side              |
-| `Mouse U`       |                        | Scroll Up 4 Times                       |
-| `Mouse Delta`   |                        | Scroll Down 4 Times                     |
-| `Mouse Golf`    |                        | Scroll Up 6 Times                       |
-| `Mouse Hotel`   |                        | Scroll Down 6 Times                     |
+| `Mouse Papa`    |                        | Primary monitor                         |
+| `Mouse Sierra`  |                        | Secondary monitor                       |
+| `Mouse Limo`    |                        | Primary monitor left side               |
+| `Mouse Romeo`   |                        | Primary monitor right side              |
+| `Mouse U`       |                        | Scroll Up 4 times                       |
+| `Mouse Delta`   |                        | Scroll Down 4 times                     |
+| `Mouse Golf`    |                        | Scroll Up 6 times                       |
+| `Mouse Hotel`   |                        | Scroll Down 6 times                     |
 | `Dive`          | Continuous Scroll Down | In Firefox with extension enabled       |
 | `Sky`           | Continuous Scroll Up   | In Firefox with extension enabled       |
 | `Dive <Num>`    | Continuous Scroll Down | Num will define the speed               |
