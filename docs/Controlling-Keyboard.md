@@ -1,26 +1,22 @@
-Command         | Action        | Command         | Action        
---------------- | ------------- | --------------- | ------------- 
-`arch`          | a             | `november`      | n             
-`bravo`         | b             | `oscar`         | o             
-`catalina`      | c             | `papa`          | p             
-`delta`         | d             | `quebec`        | q             
-`echo`          | e             | `romeo`         | r             
-`fish`          | f             | `sierra`        | s             
-`golf`          | g             | `tango`         | t             
-`hotel`         | h             | `u`             | u             
-`india`         | i             | `vpn`           | v             
-`jordan`        | j             | `wake`          | w             
-`kilo`          | k             | `eggs`          | x             
-`limo`          | l             | `yankee`        | y             
-`mike`          | m             | `zed`           | z             
+| Command  | Action | Command    | Action | Command    | Action |
+| -------- | ------ | ---------- | ------ | ---------- | ------ |
+| `arch`   | a      | `bravo`    | b      | `catalina` | c      |
+| `delta`  | d      | `echo`     | e      | `fish`     | f      |
+| `golf`   | g      | `hotel`    | h      | `india`    | i      |
+| `jordan` | j      | `kilo`     | k      | `limo`     | l      |
+| `mike`   | m      | `november` | n      | `oscar`    | o      |
+| `papa`   | p      | `quebec`   | q      | `romeo`    | r      |
+| `sierra` | s      | `tango`    | t      | `u`        | u      |
+| `vpn`    | v      | `eggs`     | x      | `yankee`   | y      |
+| `zed`    | z      |            |        |            |        |
 
-Command         | Action        | Command         | Action        
---------------- | ------------- | --------------- | ------------- 
-`sim`           | Space         | `plus`          | +             
-`end`           | end           | `slash`         | /             
-`home`          | home          | `canals`        | \             
-`semi`          | ;             | `edge`          | Menu key      
-`period`        | .             | `bracket`       | []            
-`comma`         | ,             | `curly`         | {}            
-`dash`          | -             | `quote`         | ""            
-`level`         | =             | `github`        | Caps lock     
+
+| Command  | Action | Command   | Action   | Command  | Action    |
+| -------- | ------ | --------- | -------- | -------- | --------- |
+| `sim`    | Space  | `plus`    | +        | `github` | Caps lock |
+| `end`    | End    | `slash`   | /        | `level`  | =         |
+| `home`   | Home   | `canals`  | \        | `quote`  | '         |
+| `semi`   | ;      | `edge`    | Menu key | `dash`   | -         |
+| `period` | .      | `bracket` | [        | `curly`  | ]         |
+| `comma`  | ,      |           |          |          |           |
+
