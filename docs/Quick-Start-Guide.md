@@ -1,6 +1,5 @@
 ## Overview
 
-Here are the steps you need to take to make Benjamin-ASR operational.
 Typically, it takes about a week to record all the required samples to make a fully functional model. However in less than an hour, you should be able to create a small demo model to checkout the accuracy and get an idea of the whole process.
 
 **1. Decide on Your Wordlist: `less than 20 mins`**

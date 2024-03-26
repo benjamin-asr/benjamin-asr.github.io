@@ -17,12 +17,12 @@
 | `Sky`           | Continuous Scroll Up   | In Firefox with extension enabled       |
 | `Dive <Num>`    | Continuous Scroll Down | Num will define the speed               |
 | `Sky <Num>`     | Continuous Scroll up   | Num will define the speed               |
-| `kick`          |                        | Normal left click button                |
-| `Side`          |                        | Right click button                      |
-| `Drag`          |                        | Drag with left click between two points |
+| `kick`          |                        | `Chess` left click                      |
+| `Side`          |                        | `Chess` Right click                     |
+| `Drag`          |                        | `Chess` Drag between two points         |
 | `System Sierra` |                        | Take screenshot and put it in clipboard |
-| `Comments`      |                        | Open chess on second monitor            |
+| `Comments`      |                        | chess on secondary monitor              |
 
-In the following image you can see `chess` in action.
+## Chess in Action
 
 ![Chess](img/chess.png)

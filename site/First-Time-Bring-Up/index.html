@@ -65,10 +65,6 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">First Time Bring-up</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#model-section">Model Section:</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#decoder-section">Decoder Section:</a>
-    </li>
     </ul>
                 </li>
               </ul>
@@ -90,6 +86,14 @@
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../Train-Neural-Network/">Train Neural Network</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Advanced-Training/">Advanced Training</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Advanced-Engine-Settings/">Advanced Engine Settings</a>
                 </li>
               </ul>
               <ul>
@@ -128,50 +132,24 @@
             <div class="section" itemprop="articleBody">
               
                 <p>BaTool is a real-time speech recognition engine, that gets a triphone Kaldi model and do a low latency speech recognition on the data coming from the system default microphone.</p>
-<h2 id="batool-conf">BaTool Conf<a class="headerlink" href="#batool-conf" title="Permanent link"></a></h2>
-<p>Batool is configurable via <code>conf</code> file next to BaTool application. It has 4 main sections to configure:</p>
-<h3 id="model-section">Model Section:<a class="headerlink" href="#model-section" title="Permanent link"></a></h3>
-<p>This section defines the location of Kaldi model files. The addresses are relative to where BaTool application exists.</p>
-<pre><code>; Model path
-[model]
-fst = "Model/HCLG.fst"
-mdl = "Model/final.oalimdl"
-word = "Model/words.txt"
-cmvn = "Model/global_cmvn.stats"
-</code></pre>
-<h3 id="decoder-section">Decoder Section:<a class="headerlink" href="#decoder-section" title="Permanent link"></a></h3>
-<p>Kaldi related decoder settings.</p>
-<pre><code>max_active = 900
-min_active = 200
-train_max = 5
-ac_scale = 0.05
-min_sil = 20
-</code></pre>
-<ul>
-<li><code>train_max</code>: Maximum number of same samples for later training.</li>
-<li><code>min_sil</code>: Minimum silence before detection. This value directly connected with accuracy and latency.</li>
-</ul>
 <h2 id="topbar">Topbar<a class="headerlink" href="#topbar" title="Permanent link"></a></h2>
-<p>Mom is like <a href="https://github.com/polybar/polybar">PolyBar</a>, it manages different workspace, shows system status and <code>BaTool</code> detection output. Mom is named after the fact that it will spawn all the child applications (BaTool, Chess, Rebound). Mom reads BaTool detection from <code>Benjamin/Mom/Labels</code> with <a href="https://github.com/polybar/polybar/wiki/Formatting">PolyBar Application format</a>. </p>
-<p>Mom has several widgets:</p>
+<p>Topbar is like <a href="https://github.com/polybar/polybar">PolyBar</a>, it manages different workspace, shows system status and <code>BaTool</code> detection output.</p>
 <ol>
-<li>Workspaces: you can switch between 6 workspaces showed with different icons.</li>
-<li>Word detection from <code>BaTool</code> and <code>ENN</code>.</li>
-<li>Date and time</li>
-<li>Music widget: Used to pause/play music. Also go to next/previous music.</li>
-<li>CPU usage</li>
-<li>Speaker: By clicking on this icon you can alter between speaker and headphone. By scrolling you can increase/decrease the volume.</li>
-<li>Focused application</li>
-<li>System status: Shows if system is running or sleeping or halted.</li>
+<li><strong>Workspaces:</strong> you can switch between 6 workspaces showed with different icons.</li>
+<li><strong>Word detection output:</strong> raw result of voice engine.</li>
+<li><strong>Date and time</strong></li>
+<li><strong>Music widget:</strong> Pause/play music or go to the next/previous track.</li>
+<li><strong>CPU usage</strong></li>
+<li><strong>Speaker:</strong> By clicking on this icon you can alter between speaker and headphone. By scrolling you can increase/decrease the volume.</li>
+<li><strong>Focused application</strong></li>
+<li><strong>System status:</strong> Shows if system is running or sleeping or halted.</li>
 </ol>
 <p><img alt="Mom" src="../img/mom.jpg" /></p>
-<p>Color of detected word is set by <code>ENN</code> application and sorted from best detection accuracy to worst:</p>
-<ul>
-<li><span style="color:#00b8d7">Best</span></li>
-<li><span style="color:#10b100">Good</span></li>
-<li><span style="color:Orange">Lowest Confidence</span></li>
-<li><span style="color:#f00">Wrong</span></li>
-</ul>
+<p>The underline color of each word is set by neural network and it's sorted from top to bottom based on the confidence level of detection: 
+(<span style="color:#00b8d7">High</span>
+/ <span style="color:#10b100">Mid-High</span>
+/ <span style="color:Orange">Mid-Low</span>
+/ <span style="color:#f00">Low</span>)</p>
               
             </div>
           </div><footer>

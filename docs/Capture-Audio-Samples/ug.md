@@ -15,12 +15,13 @@
 1. [Test](#test)
 1. [Enn False](#enn-false)
 1. [Console](#console)
+1. [Stat](#stat)
 
 ## Overview
 
 ArBade is a shortcut based application. You can see the common shortcuts on the top bar or press `/` to see all the shortcuts.
 
-![TopBar](img/top_bar.jpg)
+![TopBar](../img/top_bar.jpg)
 
 ## Record
 
@@ -92,6 +93,16 @@ After training on samples, the model is evaluated through test samples. Word err
 ## Enn False
 
 `BaTool` generates enn samples, from both train samples and wrong samples. The `enn` directory is the destination of this process. Enn files from the `train` directory are located in `enn/true` and `wrong` directory-related files are in `enn/false`. In the `Enn False` tab, only false statistics are shown. By clicking the trash icon, all Enn samples will be deleted.
+
 ## Console
 
 Training on samples is started by pressing `T`. After training is finished, a dialog pops up and asks to generate enn samples from audio samples. Neural Network will be trained from these enn samples. When generating Enn Samples is finished, another dialog arises and asks about verifying generated engine false detected samples. Engine false detected samples, abbreviated as `efalse` samples, are collected in the `efalse` directory. They are generated after training, and while testing samples in the `test` directory. You can verify them by switching to `False` and `Test` tabs.
+
+## Stat
+
+![Stat](../img/stat.png)
+
+1. Arbitrary name of category.
+2. Record list showing the samples recorded.
+3. Word list showing how many samples include the specific word.
+4. sample count in specific category.
