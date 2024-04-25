@@ -22,6 +22,9 @@
 | `Drag`          |                        | `Chess` Drag between two points         |
 | `System Sierra` |                        | Take screenshot and put it in clipboard |
 | `Comments`      |                        | chess on secondary monitor              |
+| `Front <Num>`   | Scroll up <Num\> times |                                         |
+| `Last <Num>`    | Scroll down            |                                         |
+|                 |                        |                                         |
 
 ## Chess in Action
 
