@@ -97,10 +97,6 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="https://github.com/bijanbina/Benjamin">GitHub</a>
-                </li>
-              </ul>
-              <ul>
                 <li class="toctree-l1"><a class="" href="https://benjamin-int.github.io">Developer</a>
                 </li>
               </ul>
@@ -132,21 +128,26 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="features">Features<a class="headerlink" href="#features" title="Permanent link"></a></h1>
+<div style="float: left; width: 45%;">
 <ul>
-<li>Speech Recognition Engine without connection to cloud or external server.</li>
-<li>Low latency recognition reaching down to less than 100ms.</li>
-<li>Remove wake-up word for every command.</li>
-<li>Enable local training of the model and fine-tune it for individual voices.</li>
-<li>Up to 99% accuracy thanks to the small set of words and adapt to the user's accent.</li>
-<li>Offer full customization of the word list and control over the training setup.</li>
-<li>Provide easy integration with other softwares through <code>DBus</code> (Linux) and <code>Named-Pipe</code> (Windows) platform.</li>
-<li>Ready to use voice control interface for Windows and Linux.</li>
+<li>No connection to cloud or external server.</li>
+<li>Low latency recognition (less than 50ms).</li>
+<li>No wake-up word</li>
+<li>Up to 99% accuracy.</li>
 </ul>
+</div>
+<div style="float: right;width: 55%;">
+<ul>
+<li>local training and fine-tuning for individual accent.</li>
+<li>Integration with external softwares through <code>DBus</code> (Linux) and &nbsp; <code>Named-Pipe</code> (Windows).</li>
+<li>Hands-free full mouse/keyboard control</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
 <h1 id="origin-of-design">Origin of Design<a class="headerlink" href="#origin-of-design" title="Permanent link"></a></h1>
-<p>Benjamin began as a voice control interface to control a PC without any interaction through hands. numerous other products exist on the market, offering specific application solutions. What sets Benjamin apart from these projects is its tailored design for individuals with handicap to use this system to interact with a PC all day long. This requirement stress over highest level of accuracy and focus on decreasing latency as many command and control actions require quick response time.</p>
-<p>One notable product for comparison is the Google Speech Recognition Engine integrated into YouTube's subtitle generator. This engine prioritizes accuracy across a diverse range of accents found in the general population. However, if user accent is a minority, the accuracy will compromise.</p>
-<p>Another critical assumption in the YouTube ASR engine is the availability of future voice data (<a href="https://en.wikipedia.org/wiki/Causality">non causal</a>), with no stringent requirement on output latency. This drastically alters the architecture of ASR engine design to maximize the accuracy.</p>
-<p>Benjamin addresses these challenges by decreasing the number of words in the vocabulary and focus on single person's accent rather than general public to achieve same or better accuracy than major ASR engines, while maintaining low latency output.It aims to provide users in need of creating a voice control software a better starting point so hopefully in future we will see more progress in future of robust ASR engines and voice control softwares for this specific application.</p>
+<p>Benjamin began to control a PC through voice without any hands interaction. numerous other products exist on the market, but what sets Benjamin apart is its designed be used to all day long without causing fatigue or annoyance. This requirement stress over highest level of accuracy with focus on productivity and latency.</p>
+<p>One example for comparison is the Google Speech Recognition Engine that generate YouTube's subtitle . This engine prioritizes accuracy across a diverse range of accents found in the general population. However, if user accent is a minority, the accuracy will compromise. Another assumption is the availability of future voice data (<a href="https://en.wikipedia.org/wiki/Causality">non causal</a>), with no requirement on output latency. This drastically alters the architecture of ASR engine design to maximize the accuracy.</p>
+<p>Benjamin addresses these challenges by decreasing the number of words in the vocabulary and focus on single person's accent rather than general public to achieve same or better accuracy than major available ASR engines, while maintaining low latency output.</p>
               
             </div>
           </div><footer>
@@ -195,5 +196,5 @@
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-04-25 13:27:40.939506+00:00
+Build Date UTC : 2024-10-01 07:11:48.242382+00:00
 -->
