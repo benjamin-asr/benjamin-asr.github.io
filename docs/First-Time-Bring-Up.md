@@ -1,8 +1,6 @@
-BaTool is a real-time speech recognition engine, that gets a triphone Kaldi model and do a low latency speech recognition on the data coming from the system default microphone.
-
 ## Topbar
 
-Topbar is like [PolyBar](https://github.com/polybar/polybar), it manages different workspace, shows system status and `BaTool` detection output.
+Topbar is like [PolyBar](https://github.com/polybar/polybar), it manages different workspace, shows system status and speech detection output.
 
 1. **Workspaces:** you can switch between 6 workspaces showed with different icons.
 2. **Word detection output:** raw result of voice engine.

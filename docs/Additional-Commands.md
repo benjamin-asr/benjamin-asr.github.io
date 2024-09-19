@@ -72,3 +72,11 @@
 | Command | Action       | Note |
 | ------- | ------------ | ---- |
 | `Meta`  | Record voice |      |
+
+## VS Code
+
+| Command     | Action       | Description          |
+| ----------- | ------------ | -------------------- |
+| `Meta`      | Record voice |                      |
+| `Next/West` | F11          | Go to Next/Prev Pane |
+|             |              |                      |
