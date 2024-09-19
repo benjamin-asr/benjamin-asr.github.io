@@ -1,9 +1,4 @@
-
-
-WARNING:
-Unfortunately due to lack of resources, we only prioritizes productivity and thus security received less attention. Therefore, it is not advisable to install this software on machines where security is a concern.
-
-# Requirements
+### Requirements
 
 - **Operating system:** Windows 10 22H2, Windows 11 21H2
 - **Access level:** Need administrator user account with disabled UAC
@@ -11,12 +6,15 @@ Unfortunately due to lack of resources, we only prioritizes productivity and thu
 - **RAM:** 2 GB
 - **GPU:** Not required
 
-# Windows
+WARNING:
+Due to lack of resources, we prioritizes productivity over security, Therefore, it is not advisable to install this software on machines where security is a concern.
+
+### Windows
 
 1. Install Firefox Developer Edition: [Firefox-Dev_120.0b1.exe](https://download-origin.cdn.mozilla.net/pub/devedition/releases/120.0b1/win64/en-US/Firefox%20Setup%20120.0b1.exe)
 
     INFO:
-    Firefox only allows extensions that are signed by Mozilla to be installed (since version 92). Unfortunately we don't like their ideas of monopoly on web extensions and the hassle of sending code each time to Mozilla and waiting for them to sign. To bypass this, the only way is to use firefox developer edition.
+    Firefox only allows extensions that are signed by Mozilla to be installed (since version 92). We don't like their ideas of monopoly on web extensions. To bypass this, the only way is to use firefox developer edition.
 
     HINT:
     Our extension is open sourced and not obfuscated, so you are always welcome to review it by yourself and raise any comments in [GitHub issues](https://github.com/benjamin-asr/benjamin-asr.github.io/issues).
@@ -31,7 +29,7 @@ Unfortunately due to lack of resources, we only prioritizes productivity and thu
 
 3. Install Benjamin-ASR: [Benjamin-ASR.exe](https://github.com/benjamin-asr/Release/releases/)
 
-# Linux
+### Linux
 Linux is not officially supported, but if you are an enthusiastic, you should be able to get it up and running by following this guide:
 
 1. Install [Awesome-WM](https://awesomewm.org/) and [Polybar](https://github.com/polybar/polybar) and [Firefox Developer Edition](https://download-origin.cdn.mozilla.net/pub/devedition/releases/120.0b1/linux-x86_64/en-US/firefox-120.0b1.tar.bz2)

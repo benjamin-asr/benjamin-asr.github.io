@@ -1,7 +1,7 @@
-Batool is configurable via `conf` file next to BaTool application. It has 4 main sections to configure:
+Benjamin is configurable via `conf` file next to application. It has 4 main sections to configure:
 
 ## Model Section: 
-This section defines the location of Kaldi model files. The addresses are relative to where BaTool application exists.
+This section defines the location of model files. The addresses are relative to where application exists.
 
     ; Model path
     [model]
@@ -11,7 +11,7 @@ This section defines the location of Kaldi model files. The addresses are relati
     cmvn = "Model/global_cmvn.stats"
 
 ## Decoder Section:
-Kaldi related decoder settings.
+Engine related decoder settings.
 
     max_active = 900
     min_active = 200
