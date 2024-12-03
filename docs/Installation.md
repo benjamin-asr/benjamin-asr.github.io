@@ -1,14 +1,3 @@
-### Requirements
-
-- **Operating system:** Windows 10 22H2, Windows 11 21H2
-- **Access level:** Need administrator user account with disabled UAC
-- **CPU:** Intel I5 10500
-- **RAM:** 2 GB
-- **GPU:** Not required
-
-WARNING:
-Due to lack of resources, we prioritizes productivity over security, Therefore, it is not advisable to install this software on machines where security is a concern.
-
 ### Windows
 
 1. Install Firefox Developer Edition: [Firefox-Dev_120.0b1.exe](https://download-origin.cdn.mozilla.net/pub/devedition/releases/120.0b1/win64/en-US/Firefox%20Setup%20120.0b1.exe)
@@ -30,7 +19,7 @@ Due to lack of resources, we prioritizes productivity over security, Therefore, 
 3. Install Benjamin-ASR: [Benjamin-ASR.exe](https://github.com/benjamin-asr/Release/releases/)
 
 ### Linux
-Linux is not officially supported, but if you are an enthusiastic, you should be able to get it up and running by following this guide:
+Linux is not officially supported, but  you should be able to get it up and running
 
 1. Install [Awesome-WM](https://awesomewm.org/) and [Polybar](https://github.com/polybar/polybar) and [Firefox Developer Edition](https://download-origin.cdn.mozilla.net/pub/devedition/releases/120.0b1/linux-x86_64/en-US/firefox-120.0b1.tar.bz2)
 
