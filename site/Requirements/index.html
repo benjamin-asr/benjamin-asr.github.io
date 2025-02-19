@@ -142,7 +142,7 @@
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>
-This product is not currently mature enough in terms of security bugs, Therefore, it is not advisable to install this software on machines where security is a concern.</p>
+This product is not currently mature enough in terms of security bugs, Please, proceed with cautious.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -150,10 +150,10 @@ This product is not currently mature enough in terms of security bugs, Therefore
 Linux is not officially supported, but if you are an enthusiastic, you should be able to get it up and running.</p>
 </div>
 <h3 id="virtual-machines">Virtual Machines<a class="headerlink" href="#virtual-machines" title="Permanent link"></a></h3>
-<p>You can run Benjamin-ASR under virtual machines but there are few notes which you need to take care:</p>
+<p>You can run Benjamin-ASR under virtual machines but there are few limitation which you need to be aware:</p>
 <ol>
 <li>Many component of Benjamin-ASR relies on AVX, although AVX is supported by almost all modern processors this may not be true when you run the software under a virtual machine.</li>
-<li>Virtual Box generally have problem supporting AVX under Windows While Hyper-V is enabled. VMware don't have this issue and it became free since Nov 2024</li>
+<li>Virtual Box generally have problem supporting AVX under Windows while Hyper-V is enabled. VMware don't have this issue and it became free since Nov 2024</li>
 <li>For both cases under Windows, you cannot train a model inside them if Hyper-V is enabled. WSL requires Hyper-V inside guest machine and that required VT-x enabled which is only available if Hyper-V is disabled on Host machine. So at the same time only one of Host or Guest can be used for training <a href="https://superuser.com/questions/1578372/run-wsl2-inside-vmware-workstation-15">ref</a></li>
 </ol>
               

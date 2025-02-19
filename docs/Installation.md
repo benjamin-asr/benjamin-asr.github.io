@@ -3,7 +3,7 @@
 1. Install Firefox Developer Edition: [Firefox-Dev_120.0b1.exe](https://download-origin.cdn.mozilla.net/pub/devedition/releases/120.0b1/win64/en-US/Firefox%20Setup%20120.0b1.exe)
 
     INFO:
-    Firefox only allows extensions that are signed by Mozilla to be installed (since version 92). We don't like their ideas of monopoly on web extensions. To bypass this, the only way is to use firefox developer edition.
+    Firefox only allows extensions that are signed by Mozilla to be installed (since version 92). We don't appreciate their monopoly on web extensions. To bypass this, we recommend to use firefox developer edition.
 
     HINT:
     Our extension is open sourced and not obfuscated, so you are always welcome to review it by yourself and raise any comments in [GitHub issues](https://github.com/benjamin-asr/benjamin-asr.github.io/issues).

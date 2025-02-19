@@ -1,6 +1,6 @@
 # About
 
-Feel free to contact us by bijan<at\>binaee{dot}<c0m\>. I'm developer based in Netherlands and open to sponsorships program
+If you have any question to send us an email to ben<at\>binaee{dot}<c0m\>. I'm a developer based in Netherlands and currently open to connect with interested investors.
 
 # Aknolegdment
 
@@ -10,6 +10,7 @@ This project wouldn't be possible without the help of:
 - S. Dadashi
 - Dr. E. Akhavan
 - M. Abdollah Zadeh
+- E. Mohammadi
 - OpenFST
 - HTKBook
 - Kaldi

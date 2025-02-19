@@ -1,5 +1,5 @@
 #### 1. Decide on Your Wordlist: `0-20 mins`
-First you need to decide if you want to train a full model(takes about a week to record all the required samples) or just a demo model(less than an hour). If you are a new user, it is recommended to start with a demo model to checkout the accuracy and get an idea of the whole process.
+First decide if you want to train a full model(takes about a week to record all the required samples) or a demo model(less than an hour). If you are a new user, it is recommended to start with a demo model to checkout the accuracy and get an idea of the whole process.
 
 - **Demo Case:** Keep all the numbers from zero to nine, remove all other words in the vocabulary. `2 mins`
 - **Default Case:** No changes need to be made. `0 min`

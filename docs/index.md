@@ -1,4 +1,4 @@
-**Benjamin-ASR** is a voice control platform that designed to fully replace traditional mouse/keyboard for all day long without causing fatigue or annoyance. This requirement stress over a new architecture in ASR engine to maximize accuracy, productivity and latency.
+**Benjamin-ASR** is a voice control platform that designed to fully replace traditional mouse/keyboard for all day long without causing fatigue or annoyance to control PC applications. This requirement stress over a new architecture in ASR(Automatic Speech Recognition) engine to maximize accuracy, productivity and latency.
 
 ## Key Features
 /// html | div[style='float: left; width: 45%;']
