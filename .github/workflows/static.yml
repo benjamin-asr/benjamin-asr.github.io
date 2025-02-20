@@ -22,29 +22,30 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3 # Aktualisiert auf v3
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+        
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4 # Aktualisiert auf v4
+        with:
+          name: github-pages
+          path: ./site/
+  
   deploy:
+    runs-on: ubuntu-latest
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4.6.0
-        with:
-          # Upload entire repository
-          name: up-artifact
-          if-no-files-found: ignore
-          path: 'site/'
-      - name: Debug artifact path
-        run: ls -R site/
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
         with:
-          artifact_name: up-artifact  # Must match the name used in upload
-          if-no-files-found: ignore
+          artifact-name: github-pages
