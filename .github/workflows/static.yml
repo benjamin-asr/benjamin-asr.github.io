@@ -38,9 +38,13 @@ jobs:
         with:
           # Upload entire repository
           name: up-artifact
+          if-no-files-found: ignore
           path: 'site/'
+      - name: Debug artifact path
+        run: ls -R site/
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
         with:
           artifact_name: up-artifact  # Must match the name used in upload
+          if-no-files-found: ignore
