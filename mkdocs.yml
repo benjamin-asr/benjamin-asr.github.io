@@ -2,25 +2,30 @@ dev_addr: 127.0.0.1:8080
 site_name: Benjamin-ASR
 nav:
   - Home: index.md
-  - Requirements: Requirements.md
-  - Installation: Installation.md
-  - Quick Start Guide: Quick-Start-Guide.md
-  - Capture Audio Samples: Capture-Audio-Samples.md
-  - Train Model: Train-Model.md
-  - First Time Bring-up: First-Time-Bring-Up.md
-  - Controlling Keyboard: Controlling-Keyboard.md
-  - Controlling Mouse: Controlling-Mouse.md
-  - Additional Commands: Additional-Commands.md
-  - Global Shortcuts: Global-Shortcuts.md
-  - Train Neural Network: Train-Neural-Network.md
-  - Advanced Training: Advanced-Training.md
-  - Advanced Engine Settings: Advanced-Engine-Settings.md
-  - Developer: https://benjamin-int.github.io
+  - Installation: 
+    - Requirements: Requirements.md
+    - Download: Installation.md
+  - Training:
+    - Overview: Quick-Start-Guide.md
+    - Record Samples: Capture-Audio-Samples.md
+    - Train Model: Train-Model.md
+  - How to use:
+    - First Bring-up: First-Time-Bring-Up.md
+    - Controlling Keyboard: Controlling-Keyboard.md
+    - Controlling Mouse: Controlling-Mouse.md
+    - Additional Commands: Additional-Commands.md
+    - Global Shortcuts: Global-Shortcuts.md
+  - Advanced:
+    - Train Neural Network: Train-Neural-Network.md
+    - Advanced Training: Advanced-Training.md
+    - Advanced Engine Settings: Advanced-Engine-Settings.md
+    - Developer: https://benjamin-int.github.io
   - About: About.md
 
 theme: 
   name: readthedocs
   highlightjs: true
+  collapse_navigation: true
   palette:
     primary: 'indigo'
     accent: 'pink'
@@ -28,6 +33,7 @@ theme:
   hljs_languages:
     - yaml
     - django
+  custom_dir: b_theme/
 
 extra_css:
   - css/extra.css

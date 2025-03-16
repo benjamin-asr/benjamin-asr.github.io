@@ -1,3 +1,3 @@
 @echo off
-mkdocs serve
+mkdocs serve --watch-theme
 pause
