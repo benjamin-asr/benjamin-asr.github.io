@@ -2353,7 +2353,7 @@ textarea
 
 .wy-menu-vertical li.current>a button.toctree-expand:before
 {
-    content: ""
+    content: "";
 }
 
 .fa-minus-square-o:before,
@@ -7019,7 +7019,7 @@ html
     float: left;
     margin-left: -1.2em;
     line-height: 18px;
-    color: #4d4d4d;
+    color: #949494;
     border: none;
     background: none;
     padding: 0
@@ -7302,7 +7302,7 @@ html
 {
     display: block;
     width: 300px;
-    padding: .809em;
+    padding: .5em;
     margin-bottom: .809em;
     z-index: 200;
     background-color: #2980b9;
@@ -7337,7 +7337,6 @@ html
     font-weight: 700;
     display: inline-block;
     padding: 4px 6px;
-    margin-bottom: .809em;
     max-width: 100%
 }
 

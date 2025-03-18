@@ -15,12 +15,12 @@ nav:
     - Controlling Mouse: Controlling-Mouse.md
     - Additional Commands: Additional-Commands.md
     - Global Shortcuts: Global-Shortcuts.md
-  - Advanced:
+  - Advance Features:
     - Train Neural Network: Train-Neural-Network.md
     - Advanced Training: Advanced-Training.md
     - Advanced Engine Settings: Advanced-Engine-Settings.md
     - Developer: https://benjamin-int.github.io
-  - About: About.md
+  - Contact Us: About.md
 
 theme: 
   name: readthedocs

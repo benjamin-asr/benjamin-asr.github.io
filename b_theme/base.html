@@ -97,14 +97,6 @@
         {%- endif %}
         </a>
       {%- endblock %}
-      {%- if config.extra.version %}
-        <div class="version">
-          {{ config.extra.version }}
-        </div>
-      {%- endif %}
-      {%- block search_button %}
-        {%- if 'search' in config.plugins %}{%- include "searchbox.html" %}{%- endif %}
-      {%- endblock %}
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="{% trans %}Navigation menu{% endtrans %}">
@@ -112,28 +104,18 @@
           {%- set navlevel = 1 %}
           {%- for nav_item in nav %}
             {%- if nav_item.is_section %}
-              {%- if nav_item.is_page %}
-                <ul><li{% if nav_item == page %} class="current-section"{% endif %}>
-                    <a href="{% if nav_item == page %}#{% else %}{{ nav_item.url|url }}{% endif %}" style="padding: 0; font-size: inherit; line-height: inherit">
-              {%- endif %}
-              <p class="caption"><span class="caption-text">{{ nav_item.title }}</span></p>
-              {%- if nav_item.is_page %}
-                    </a>
-                </li></ul>
-              {%- endif %}
-              <ul{% if nav_item.active %} class="current"{% endif %}>
-                {%- for nav_item in nav_item.children %}
-                  <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
-                    {%- include 'nav.html' %}
-                  </li>
-                {%- endfor %}
-              </ul>
-            {%- elif config.theme.include_homepage_in_sidebar or (not nav_item == nav.homepage) %}
-              <ul{% if nav_item.active %} class="current"{% endif %}>
-                <li class="toctree-l{{ navlevel }}{% if nav_item.active %} current{% endif %}">
-                  {%- include 'nav.html' %}
+              <ul class="current">
+                <li class="toctree-l1{% if nav_item.active %} current{% endif %}">
+                  <a class="reference internal{% if nav_item.active %} current{% endif %}" href="{{ nav_item.children[0].url|url }}">{{ nav_item.title }}</a>
+                      {%- include 'nav.html' %}
                 </li>
               </ul>
+            {%- else %}  <!--homepage-->
+            <ul class="current">
+              <li class="toctree-l1{% if nav_item.active %} current{% endif %}">
+                <a class="reference internal{% if nav_item.active%} current{%endif%}" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+              </li>
+            </ul>
             {%- endif %}
           {%- endfor %}
         {%- endblock %}
@@ -171,8 +153,6 @@
     </section>
 
   </div>
-
-  {% include "versions.html" -%}
 
   {%- block scripts %}
     <script src="{{ 'js/jquery-3.6.0.min.js'|url }}"></script>

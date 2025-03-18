@@ -1,6 +1,6 @@
 # About
 
-If you have any question to send us an email to ben<at\>binaee{dot}<c0m\>. I'm a developer based in Netherlands and currently open to connect with interested investors.
+I'm a developer based in Netherlands and currently looking for the right investor. If you have a question or interested in supporting this project please reach out to ben<at\>binaee{dot}<c0m\>. 
 
 # Acknowledgment
 
