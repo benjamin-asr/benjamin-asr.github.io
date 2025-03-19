@@ -1,6 +1,6 @@
 <ul{% if nav_item.active %} class="current"{% endif %}>
     {%- for t_item in nav_item.children %}
-        <li class="toctree-l3"><a class="reference internal" href="{{ t_item.url|url }}">{{ t_item.title }}</a>
+        <li class="toctree-l2{% if t_item.active %} current{% endif %}"><a class="reference internal{% if t_item.active %} current{% endif %}" href="{{ t_item.url|url }}">{{ t_item.title }}</a>
         </li>
     {%- endfor %}
 </ul>
