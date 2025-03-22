@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Advanced Engine Settings - Benjamin-ASR</title>
+    <title>Configuration File - Benjamin-ASR</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Advanced Engine Settings";
+        var mkdocs_page_name = "Configuration File";
         var mkdocs_page_input_path = "Advanced-Engine-Settings.md";
         var mkdocs_page_url = null;
       </script>
@@ -67,7 +67,7 @@
               </ul>
               <ul class="current">
                 <li class="toctree-l1">
-                  <a class="reference internal" href="../First-Time-Bring-Up/">How to use</a><ul>
+                  <a class="reference internal" href="../First-Time-Bring-Up/">How to Use</a><ul>
         <li class="toctree-l2"><a class="reference internal" href="../First-Time-Bring-Up/">First Bring-up</a>
         </li>
         <li class="toctree-l2"><a class="reference internal" href="../Controlling-Keyboard/">Controlling Keyboard</a>
@@ -88,9 +88,7 @@
         </li>
         <li class="toctree-l2"><a class="reference internal" href="../Advanced-Training/">Advanced Training</a>
         </li>
-        <li class="toctree-l2 current"><a class="reference internal current" href="./">Advanced Engine Settings</a>
-        </li>
-        <li class="toctree-l2"><a class="reference internal" href="https://benjamin-int.github.io">Developer</a>
+        <li class="toctree-l2 current"><a class="reference internal current" href="./">Configuration File</a>
         </li>
 </ul>
                 </li>
@@ -115,7 +113,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Advance Features</li>
-      <li class="breadcrumb-item active">Advanced Engine Settings</li>
+      <li class="breadcrumb-item active">Configuration File</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -124,16 +122,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>Benjamin is configurable via <code>conf</code> file next to application. It has 4 main sections to configure:</p>
-<h2 id="model-section">Model Section:<a class="headerlink" href="#model-section" title="Permanent link"></a></h2>
-<p>This section defines the location of model files. The addresses are relative to where application exists.</p>
-<pre><code>; Model path
-[model]
-fst = "Model/HCLG.fst"
-mdl = "Model/final.oalimdl"
-word = "Model/words.txt"
-cmvn = "Model/global_cmvn.stats"
-</code></pre>
+                <p>Benjamin is configurable via the <code>BaTool.conf</code> file next to the application. It has 4 main sections to configure:</p>
 <h2 id="decoder-section">Decoder Section:<a class="headerlink" href="#decoder-section" title="Permanent link"></a></h2>
 <p>Engine related decoder settings.</p>
 <pre><code>max_active = 900
@@ -146,13 +135,21 @@ min_sil = 20
 <li><code>train_max</code>: Maximum number of same samples for later training.</li>
 <li><code>min_sil</code>: Minimum silence before detection. This value directly connected with accuracy and latency.</li>
 </ul>
+<h3 id="captain-section">Captain Section:<a class="headerlink" href="#captain-section" title="Permanent link"></a></h3>
+<pre><code>; Threshold for detecting words
+[captain]
+hard_threshold = 0.35
+</code></pre>
+<h3 id="miscellaneous-section">Miscellaneous Section:<a class="headerlink" href="#miscellaneous-section" title="Permanent link"></a></h3>
+<pre><code>; Miscellaneous parameters
+[misc]
+mic = "Sennheiser"
+channel = "com_binaee_rebound"
+</code></pre>
+<p>More info at <a href="https://benjamin-int.github.io">Developer</a></p>
               
             </div>
           </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../Advanced-Training/" class="btn btn-neutral float-left" title="Advanced Training"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../About/" class="btn btn-neutral float-right" title="Contact Us">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
 
   <hr/>
 
@@ -160,7 +157,7 @@ min_sil = 20
     <!-- Copyright etc -->
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Proudly powered by <a href="https://www.mkdocs.org/">MkDocs</a> and <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
           
         </div>

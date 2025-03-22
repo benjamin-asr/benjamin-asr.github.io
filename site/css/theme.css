@@ -6674,7 +6674,7 @@ hr
     height: 1px;
     border: 0;
     border-top: 1px solid #e1e4e5;
-    margin: 24px 0;
+    margin: 10px 0 20px 0;
     padding: 0
 }
 
@@ -7305,7 +7305,7 @@ html
     padding: .5em;
     margin-bottom: .809em;
     z-index: 200;
-    background-color: #2980b9;
+    background-color: #0d599e;
     text-align: center;
     color: #fcfcfc
 }
@@ -7515,7 +7515,7 @@ html
 
 .wy-nav-content
 {
-    padding: 1.618em 3.236em;
+    padding: 0.4em 3.236em 1.618em 3.236em;
     height: 100%;
     max-width: 800px;
     margin: auto
@@ -8164,8 +8164,6 @@ footer span.commit code
 .rst-content section ol li>*,
 .rst-content section ul li>*
 {
-    margin-top: 12px;
-    margin-bottom: 12px
 }
 
 .rst-content .section ol li>:first-child,
@@ -9118,4 +9116,36 @@ span[id*=MathJax-Span]
     font-weight: 700;
     src: url(fonts/Roboto-Slab-Bold.woff2?9984f4a9bda09be08e83f2506954adbe) format("woff2"), url(fonts/Roboto-Slab-Bold.woff?bed5564a116b05148e3b3bea6fb1162a) format("woff");
     font-display: block
+}
+
+
+
+
+
+
+/*BIJAN*/
+.video-container 
+{
+    position: relative;
+    width: 560px;
+    height: 315px;
+    cursor: pointer;
+}
+.thumbnail
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    /* Replace with your custom thumbnail URL */
+    background-image: url('../img/YT_Demo.png');
+}
+.iframe-embed
+{
+    display: none; /* Hide initially */
+    width: 100%;
+    height: 100%;
+    border: 0;
+    position: absolute;
 }

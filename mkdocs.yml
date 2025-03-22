@@ -9,7 +9,7 @@ nav:
     - Overview: Quick-Start-Guide.md
     - Record Samples: Capture-Audio-Samples.md
     - Train Model: Train-Model.md
-  - How to use:
+  - How to Use:
     - First Bring-up: First-Time-Bring-Up.md
     - Controlling Keyboard: Controlling-Keyboard.md
     - Controlling Mouse: Controlling-Mouse.md
@@ -18,8 +18,7 @@ nav:
   - Advance Features:
     - Train Neural Network: Train-Neural-Network.md
     - Advanced Training: Advanced-Training.md
-    - Advanced Engine Settings: Advanced-Engine-Settings.md
-    - Developer: https://benjamin-int.github.io
+    - Configuration File: Advanced-Engine-Settings.md
   - Contact Us: About.md
 
 theme: 

@@ -1,14 +1,4 @@
-Benjamin is configurable via `conf` file next to application. It has 4 main sections to configure:
-
-## Model Section: 
-This section defines the location of model files. The addresses are relative to where application exists.
-
-    ; Model path
-    [model]
-    fst = "Model/HCLG.fst"
-    mdl = "Model/final.oalimdl"
-    word = "Model/words.txt"
-    cmvn = "Model/global_cmvn.stats"
+Benjamin is configurable via the `BaTool.conf` file next to the application. It has 4 main sections to configure:
 
 ## Decoder Section:
 Engine related decoder settings.
@@ -21,3 +11,18 @@ Engine related decoder settings.
 
 - `train_max`: Maximum number of same samples for later training.
 - `min_sil`: Minimum silence before detection. This value directly connected with accuracy and latency.
+
+### Captain Section:
+
+    ; Threshold for detecting words
+    [captain]
+    hard_threshold = 0.35
+
+### Miscellaneous Section:
+
+    ; Miscellaneous parameters
+    [misc]
+    mic = "Sennheiser"
+    channel = "com_binaee_rebound"
+
+More info at [Developer](https://benjamin-int.github.io)
