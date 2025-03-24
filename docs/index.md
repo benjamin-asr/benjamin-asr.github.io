@@ -1,4 +1,4 @@
-<span style="font-size: 16.3px;">**Benjamin-ASR** is a voice recognition engine that bring hands-free experience to control PCs and digital equipment.</span> We revolutionized speech recognition technology to reach next-level accuracy and performance. Check out our specs and decide yourself!
+<span style="font-size: 15.8px;">**Benjamin-ASR** is a technology that let user control a PC or a digital equipment completely hands-free.</span> We revolutionized speech recognition engines to reach next-level accuracy and performance. Check out our specs and decide yourself!
 
 ## Key Features
 /// html | div[style='float: left; width: 45%;']

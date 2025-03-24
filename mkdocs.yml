@@ -33,6 +33,8 @@ theme:
     - yaml
     - django
   custom_dir: b_theme/
+  analytics:
+    gtag: 'G-06ZBEJ1V6X'
 
 extra_css:
   - css/extra.css
