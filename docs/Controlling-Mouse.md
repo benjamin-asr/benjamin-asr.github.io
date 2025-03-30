@@ -3,7 +3,7 @@
 | `Mouse Left`    | Left Click             |                                         |
 | `Mouse Right`   | Right Click            |                                         |
 | `Mouse Mike`    | Middle Click           |                                         |
-| `Mouse Up`      | Scroll Up              |                                         |
+| `Mouse Raise`   | Scroll Up              |                                         |
 | `Mouse Down`    | Scroll Down            |                                         |
 | `Mouse Papa`    |                        | Primary monitor                         |
 | `Mouse Sierra`  |                        | Secondary monitor                       |

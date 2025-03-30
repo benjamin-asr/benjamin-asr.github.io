@@ -3,8 +3,8 @@ site_name: Benjamin-ASR
 nav:
   - Home: index.md
   - Installation: 
-    - Requirements: Requirements.md
     - Download: Installation.md
+    - Requirements: Requirements.md
   - Training:
     - Overview: Quick-Start-Guide.md
     - Record Samples: Capture-Audio-Samples.md
@@ -13,7 +13,8 @@ nav:
     - First Bring-up: First-Time-Bring-Up.md
     - Controlling Keyboard: Controlling-Keyboard.md
     - Controlling Mouse: Controlling-Mouse.md
-    - Additional Commands: Additional-Commands.md
+    - Global Commands: Additional-Commands.md
+    - Application Commands: App-Commands.md
     - Global Shortcuts: Global-Shortcuts.md
   - Advance Features:
     - Train Neural Network: Train-Neural-Network.md

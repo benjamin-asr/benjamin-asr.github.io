@@ -55,10 +55,10 @@
             </ul>
               <ul class="current">
                 <li class="toctree-l1 current">
-                  <a class="reference internal current" href="./">Installation</a><ul class="current">
-        <li class="toctree-l2 current"><a class="reference internal current" href="./">Requirements</a>
-        </li>
+                  <a class="reference internal current" href="../Installation/">Installation</a><ul class="current">
         <li class="toctree-l2"><a class="reference internal" href="../Installation/">Download</a>
+        </li>
+        <li class="toctree-l2 current"><a class="reference internal current" href="./">Requirements</a>
         </li>
 </ul>
                 </li>
@@ -84,7 +84,9 @@
         </li>
         <li class="toctree-l2"><a class="reference internal" href="../Controlling-Mouse/">Controlling Mouse</a>
         </li>
-        <li class="toctree-l2"><a class="reference internal" href="../Additional-Commands/">Additional Commands</a>
+        <li class="toctree-l2"><a class="reference internal" href="../Additional-Commands/">Global Commands</a>
+        </li>
+        <li class="toctree-l2"><a class="reference internal" href="../App-Commands/">Application Commands</a>
         </li>
         <li class="toctree-l2"><a class="reference internal" href="../Global-Shortcuts/">Global Shortcuts</a>
         </li>
@@ -134,28 +136,23 @@
               
                 <h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link"></a></h3>
 <ul>
-<li><strong>Operating system:</strong> Windows 10 22H2, Windows 11 21H2, Linux(Advanced)</li>
+<li><strong>Operating system:</strong> Windows 10 22H2, Windows 11, Linux(Advanced)</li>
 <li><strong>Access level:</strong> Need administrator user account with disabled UAC</li>
 <li><strong>CPU:</strong> Intel I5 10500</li>
 <li><strong>RAM:</strong> 2 GB</li>
 <li><strong>GPU:</strong> Not required</li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>
-This product is not currently mature enough in terms of security bugs, Please, proceed with cautious.</p>
-</div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>
-Linux is not officially supported, but if you are an enthusiastic, you should be able to get it up and running.</p>
+Linux is supported, but may need extra steps to set it up, being said, you should be able to get it up and running if you are enthusiastic.</p>
 </div>
 <h3 id="virtual-machines">Virtual Machines<a class="headerlink" href="#virtual-machines" title="Permanent link"></a></h3>
 <p>You can run Benjamin-ASR under virtual machines but there are few limitation which you need to be aware:</p>
 <ol>
 <li>Many component of Benjamin-ASR relies on AVX, although AVX is supported by almost all modern processors this may not be true when you run the software under a virtual machine.</li>
 <li>Virtual Box generally have problem supporting AVX under Windows while Hyper-V is enabled. VMware don't have this issue and it became free since Nov 2024</li>
-<li>For both cases under Windows, you cannot train a model inside them if Hyper-V is enabled. WSL requires Hyper-V inside guest machine and that required VT-x enabled which is only available if Hyper-V is disabled on Host machine. So at the same time only one of Host or Guest can be used for training <a href="https://superuser.com/questions/1578372/run-wsl2-inside-vmware-workstation-15">ref</a></li>
+<li>For both cases under Windows, you cannot train a model inside them if Hyper-V is enabled. WSL requires Hyper-V inside guest machine and that required VT-x enabled which is only available if Hyper-V is disabled on Host machine. So at the same time only one of Host or Guest can be used for training. [<a href="https://superuser.com/questions/1578372/run-wsl2-inside-vmware-workstation-15">Reference</a>]</li>
 </ol>
               
             </div>

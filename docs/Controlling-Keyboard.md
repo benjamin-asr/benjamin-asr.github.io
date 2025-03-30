@@ -19,6 +19,6 @@
 
 | Command | Action                       | Command   | Action | Command  | Action    |
 | ------- | ---------------------------- | --------- | ------ | -------- | --------- |
-| `super` | :fontawesome-brands-windows: | `control` | ctrl   | `shift`  | shift     |
-| `alt`   | alt                          | `sim`     | space  | `github` | caps lock |
-| `home`  | home                         | `end`     | end    | `edge`   | Menu key  |
+| `super` | :fontawesome-brands-windows: | `control` | Ctrl   | `shift`  | Shift     |
+| `alt`   | Alt                          | `sim`     | Space  | `github` | Caps Lock |
+| `home`  | Home                         | `end`     | End    | `edge`   | Menu Key  |
