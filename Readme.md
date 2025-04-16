@@ -17,4 +17,4 @@ after you edit the wiki, to implement the changes run:
 ```
 build_mkdocs.bat
 ```
-then commit changes.
+then commit the changes.
