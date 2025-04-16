@@ -122,6 +122,9 @@
         {%- endblock %}
       </div>
     </div>
+	<div class="nav-powered-by">
+	    {% trans mkdocs_link='<a href="https://www.mkdocs.org/">MkDocs</a>', sphinx_link='<a href="https://github.com/readthedocs/sphinx_rtd_theme">{}</a>'.format(gettext('theme')), rtd_link='<a href="https://readthedocs.org">Read the Docs</a>' %}Powered by %(mkdocs_link)s & %(rtd_link)s{% endtrans %}
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
