@@ -112,6 +112,9 @@
             </ul>
       </div>
     </div>
+	<div class="nav-powered-by">
+	    Powered by <a href="https://www.mkdocs.org/">MkDocs</a> & <a href="https://readthedocs.org">Read the Docs</a>
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -133,44 +136,126 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p><span style="font-size: 15.8px;"><strong>Benjamin-ASR</strong> enable you to control a PC or a digital equipment completely hands-free.</span> We revolutionized speech recognition engines to reach next-level accuracy and performance. Check out our specs and decide yourself!</p>
-<h2 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link"></a></h2>
-<div style="float: left; width: 45%;">
-<ul>
-<li>Up to 99.8% accuracy.</li>
-<li>Low latency recognition (less than 50ms).</li>
-<li>No connection to cloud or external server.</li>
-<li>No wake-up word</li>
-</ul>
+                <div class="media-row">
+    <div class="video-container" onclick="showVideo()" style="display:block;">
+    <div class="thumbnail"></div>
+    <iframe 
+        id="videoIframe"
+        class="iframe-embed"
+        src=""
+        allow="autoplay; encrypted-media"
+        allowfullscreen >
+    </iframe>
+    </div>
+  <div class="image-box">
+    <h2 class="h2-headline">
+        <span>Control Any Digital Equipment Hands-Free</span>
+    </h2>
+    <h3 class="h3-headline">
+        We revolutionized speech recognition technologies to reach next-level accuracy and performance.
+    </h3>
+    <a href="/Installation" class="button-dl-home">Download Now</a>
+  </div>
 </div>
-<div style="float: right;width: 55%;">
-<ul>
-<li>Fine-tuning for individual accent and gender.</li>
-<li>Seamless integration with third-party softwares through our API's on <code>DBus</code> (Linux) or <code>Named-Pipe</code> (Windows).</li>
-<li>CPU-Based, no special hardware(GPU, CUDA, ...)</li>
-</ul>
+
+<!--## Key Features
+/// html | div[style='float: left; width: 45%;']
+- Up to 99.8% accuracy.
+- Low latency recognition (less than 50ms).
+- No connection to cloud or external server.
+- No wake-up word
+///
+
+/// html | div[style='float: right;width: 55%;']
+- Fine-tuning for individual accent and gender.
+- Seamless integration with third-party software's through our API's on `DBus` (Linux) or `Named-Pipe` (Windows).
+- CPU-Based, no special hardware(GPU, CUDA, ...)
+///-->
+<h2 id="unique-features" class="home-features">
+    Unique Features
+    <a class="headerlink" href="#unique-features" title="Permanent link">
+    </a>
+</h2>
+
+<div class="home-features">
+    <div class="home-feature-div">
+        <div class="home-feature-img">
+            <img src="../img/accuracy.png">
+        </div>
+        <div class="home-feature-txt">
+            <h4 class="headline-h4">
+            Accuracy
+            </h4>
+            <p>Up to 99.8% word error rate</p>
+        </div>
+    </div>
+
+    <div class="home-feature-div">
+        <div class="home-feature-img">
+            <img src="../img/latency.png">
+        </div>
+        <div class="home-feature-txt">
+            <h4 class="headline-h4">
+            Ultra Low Latency
+            </h4>
+            <p>Less than 50ms</p>
+        </div>
+    </div>
+
+    <div class="home-feature-div">
+        <div class="home-feature-img">
+            <img src="../img/no-cloud.png">
+        </div>
+        <div class="home-feature-txt">
+            <h4 class="headline-h4">
+            No Cloud
+            </h4>
+            <p>No internet connection requirement to cloud or external server</p>
+        </div>
+    </div>
 </div>
-<div class="video-container" onclick="showVideo()" style="display:block; margin: 150px auto 30px;">
-  <div class="thumbnail"></div>
-  <iframe 
-    id="videoIframe"
-    class="iframe-embed"
-    src=""
-    allow="autoplay; encrypted-media"
-    allowfullscreen >
-  </iframe>
+
+<div class="home-features">
+    <div class="home-feature-div">
+        <div class="home-feature-img">
+            <img src="../img/api.png">
+        </div>
+        <div class="home-feature-txt">
+            <h4 class="headline-h4">
+            API For Third-Party Software's
+            </h4>
+            <p>Seamless integration through `DBus` (Linux) or `Named-Pipe` (Windows)</p>
+        </div>
+    </div>
+
+    <div class="home-feature-div">
+        <div class="home-feature-img">
+            <img src="../img/speech.png">
+        </div>
+        <div class="home-feature-txt">
+            <h4 class="headline-h4">
+            Accent Agnostic
+            </h4>
+            <p>Fine-tuning for individual accent and gender</p>
+        </div>
+    </div>
+
+    <div class="home-feature-div">
+        <div class="home-feature-img">
+            <img src="../img/cpu.png">
+        </div>
+        <div class="home-feature-txt">
+            <h4 class="headline-h4">
+            Completely CPU Based
+            </h4>
+            <p>No special hardware like GPU, CUDA or NPU needed</p>
+        </div>
+    </div>
 </div>
               
             </div>
           </div><footer>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Proudly powered by <a href="https://www.mkdocs.org/">MkDocs</a> and <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
           
         </div>
@@ -195,5 +280,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-03-30 16:10:18.480135+00:00
+Build Date UTC : 2025-04-17 15:05:46.810027+00:00
 -->
