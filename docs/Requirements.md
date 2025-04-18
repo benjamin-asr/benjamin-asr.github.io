@@ -7,7 +7,7 @@
 - **GPU:** Not required
 
 INFO:
-Linux is supported, but may need extra steps to set it up, being said, you should be able to get it up and running if you are enthusiastic.
+Linux is supported, but requires extra steps to set up.
 
 ### Virtual Machines
 

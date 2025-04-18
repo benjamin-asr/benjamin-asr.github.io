@@ -1,6 +1,6 @@
 # About
 
-I'm a developer based in Netherlands and currently looking for investor. If you have a question or interested in supporting this project please reach out to ben<at\>binaee{dot}<c0m\>. 
+We are a team in the Netherlands, Amsterdam and currently looking for investor. If you have a question or interested in supporting this project please reach out to ben<at\>binaee{dot}<c0m\>. 
 
 # Acknowledgment
 

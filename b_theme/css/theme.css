@@ -9303,12 +9303,13 @@ span[id*=MathJax-Span]
 .home-feature-txt p
 {
 	text-align: justify;
+	font-size: 14px;
 }
 
 .headline-h4
 {
     color: #232425;
-	font-size: 1.125rem;
+	font-size: 1.1rem;
     line-height: 1.33333333;
 	font-family: "Linotype Univers Condensed",sans-serif;
     font-weight: 400;
@@ -9320,14 +9321,49 @@ span[id*=MathJax-Span]
 .home-features
 {
 	display: flex;
-	width: 830px;
+	width: 750px;
 	overflow: hidden;
 	display: flex;
     gap: 20px; /* Optional spacing between the two columns */
 	margin: auto;
 }
 
-.home-features
+.home-h2
 {
 	margin-top: 20px;
+    text-align: center;
+}
+
+.download_btn
+{
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff !important;
+    border-color: #357ebd;
+    padding: 10px 14px;
+    min-width: 100px;
+    font-size: 15px;
+    line-height: 2;
+    border-radius: 12px;
+    background-color: #1d98dc;
+    display: inline;
+    margin-bottom: 20px !important;
+    transition: background-color 0.7s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+}
+
+
+.download_btn:hover
+{
+    color: #fff !important;
+    border-color: #3db8fc;
+    background-color: #0d68ac;
+    transition: background-color 0.7s cubic-bezier(0.23, 1, 0.32, 1) 0s;
 }

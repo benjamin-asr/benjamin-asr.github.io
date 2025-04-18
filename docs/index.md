@@ -33,8 +33,8 @@
 - Seamless integration with third-party software's through our API's on `DBus` (Linux) or `Named-Pipe` (Windows).
 - CPU-Based, no special hardware(GPU, CUDA, ...)
 ///-->
-<h2 id="unique-features" class="home-features">
-    Unique Features
+<h2 id="unique-features" class="home-h2">
+	What Sets Us Apart
 	<a class="headerlink" href="#unique-features" title="Permanent link">
 	</a>
 </h2>
@@ -46,9 +46,9 @@
 		</div>
 		<div class="home-feature-txt">
 			<h4 class="headline-h4">
-			Accuracy
+			Highly Accurate
 			</h4>
-			<p>Up to 99.8% word error rate</p>
+			<p>Less than 0.5% word error rate</p>
 		</div>
 	</div>
 
@@ -58,9 +58,9 @@
 		</div>
 		<div class="home-feature-txt">
 			<h4 class="headline-h4">
-			Ultra Low Latency
+			Lightning‑Fast Response
 			</h4>
-			<p>Less than 50ms</p>
+			<p>Real‑Time responsiveness with less than 50ms latency</p>
 		</div>
 	</div>
 
@@ -72,7 +72,7 @@
 			<h4 class="headline-h4">
 			No Cloud
 			</h4>
-			<p>No internet connection requirement to cloud or external server</p>
+			<p>100% Local. private, and always work even when offline</p>
 		</div>
 	</div>
 </div>
@@ -84,9 +84,9 @@
 		</div>
 		<div class="home-feature-txt">
 			<h4 class="headline-h4">
-			API For Third-Party Software's
+			Third-Party Software Integration
 			</h4>
-			<p>Seamless integration through `DBus` (Linux) or `Named-Pipe` (Windows)</p>
+			<p>Seamless API through DBus (Linux) and Named-Pipe (Win32)</p>
 		</div>
 	</div>
 
@@ -108,7 +108,7 @@
 		</div>
 		<div class="home-feature-txt">
 			<h4 class="headline-h4">
-			Completely CPU Based
+			Designed for CPUs
 			</h4>
 			<p>No special hardware like GPU, CUDA or NPU needed</p>
 		</div>
