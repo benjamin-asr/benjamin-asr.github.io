@@ -51,7 +51,6 @@
 			<p>Less than 0.5% word error rate</p>
 		</div>
 	</div>
-
 	<div class="home-feature-div">
 		<div class="home-feature-img">
 			<img src="../img/latency.png">
@@ -63,7 +62,6 @@
 			<p>Real‑Time responsiveness with less than 50ms latency</p>
 		</div>
 	</div>
-
 	<div class="home-feature-div">
 		<div class="home-feature-img">
 			<img src="../img/no-cloud.png">
@@ -75,9 +73,6 @@
 			<p>100% Local. private, and always work even when offline</p>
 		</div>
 	</div>
-</div>
-
-<div class="home-features">
 	<div class="home-feature-div">
 		<div class="home-feature-img">
 			<img src="../img/api.png">
@@ -89,7 +84,6 @@
 			<p>Seamless API through DBus (Linux) and Named-Pipe (Win32)</p>
 		</div>
 	</div>
-
 	<div class="home-feature-div">
 		<div class="home-feature-img">
 			<img src="../img/speech.png">
@@ -101,7 +95,6 @@
 			<p>Fine-tuning for individual accent and gender</p>
 		</div>
 	</div>
-
 	<div class="home-feature-div">
 		<div class="home-feature-img">
 			<img src="../img/cpu.png">

@@ -5173,6 +5173,46 @@ a .wy-menu-vertical li button.toctree-expand
     {
         width: 100%
     }
+
+	.media-row
+	{
+		flex-direction: column;
+		width: 500px !important;
+		margin: auto;
+	}
+
+	.video-container
+	{
+		height: 270px !important;
+	}
+
+	.image-box
+	{
+		height: 260px !important;
+		width: 500px  !important;
+	}
+
+	.h2-headline
+	{
+		margin-bottom: 20px !important;
+  		margin-right: 100px;
+	}
+
+	.h3-headline
+	{
+		margin-right: 60px;
+	}
+
+	.home-features
+	{
+		width: 100% !important;
+	}
+
+	.home-feature-div
+	{
+		width: 250px !important;
+		margin: 0 3%;
+	}
 }
 
 button
@@ -9217,13 +9257,13 @@ span[id*=MathJax-Span]
     pointer-events: none;
 }
 
-.h2-headline
+h2.h2-headline
 {
 	color: #fff;
 	font-weight: 700;
 	font-family: "Linotype Univers Condensed",sans-serif;
 	font-size: 1.7rem;
-	margin-bottom: 10px !important;
+	margin-bottom: 10px;
 }
 
 .h3-headline
@@ -9272,6 +9312,16 @@ span[id*=MathJax-Span]
 	color: #ccc !important;
 }
 
+.home-features
+{
+	display: flex;
+	flex-wrap: wrap;
+	width: 750px;
+	overflow: hidden;
+    gap: 20px; /* Optional spacing between the two columns */
+	margin: auto;
+}
+
 .home-feature-div
 {
     position: relative;
@@ -9279,7 +9329,7 @@ span[id*=MathJax-Span]
 	list-style: none;
 	font-family: "Linotype Univers",sans-serif;
 	line-height: 1.625;
-	width: 250px;
+	width: 235px;
 	height: 230px;
 }
 
@@ -9316,15 +9366,6 @@ span[id*=MathJax-Span]
 	list-style: none;
 	text-align: center;
 	margin-bottom: 5px !important;
-}
-
-.home-features
-{
-	display: flex;
-	width: 750px;
-	overflow: hidden;
-    gap: 20px; /* Optional spacing between the two columns */
-	margin: auto;
 }
 
 .home-h2
