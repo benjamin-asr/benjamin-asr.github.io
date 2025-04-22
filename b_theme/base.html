@@ -16,7 +16,14 @@
   {%- endblock %}
 
   {%- block htmltitle %}
-    <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <title>
+      {% if page and page.title and not page.is_homepage %}
+        {{ page.title }} - {{ config.site_name }}
+      {%- else %}
+        {{ config.site_name }} - Hands-Free Voice Control for Windows and Linux
+      {% endif %}
+
+    </title>
   {%- endblock %}
 
   {%- block styles %}

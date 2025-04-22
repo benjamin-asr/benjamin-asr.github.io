@@ -2,11 +2,8 @@ dev_addr: 127.0.0.1:8080
 site_name: Benjamin-ASR
 nav:
   - Home: index.md
-  - Installation: 
-    - Download: Installation.md
-    - Requirements: Requirements.md
+  - Installation: Installation.md
   - Training:
-    - Overview: Quick-Start-Guide.md
     - Record Samples: Capture-Audio-Samples.md
     - Train Model: Train-Model.md
   - How to Use:
@@ -16,9 +13,6 @@ nav:
     - Global Commands: Additional-Commands.md
     - Application Commands: App-Commands.md
     - Global Shortcuts: Global-Shortcuts.md
-  - Advance Features:
-    - Train Neural Network: Train-Neural-Network.md
-    - Advanced Training: Advanced-Training.md
     - Configuration File: Advanced-Engine-Settings.md
   - Contact Us: About.md
 

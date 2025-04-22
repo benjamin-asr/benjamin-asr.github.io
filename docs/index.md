@@ -20,19 +20,6 @@
   </div>
 </div>
 
-<!--## Key Features
-/// html | div[style='float: left; width: 45%;']
-- Up to 99.8% accuracy.
-- Low latency recognition (less than 50ms).
-- No connection to cloud or external server.
-- No wake-up word
-///
-
-/// html | div[style='float: right;width: 55%;']
-- Fine-tuning for individual accent and gender.
-- Seamless integration with third-party software's through our API's on `DBus` (Linux) or `Named-Pipe` (Windows).
-- CPU-Based, no special hardware(GPU, CUDA, ...)
-///-->
 <h2 id="unique-features" class="home-h2">
 	What Sets Us Apart
 	<a class="headerlink" href="#unique-features" title="Permanent link">
@@ -107,6 +94,10 @@
 		</div>
 	</div>
 </div>
+
+## Quick Overview
+<p style="text-align: justify;">
+Benjamin-ASR believes a user can control a machine with voice as easy as others can do with a traditional mouse and keyboard. Numerous products exist on the market, offering speech recognition solutions. What makes Benjamin unique is its tailored design for an all day long interaction. This requirement stress over highest level of accuracy and pushing the engine latency to lowest. By doing so we did not only make the interaction fast and responsive but we made it pleasant. Following is the path that a potential user need to take to truly master the art of Voice-Control.</p>
 
 <div class="home-flow-div">
 	<div class="home-flow-left">

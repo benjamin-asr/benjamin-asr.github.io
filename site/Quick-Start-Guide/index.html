@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Overview - Benjamin-ASR</title>
+    <title>
+      
+        Quick Start Guide - Benjamin-ASR
+
+    </title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,7 +17,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Overview";
+        var mkdocs_page_name = "Quick Start Guide";
         var mkdocs_page_input_path = "Quick-Start-Guide.md";
         var mkdocs_page_url = null;
       </script>
@@ -52,22 +56,15 @@
               <li class="toctree-l1">
                 <a class="reference internal" href="..">Home</a>
               </li>
+            </ul>  <!--homepage-->
+            <ul class="current">
+              <li class="toctree-l1">
+                <a class="reference internal" href="../Installation/">Installation</a>
+              </li>
             </ul>
               <ul class="current">
                 <li class="toctree-l1">
-                  <a class="reference internal" href="../Installation/">Installation</a><ul>
-        <li class="toctree-l2"><a class="reference internal" href="../Installation/">Download</a>
-        </li>
-        <li class="toctree-l2"><a class="reference internal" href="../Requirements/">Requirements</a>
-        </li>
-</ul>
-                </li>
-              </ul>
-              <ul class="current">
-                <li class="toctree-l1 current">
-                  <a class="reference internal current" href="./">Training</a><ul class="current">
-        <li class="toctree-l2 current"><a class="reference internal current" href="./">Overview</a>
-        </li>
+                  <a class="reference internal" href="../Capture-Audio-Samples/">Training</a><ul>
         <li class="toctree-l2"><a class="reference internal" href="../Capture-Audio-Samples/">Record Samples</a>
         </li>
         <li class="toctree-l2"><a class="reference internal" href="../Train-Model/">Train Model</a>
@@ -89,16 +86,6 @@
         <li class="toctree-l2"><a class="reference internal" href="../App-Commands/">Application Commands</a>
         </li>
         <li class="toctree-l2"><a class="reference internal" href="../Global-Shortcuts/">Global Shortcuts</a>
-        </li>
-</ul>
-                </li>
-              </ul>
-              <ul class="current">
-                <li class="toctree-l1">
-                  <a class="reference internal" href="../Train-Neural-Network/">Advance Features</a><ul>
-        <li class="toctree-l2"><a class="reference internal" href="../Train-Neural-Network/">Train Neural Network</a>
-        </li>
-        <li class="toctree-l2"><a class="reference internal" href="../Advanced-Training/">Advanced Training</a>
         </li>
         <li class="toctree-l2"><a class="reference internal" href="../Advanced-Engine-Settings/">Configuration File</a>
         </li>
@@ -127,8 +114,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Training</li>
-      <li class="breadcrumb-item active">Overview</li>
+      <li class="breadcrumb-item active">Quick Start Guide</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -137,27 +123,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p><strong>1. Select Your Word List: <code>0-20 mins</code></strong></p>
-<p>First decide if you want to train a full model(takes about a week to record all the required samples) or a demo model(less than an hour). If you are a new user, we recommended to start with a demo model to checkout the accuracy and get an idea of the process.</p>
-<ul>
-<li><strong>Demo:</strong> Keep all the numbers from zero to nine, remove all other words in the vocabulary. <code>2 mins</code></li>
-<li><strong>Default:</strong> No changes need to be made. <code>0 min</code></li>
-<li><strong>Custom:</strong> Add or remove words as you please. However keep in mind that to achieve decent performance from the engine, you need to train <code>Count^2</code> samples, where <code>Count</code> represents the number of words in your word list. <code>20 mins</code></li>
-</ul>
-<p><strong>2. Record Audio Samples: <code>1hr / 1week</code></strong></p>
-<p>The number of samples depend on the user but generally the more the merrier.  Sample means an audio <code>.wav</code> file consisted of three spoken words.  </p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<ul>
-<li>Demo Model: <strong>400 samples</strong>.  </li>
-<li>Full Model: At least <strong>5K samples</strong>.</li>
-</ul>
-</div>
-<p><strong>3. Train a Model: <code>30 mins</code></strong></p>
-<p>Open <em>Gym</em> and train a model.</p>
-<p><strong>4. Learn How to Use and Improve the Model</strong></p>
-<p>Next step is to learn how to control mouse and keyboard and other special features.
-Benjamin also records all the samples while you use the software so you can later train on these samples too.</p>
+                
               
             </div>
           </div><footer>

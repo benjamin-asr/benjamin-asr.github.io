@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Record Samples - Benjamin-ASR</title>
+    <title>
+      
+        Record Samples - Benjamin-ASR
+
+    </title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -52,22 +56,15 @@
               <li class="toctree-l1">
                 <a class="reference internal" href="..">Home</a>
               </li>
+            </ul>  <!--homepage-->
+            <ul class="current">
+              <li class="toctree-l1">
+                <a class="reference internal" href="../Installation/">Installation</a>
+              </li>
             </ul>
               <ul class="current">
-                <li class="toctree-l1">
-                  <a class="reference internal" href="../Installation/">Installation</a><ul>
-        <li class="toctree-l2"><a class="reference internal" href="../Installation/">Download</a>
-        </li>
-        <li class="toctree-l2"><a class="reference internal" href="../Requirements/">Requirements</a>
-        </li>
-</ul>
-                </li>
-              </ul>
-              <ul class="current">
                 <li class="toctree-l1 current">
-                  <a class="reference internal current" href="../Quick-Start-Guide/">Training</a><ul class="current">
-        <li class="toctree-l2"><a class="reference internal" href="../Quick-Start-Guide/">Overview</a>
-        </li>
+                  <a class="reference internal current" href="./">Training</a><ul class="current">
         <li class="toctree-l2 current"><a class="reference internal current" href="./">Record Samples</a>
         </li>
         <li class="toctree-l2"><a class="reference internal" href="../Train-Model/">Train Model</a>
@@ -89,16 +86,6 @@
         <li class="toctree-l2"><a class="reference internal" href="../App-Commands/">Application Commands</a>
         </li>
         <li class="toctree-l2"><a class="reference internal" href="../Global-Shortcuts/">Global Shortcuts</a>
-        </li>
-</ul>
-                </li>
-              </ul>
-              <ul class="current">
-                <li class="toctree-l1">
-                  <a class="reference internal" href="../Train-Neural-Network/">Advance Features</a><ul>
-        <li class="toctree-l2"><a class="reference internal" href="../Train-Neural-Network/">Train Neural Network</a>
-        </li>
-        <li class="toctree-l2"><a class="reference internal" href="../Advanced-Training/">Advanced Training</a>
         </li>
         <li class="toctree-l2"><a class="reference internal" href="../Advanced-Engine-Settings/">Configuration File</a>
         </li>
@@ -137,24 +124,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <ol>
-<li>
-<p>specify a category name by pressing <code>S</code>.</p>
+                <p><strong>1. Select Your Word List: <code>0-20 mins</code></strong></p>
+<p>First decide if you want to train a full model(takes about a week to record all the required samples) or a demo model(less than an hour). If you are a new user, we recommended to start with a demo model to checkout the accuracy and get an idea of the process.</p>
+<ul>
+<li><strong>Demo:</strong> Keep all the numbers from zero to nine, remove all other words in the vocabulary. <code>2 mins</code></li>
+<li><strong>Default:</strong> No changes need to be made. <code>0 min</code></li>
+<li><strong>Custom:</strong> Add or remove words as you please. However keep in mind that to achieve decent performance from the engine, you need to train <code>Count^2</code> samples, where <code>Count</code> represents the number of words in your word list. <code>20 mins</code></li>
+</ul>
+<p><strong>2. Record Audio Samples: <code>1hr / 1week</code></strong></p>
+<p>The number of samples depend on the user but generally the more the merrier.  Sample means an audio <code>.wav</code> file consisted of three spoken words.  </p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<ul>
+<li>Demo Model: <strong>400 samples</strong>.  </li>
+<li>Full Model: At least <strong>5K samples</strong>.</li>
+</ul>
+</div>
+<p><strong>STEP A: </strong>specify a category name by pressing <code>S</code>.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>
 Category name is used to distinguish a single set of voice samples. A good name could be your microphone name such as <code>Sennheiser PC7</code> or the place which the samples are recorded like <code>Bijan-house</code></p>
 </div>
-</li>
-<li>
-<p>Start recording by pressing <code>space</code>.</p>
+<p><strong>STEP B: </strong>Start recording by pressing <code>space</code>.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>
 When the recording starts couple of words will be shown up on the screen. The default setting is 3 words and you have 3 seconds to say them. The time will be shown up on the screen. For best performance try to say the words not close to the edges, so give a small pause after start and try to finish up 200ms before time up.</p>
 </div>
 <p><img alt="Record" src="../img/record.jpg" /></p>
-</li>
+<ol>
 <li>
 <p>You will be prompted to record <code>count</code> samples. At any given time you can pause the Record by pressing <code>space</code> or completely get out of the record panel by pressing <code>Escape</code>.</p>
 </li>
