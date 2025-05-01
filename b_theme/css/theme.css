@@ -26,7 +26,8 @@
     font-style:normal
 }
 
-@font-face {
+@font-face 
+{
   font-family:"Linotype Univers";
   src:url(../fonts/LinotypeUnivers-330Light.woff2) format("woff2"),
   url(../fonts/LinotypeUnivers-330Light.woff) format("woff");
@@ -34,12 +35,21 @@
   font-style:normal
 }
 
-@font-face {
+@font-face 
+{
   font-family:"Linotype Univers";
   src:url(../fonts/LinotypeUnivers-630Bold.woff2) format("woff2"),
   url(../fonts/LinotypeUnivers-630Bold.woff) format("woff");
   font-weight:700;
   font-style:normal
+}
+
+@font-face 
+{
+  font-family: 'Mitr';
+  font-style: normal;
+  font-weight: 400;
+  src:url(../fonts/mitr-v11-latin-300.woff2) format("woff2");
 }
 
 html
@@ -5855,7 +5865,7 @@ input[type=submit]
     *overflow: visible
 }
 
-input[type=color],
+/*input[type=color],
 input[type=date],
 input[type=datetime-local],
 input[type=datetime],
@@ -5881,7 +5891,7 @@ input[type=week]
     -webkit-transition: border .3s linear;
     -moz-transition: border .3s linear;
     transition: border .3s linear
-}
+}*/
 
 input[type=datetime-local]
 {
@@ -5917,7 +5927,7 @@ input[type=search]::-webkit-search-decoration
     -webkit-appearance: none
 }
 
-input[type=color]:focus,
+/*input[type=color]:focus,
 input[type=date]:focus,
 input[type=datetime-local]:focus,
 input[type=datetime]:focus,
@@ -5935,7 +5945,7 @@ input[type=week]:focus
     outline: 0;
     outline: thin dotted\9;
     border-color: #333
-}
+}*/
 
 input.no-focus:focus
 {
@@ -5969,7 +5979,7 @@ input[type=week][disabled]
     background-color: #fafafa
 }
 
-input:focus:invalid,
+/*input:focus:invalid,
 select:focus:invalid,
 textarea:focus:invalid
 {
@@ -5982,7 +5992,7 @@ select:focus:invalid:focus,
 textarea:focus:invalid:focus
 {
     border-color: #e74c3c
-}
+}*/
 
 input[type=checkbox]:focus:invalid:focus,
 input[type=file]:focus:invalid:focus,
@@ -9461,4 +9471,94 @@ h2.h2-headline
 	margin-bottom: 2px;
 	line-height: 1.3;
 	padding-left: 10px;
+}
+
+.contact-form
+{
+	display: grid;
+	grid-template-columns: repeat(2,minmax(0,1fr));
+	row-gap: 1.5rem;
+	margin-top: 10px;
+	column-gap: 2rem;
+}
+
+.col-span-2
+{
+	grid-column: span 2;
+}
+
+.contact-h3
+{
+	/*color: rgb(17 24 39);*/
+	/*font-size: 18px;*/
+	line-height: 28px;
+	margin-top: 20px;
+	margin-bottom: 15px !important;
+}
+
+.contact-label
+{
+	color: rgb(17 24 39);
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	font-family: Mitr,Inter var,sans-serif;
+}
+
+.contact-input
+{
+	border-radius: .375rem;
+	padding-top: .75rem;
+    padding-bottom: .75rem;
+	padding-left: 1rem;
+    padding-right: 1rem;
+	appearance: none;
+    background-color: #fff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+	width: 100%;
+	box-shadow: none;            /* remove inner shadow some browsers add */
+    outline: none;    
+	border: 1px solid rgb(209 213 219);
+	box-shadow: 0 0 #0000,0 0 #0000,0 1px 2px 0 rgba(0,0,0,.05);
+}
+
+.contact-input:focus
+{
+	border-color: rgb(14 165 233);
+	border-width: 2px;
+}
+
+.contact-label-div
+{
+	margin-top: .25rem !important;
+	box-sizing: border-box;
+}
+
+.contact-btn
+{
+	padding-top: .75rem;
+    padding-bottom: .75rem;
+	padding-left: 1.5rem;
+    padding-right: 1.5rem;
+	border-color: transparent;
+    border-width: 1px;
+    border-radius: .375rem;
+    justify-content: center;
+    align-items: center;
+	display: inline-flex;
+    margin-top: .5rem;
+    cursor: pointer;
+	box-sizing: border-box;
+    font-family: Mitr,Inter var,sans-serif;
+	background-color: rgb(2 132 199);
+	color: rgb(255 255 255);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.contact-submit-div
+{
+	display: flex;
+	justify-content: flex-end;
 }
