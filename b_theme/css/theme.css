@@ -9574,3 +9574,77 @@ h2.h2-headline
 	display: flex;
 	justify-content: flex-end;
 }
+
+@media screen and (max-width:400px)
+{
+	.h2-headline
+	{
+		margin-bottom: 10px !important;
+  		margin-right: 30px;
+		font-size: 5.5vw !important;
+	}
+
+	.h3-headline
+	{
+		margin-right: 60px;
+		font-size: 3.3vw !important;
+		margin-bottom: 5vw !important;
+	}
+
+	.button-dl-home
+	{
+		font-size: 3.5vw !important;
+	}
+
+	.home-flow-left
+	{
+		width: 35%;
+	}
+
+	.home-flow-div
+	{
+		width: 100%;
+	}
+
+	.home-flow-right
+	{
+		width: 65%;
+	}
+
+	.home-flow-right img
+	{
+		width: 60% !important;
+	}
+
+	.flash-caption
+	{
+		font-size: 3.5vw;
+		margin-left: 60px;
+	}
+
+	.flash-tips
+	{
+		font-size: 2.1vw !important;
+		margin-top: 4px  !important;
+	}
+
+	.flash-1
+	{
+		top: 0.5vw !important;
+	}
+
+	.flash-2
+	{
+		top: 18.2vw !important;
+	}
+
+	.flash-3
+	{
+		top: 35.5vw !important;
+	}
+
+	.flash-4
+	{
+		top: 54vw !important;
+	}
+}

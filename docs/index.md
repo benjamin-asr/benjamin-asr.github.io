@@ -105,7 +105,7 @@ Benjamin-ASR believes a user can control a machine with voice as easy as others 
 		<img src="../img/appflow_l.png">
 	</div><div class="home-flow-right">
 		<img src="../img/appflow_r.png" style="width: 220px;">
-		<div class="flash-tip" style="top: 7px;">
+		<div class="flash-tip flash-1" style="top: 7px;">
 			<div class="flash-caption" style="color: #584428;">Prepare for Training</div>
 			<ul class="flash-tips">
 				<li>Download and Install Benjamin-ASR</li>
@@ -113,7 +113,7 @@ Benjamin-ASR believes a user can control a machine with voice as easy as others 
 				<li>Record Enough Samples</li>
 			</ul>
 		</div>
-		<div class="flash-tip" style="top: 123px;">
+		<div class="flash-tip flash-2" style="top: 123px;">
 			<div class="flash-caption" style="color: #582844;">Train A Model</div>
 			<ul class="flash-tips">
 				<li>Open The Train Studio</li>
@@ -121,7 +121,7 @@ Benjamin-ASR believes a user can control a machine with voice as easy as others 
 				<li>Wait Till You Get Your Custom Model</li>
 			</ul>
 		</div>
-		<div class="flash-tip" style="top: 234px;">
+		<div class="flash-tip flash-3" style="top: 234px;">
 			<div class="flash-caption" style="color: #58282e;">Learn the Commands Flow</div>
 			<ul class="flash-tips" style="font-size: 13px; margin-top: 10px;">
 				<li>Control Windows</li>
@@ -130,7 +130,7 @@ Benjamin-ASR believes a user can control a machine with voice as easy as others 
 				<li>Control Browser</li>
 			</ul>
 		</div>
-		<div class="flash-tip" style="top: 350px;">
+		<div class="flash-tip flash-4" style="top: 350px;">
 			<div class="flash-caption" style="color: #284e58;">Unlock The Voice Control</div>
 			<ul class="flash-tips">
 				<li>Enjoy Browser Automation</li>
