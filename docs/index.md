@@ -1,6 +1,6 @@
 <div class="media-row">
 	<div class="video-container" onclick="showVideo()" style="display:block;">
-	<div class="thumbnail"></div>
+	<div class="home-thumbnail"></div>
 	<iframe 
 		id="videoIframe"
 		class="iframe-embed"
@@ -9,6 +9,7 @@
 		allowfullscreen >
 	</iframe>
 	</div>
+
   <div class="image-box">
     <h2 class="h2-headline">
         <span>Control Any Digital Equipment Hands-Free</span>
