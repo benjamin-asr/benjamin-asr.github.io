@@ -9,7 +9,7 @@ name: 🚀 Deploy FTP on push
 jobs:
   web-deploy:
     name: 🎉 Deploy
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04      # Pin to Ubuntu 22.04 LTS (22.04.5 today)
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
@@ -21,6 +21,7 @@ jobs:
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         protocol: ftps
+        local-dir: './site/'
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
