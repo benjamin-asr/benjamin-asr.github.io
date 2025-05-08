@@ -127,12 +127,12 @@
     <h2 class="h2-headline">
         <span>Benjamin-ASR Access Request</span>
     </h2>
-  </div>
+</div>
 
 <p>Access the Windows 1-Click setup file. Unleash the power of voice control and check out our latest model with lowest latency and highest amount of accuracy. Currently we accept applications and provide access to our beta program.</p>
 <div>
     <h3 class="contact-h3"></h3>
-    <form class="contact-form" method="POST">
+    <form id="accessForm" class="contact-form" method="POST" action="../php/trial-request.php">
         <div>
             <label class="contact-label" for="first-name">Full Name</label>
             <div class="contact-label-div">
@@ -151,8 +151,11 @@
     </form>
 </div>
 
+<div id="pg_msg"></div>
+
 <p></br></p>
 <p>Last Update: April 2025</p>
+<script src="../js/trial-request.js"></script>
               
             </div>
           </div><footer>
