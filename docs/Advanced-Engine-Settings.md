@@ -24,5 +24,3 @@ Engine related decoder settings.
     [misc]
     mic = "Sennheiser"
     channel = "com_binaee_rebound"
-
-More info at [Developer](https://benjamin-int.github.io)

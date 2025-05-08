@@ -5202,13 +5202,18 @@ a .wy-menu-vertical li button.toctree-expand
 		width: 100%  !important;
 	}
 
-	.h2-headline
+	.image-box .h2-headline
 	{
 		margin-bottom: 20px !important;
   		margin-right: 100px;
 	}
 
-	.h3-headline
+	.trial-header .h2-headline
+	{
+		font-size: 4vw !important;
+	}
+
+	.image-box .h3-headline
 	{
 		margin-right: 60px;
 	}
@@ -9279,7 +9284,7 @@ span[id*=MathJax-Span]
     pointer-events: none;
 }
 
-h2.h2-headline
+.image-box h2.h2-headline
 {
 	color: #fff;
 	font-weight: 700;
@@ -9577,14 +9582,14 @@ h2.h2-headline
 
 @media screen and (max-width:400px)
 {
-	.h2-headline
+	.image-box .h2-headline
 	{
 		margin-bottom: 10px !important;
   		margin-right: 30px;
 		font-size: 5.5vw !important;
 	}
 
-	.h3-headline
+	.image-box .h3-headline
 	{
 		margin-right: 60px;
 		font-size: 3.3vw !important;
@@ -9647,4 +9652,28 @@ h2.h2-headline
 	{
 		top: 54vw !important;
 	}
+}
+
+.trial-header
+{
+    width: 100%;
+    background: url('../img/trial-header.png') center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	align-items: flex-start;
+
+    flex-direction: column;
+    padding-left: 26px;
+	aspect-ratio: 1180 / 280;
+	margin-bottom: 20px;
+}
+
+.trial-header h2.h2-headline
+{
+	color: #ffffffee;
+	font-weight: 200;
+	font-family: "Linotype Univers",sans-serif;
+	font-size: 1.7rem;
+	margin: auto;
 }

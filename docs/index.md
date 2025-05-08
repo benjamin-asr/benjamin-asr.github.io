@@ -12,7 +12,7 @@
 
   <div class="image-box">
     <h2 class="h2-headline">
-        <span>Control Any Digital Equipment Hands-Free</span>
+        <span>Control Digital Equipment</br>Hands-Free</span>
     </h2>
     <h3 class="h3-headline">
 	    We revolutionized speech recognition technologies to reach next-level accuracy and performance.
@@ -98,7 +98,7 @@
 
 ## Quick Overview
 <p style="text-align: justify;">
-Benjamin-ASR believes a user can control a machine with voice as easy as others can do with a traditional mouse and keyboard. Numerous products exist on the market, offering speech recognition solutions. What makes Benjamin unique is its tailored design for an all day long interaction. This requirement stress over highest level of accuracy and pushing the engine latency to lowest. By doing so we did not only make the interaction fast and responsive but we made it pleasant. Following is the path that a potential user need to take to truly master the art of Voice-Control.</p>
+Benjamin-ASR believes a user can control a machine with voice as easy as others can do with a traditional mouse and keyboard. Numerous products exist on the market, but we offer unprecedented level of accuracy lowest level of latency that makes our solution suitable for all day long interaction. We did not only make voice control fast but we made it pleasant experience too. Following is the path that a potential user takes to truly master the art of Voice-Control.</p>
 
 <div class="home-flow-div">
 	<div class="home-flow-left">
