@@ -21,13 +21,13 @@ Access the Windows 1-Click setup file. Unleash the power of voice control and ch
 				<input class="contact-input" id="email" name="email" type="email" required="" autocomplete="email">
 			</div>
 		</div>
-		<div class="col-span-2 contact-submit-div">
+		<p id="trial-msg" class=""></p>
+		<div class="contact-submit-div">
               <button class="contact-btn" type="submit">Submit</button>
         </div>
 	</form>
 </div>
 
-<div id="pg_msg"></div>
 
  </br>
 

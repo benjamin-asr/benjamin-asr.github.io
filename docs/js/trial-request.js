@@ -1,30 +1,55 @@
+/* --------------------------------------------------------------------------
+ * Elements
+ * ------------------------------------------------------------------------*/
 const pg_form = document.getElementById('accessForm');
-const pg_msg = document.getElementById('pg_msg');
+const pg_msg  = document.getElementById('trial-msg');
 
-pg_form.addEventListener('submit', function (e) 
+/* --------------------------------------------------------------------------
+ * Helpers
+ * ------------------------------------------------------------------------*/
+async function postForm(actionUrl, formData)
 {
-    e.preventDefault();                           // keep the page in place
+    const response = await fetch(actionUrl, {
+        method  : 'POST',
+        body    : formData,
+        headers : { 'X-Requested-With': 'fetch' }   // hint for PHP
+    });
 
-    const data = new FormData(pg_form);
+    return response.json();
+}
 
-    fetch(pg_form.action, {
-        method: 'POST',
-        body: data,
-        headers: { 'X-Requested-With': 'fetch' }  // optional hint for PHP
-    })
-        .then(r => r.json())
-        .then(res => {
-            if (res.status === 'ok') {
-                pg_msg.textContent = 'Thank you – your request has been sent.';
-                pg_msg.className = 'ok';
-                pg_form.reset();
-            } else {
-                pg_msg.textContent = res.error || 'Sorry – message could not be sent.';
-                pg_msg.className = 'err';
-            }
-        })
-        .catch(() => {
-            pg_msg.textContent = 'Network error – please try again.';
-            pg_msg.className = 'err';
-        });
-});
+/* --------------------------------------------------------------------------
+ * Main handler
+ * ------------------------------------------------------------------------*/
+async function handleSubmit(event)
+{
+    event.preventDefault();                         // keep the page in place
+
+    try
+    {
+        const data   = new FormData(pg_form);
+        const result = await postForm(pg_form.action, data);
+
+        if( result.status==='ok' )
+        {
+            pg_msg.textContent = 'Thank you - your request has been sent.';
+            pg_msg.className   = 'trial-msg-ok';
+            pg_form.reset();
+        }
+        else
+        {
+            pg_msg.textContent = result.error || 'Sorry - server could not sent request.';
+            pg_msg.className   = 'trial-msg-err';
+        }
+    }
+    catch( _err )
+    {
+        pg_msg.textContent = 'Network error - please try again.';
+        pg_msg.className   = 'trial-msg-err';
+    }
+}
+
+/* --------------------------------------------------------------------------
+ * Wiring
+ * ------------------------------------------------------------------------*/
+pg_form.addEventListener('submit', handleSubmit);
