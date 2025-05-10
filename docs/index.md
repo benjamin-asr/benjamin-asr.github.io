@@ -36,7 +36,7 @@
 			<h4 class="headline-h4">
 			Highly Accurate
 			</h4>
-			<p>Less than 0.5% word error rate</p>
+			<p>WER&lt0.5% or 10x better than Google Voice accuracy</p>
 		</div>
 	</div>
 	<div class="home-feature-div">
@@ -98,7 +98,7 @@
 
 ## Quick Overview
 <p style="text-align: justify;">
-Benjamin-ASR believes a user can control a machine with voice as easy as others can do with a traditional mouse and keyboard. Numerous products exist on the market, but we offer unprecedented level of accuracy lowest level of latency that makes our solution suitable for all day long interaction. We did not only make voice control fast but we made it pleasant experience too. Following is the path that a potential user takes to truly master the art of Voice-Control.</p>
+Benjamin-ASR believes a user can control a machine with voice as easy as others can do with a traditional mouse and keyboard. Numerous products exist on the market, but we offer unprecedented level of accuracy with lowest level of latency. By doing so we did not only make voice control fast but we made it pleasant experience too. Following is the path that a potential user will take to truly master the art of Voice-Control.</p>
 
 <div class="home-flow-div">
 	<div class="home-flow-left">

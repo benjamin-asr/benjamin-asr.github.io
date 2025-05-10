@@ -3,6 +3,9 @@ site_name: Benjamin-ASR
 nav:
   - Home: index.md
   - Installation: Installation.md
+    #- Installation: Installation.md
+    #- Download (Windows): Download-Windows.md
+    #- Download (Linux)  : Download-Linux.md
   - Training:
     - Record Samples: Capture-Audio-Samples.md
     - Train Model: Train-Model.md

@@ -493,7 +493,7 @@
 	font-weight: 200;
 	font-family: "Linotype Univers",sans-serif;
 	font-size: 1.7rem;
-	margin: auto;
+	margin: 30px auto 10px;
 }
 
 #trial-msg
@@ -527,4 +527,13 @@
 .trial-website
 {
     display: none;
+}
+
+.trial-h2-platform
+{
+    color: #fffc;
+    font-weight: 200;
+    font-family: "Linotype Univers",sans-serif;
+    font-size: 0.9rem;
+    margin: 0px auto;
 }

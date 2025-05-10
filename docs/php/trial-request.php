@@ -12,7 +12,7 @@ $recipient = 'bijanbina' . '@' . 'gma' . 'il.com';
 header('Content-Type: application/json');
 
 /* -------- only POST allowed ------ */
-if ($_SERVER['REQUEST_METHOD'] !== 'POST')
+if( $_SERVER['REQUEST_METHOD']!=='POST' )
 {
     http_response_code(405);
     echo json_encode(['error' => 'Method not allowed']);
@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST')
 /* -------- sanitise & validate ---- */
 $name     = filter_input(INPUT_POST, 'name',  FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $email    = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-$platform = filter_input(INPUT_POST, 'platform', FILTER_SANITIZE_EMAIL);
+$platform = filter_input(INPUT_POST, 'platform', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
 if (!$name || !filter_var($email, FILTER_VALIDATE_EMAIL))
 {

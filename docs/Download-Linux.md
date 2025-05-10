@@ -2,6 +2,9 @@
 	<h2 class="h2-headline">
 		<span>Benjamin-ASR Access Request</span>
 	</h2>
+	<h2 class="trial-h2-platform">
+		<span>Linux Edition</span>
+	</h2>
 </div>
 
 Access the Linux setup file. Unleash the power of voice control and check out our latest model with lowest latency and highest amount of accuracy. Currently we accept applications.
