@@ -21,7 +21,7 @@ Access the Linux setup file. Unleash the power of voice control and check out ou
 				<input class="contact-input" id="email" name="email" type="email" required="" autocomplete="email">
 			</div>
 		</div>
-		<input type="hidden" id="platform" name="platform" value="linux">
+		<input type="hidden" id="platform" name="platform" value="Linux">
 		<input type="text" id="website" class="trial-website" name="website"/>
 		<p id="trial-msg" class="trial-msg-ok"></p>
 		<div class="contact-submit-div">

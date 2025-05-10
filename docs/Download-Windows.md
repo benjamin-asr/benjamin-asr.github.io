@@ -21,7 +21,7 @@ Access the Windows 1-Click setup file. Unleash the power of voice control and ch
 				<input class="contact-input" id="email" name="email" type="email" required="" autocomplete="email">
 			</div>
 		</div>
-		<input type="hidden" id="platform" name="platform" value="windows"> 
+		<input type="hidden" id="platform" name="platform" value="Windows"> 
 		<input type="text" id="website" class="trial-website" name="website"/>
 		<p id="trial-msg" class="trial-msg-ok"></p>
 		<div class="contact-submit-div">

@@ -32,8 +32,8 @@ async function handleSubmit(event)
 
         if( result.status==='ok' )
         {
-            pg_msg.textContent = 'Thank you for your interest in Benjamin-ASR. </br> We\'ve sent you an email on how to proceed.';
-            pg_msg.className   = 'trial-msg-ok';
+            pg_msg.innerHTML = 'Thank you for your interest in Benjamin-ASR. </br> We\'ve sent you an email on how to proceed.';
+            pg_msg.className = 'trial-msg-ok';
             pg_form.reset();
         }
         else
