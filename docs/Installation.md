@@ -1,14 +1,14 @@
 ### Windows
 Currently we support `Windows 10 22H2` and `Windows 11`. For Windows we offer a 1-Click setup.
 
-<a class="download_btn" href="https://forms.gle/8HddUSr4AidNaKBr8">Download Ben-ASR for Windows</a>
+<a class="download_btn" href="/Download-Windows">Download Ben-ASR for Windows</a>
 
 TIP:
 **Access level:** User needs administrator-level account with disabled UAC
 
 ### Linux
 
-<a class="download_btn" href="https://forms.gle/62EzbtzDVN9upVCAA">Download Ben-ASR for Linux</a>
+<a class="download_btn" href="/Download-Linux">Download Ben-ASR for Linux</a>
 
 Linux is for more advanced users and you need to following these steps further to the setup file.
 

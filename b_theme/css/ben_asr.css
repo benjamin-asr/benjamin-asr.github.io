@@ -381,7 +381,7 @@
     justify-content: center;
     align-items: center;
 	display: inline-flex;
-    margin-top: 0rem;
+    margin-top: 0.2rem;
     cursor: pointer;
 	box-sizing: border-box;
     font-family: Mitr,Inter var,sans-serif;
@@ -503,7 +503,6 @@
     display: flex;
     padding: 0px 15px;
     height: 30px;
-    width: 70%;
     margin: auto 5px;
     width: fit-content;
     align-items: center;
@@ -511,9 +510,11 @@
 
 .trial-msg-ok
 {
-    color: white;
-    background-color: #58c569;
-    border-radius: 5px;
+    color: #30c247;
+    font-size: 14px;
+    line-height: 20px;
+    width: 120% !important;
+    padding: 0px !important;
 }
 
 .trial-msg-err
@@ -521,4 +522,9 @@
     color: white;
     background-color: #ef6565;
     border-radius: 5px;
+}
+
+.trial-website
+{
+    display: none;
 }

@@ -1,4 +1,10 @@
 <?php
+/* ------------ spam checker ------------ */
+if(!empty($_POST['website']))
+{
+    die();
+}
+
 /* ------------ configuration ------------ */
 $sender    = 'info' . '@' . 'benasr.com';
 $recipient = 'bijanbina' . '@' . 'gma' . 'il.com';
@@ -14,8 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST')
 }
 
 /* -------- sanitise & validate ---- */
-$name  = filter_input(INPUT_POST, 'name',  FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+$name     = filter_input(INPUT_POST, 'name',  FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$email    = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+$platform = filter_input(INPUT_POST, 'platform', FILTER_SANITIZE_EMAIL);
 
 if (!$name || !filter_var($email, FILTER_VALIDATE_EMAIL))
 {
@@ -28,7 +35,8 @@ if (!$name || !filter_var($email, FILTER_VALIDATE_EMAIL))
 $subject = "Benjamin-ASR Sign Up: {$name}";
 $body    = "A new user with following detail signed up for the Windows setup file access:\n\n" . 
            "Full Name : {$name}\n" . 
-           "Email        : {$email}\n\n" .
+           "Email        : {$email}\n" .
+           "Platform   : {$platform}\n\n" .
            "An automatic email has been send to their account and we are waiting for them to respond.";
 
 $headers = [
