@@ -130,7 +130,7 @@
     </h2>
 </div>
 
-<p>Access the Windows 1-Click setup file. Unleash the power of voice control and check out our latest model with lowest latency and highest amount of accuracy. Currently we accept applications and provide access to our beta program.</p>
+<p>Access the Windows 1-Click setup file. Unleash the power of voice control and check out our latest model with lowest latency and highest amount of accuracy. Currently we accept applications.</p>
 <div>
     <h3 class="contact-h3"></h3>
     <form id="accessForm" class="contact-form" method="POST" action="../php/trial-request.php">
@@ -146,7 +146,9 @@
                 <input class="contact-input" id="email" name="email" type="email" required="" autocomplete="email">
             </div>
         </div>
-        <p id="trial-msg" class=""></p>
+        <input type="hidden" id="platform" name="platform" value="windows"> 
+        <input type="text" id="website" class="trial-website" name="website"/>
+        <p id="trial-msg" class="trial-msg-ok"></p>
         <div class="contact-submit-div">
               <button class="contact-btn" type="submit">Submit</button>
         </div>

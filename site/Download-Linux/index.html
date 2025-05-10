@@ -7,7 +7,7 @@
       <link rel="shortcut icon" href="../img/favicon.ico" />
     <title>
       
-        Installation - Benjamin-ASR
+        Download Linux - Benjamin-ASR
 
     </title>
     <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Installation";
-        var mkdocs_page_input_path = "Installation.md";
+        var mkdocs_page_name = "Download Linux";
+        var mkdocs_page_input_path = "Download-Linux.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -59,8 +59,8 @@
               </li>
             </ul>  <!--homepage-->
             <ul class="current">
-              <li class="toctree-l1 current">
-                <a class="reference internal current" href="./">Installation</a>
+              <li class="toctree-l1">
+                <a class="reference internal" href="../Installation/">Installation</a>
               </li>
             </ul>
               <ul class="current">
@@ -115,7 +115,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Installation</li>
+      <li class="breadcrumb-item active">Download Linux</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -124,38 +124,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link"></a></h3>
-<p>Currently we support <code>Windows 10 22H2</code> and <code>Windows 11</code>. For Windows we offer a 1-Click setup.</p>
-<p><a class="download_btn" href="/Download-Windows">Download Ben-ASR for Windows</a></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>
-<strong>Access level:</strong> User needs administrator-level account with disabled UAC</p>
+                <div class="trial-header">
+    <h2 class="h2-headline">
+        <span>Benjamin-ASR Access Request</span>
+    </h2>
 </div>
-<h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link"></a></h3>
-<p><a class="download_btn" href="/Download-Linux">Download Ben-ASR for Linux</a></p>
-<p>Linux is for more advanced users and you need to following these steps further to the setup file.</p>
-<ol>
-<li>
-<p>Install <a href="https://awesomewm.org/">Awesome-WM</a> and <a href="https://github.com/polybar/polybar">Polybar</a> and <a href="https://download-origin.cdn.mozilla.net/pub/devedition/releases/120.0b1/linux-x86_64/en-US/firefox-120.0b1.tar.bz2">Firefox Developer Edition</a></p>
-</li>
-<li>
-<p>Install config files from <a href="https://github.com/bijanbina/Bijoux/tree/master/Awesome">Bijoux repository</a> for PolyBar and Awesome-WM.</p>
-</li>
-</ol>
-<h3 id="hardware-requirements">Hardware Requirements<a class="headerlink" href="#hardware-requirements" title="Permanent link"></a></h3>
-<ul>
-<li><strong>CPU:</strong> Intel I5 10500</li>
-<li><strong>RAM:</strong> 2 GB</li>
-<li><strong>GPU:</strong> Not required</li>
-</ul>
-<h3 id="virtual-machines">Virtual Machines<a class="headerlink" href="#virtual-machines" title="Permanent link"></a></h3>
-<p>You can run Benjamin-ASR under virtual machines but there are few caveats:</p>
-<ol>
-<li>Many component of Benjamin-ASR relies on AVX, although AVX is supported by almost all modern processors this may not be true when you run the software under a virtual machine.</li>
-<li>VirtualBox generally have problem supporting AVX under Windows while Hyper-V is enabled. VMware doesn't have this limitation and it became free since Nov 2024</li>
-<li>For both cases under Windows, you cannot train a model inside them if Hyper-V is enabled. For training we rely on WSL and WSL requires Hyper-V inside guest machine and that required VT-x enabled which is only available if Hyper-V is disabled on Host machine. So at the same time only one of Host or Guest can be used for training. [<a href="https://superuser.com/questions/1578372/run-wsl2-inside-vmware-workstation-15">Reference</a>]</li>
-</ol>
+
+<p>Access the Linux setup file. Unleash the power of voice control and check out our latest model with lowest latency and highest amount of accuracy. Currently we accept applications.</p>
+<div>
+    <h3 class="contact-h3"></h3>
+    <form id="accessForm" class="contact-form" method="POST" action="../php/trial-request.php">
+        <div>
+            <label class="contact-label" for="first-name">Full Name</label>
+            <div class="contact-label-div">
+                <input class="contact-input" id="name" name="name" type="text"  required="" autocomplete="name">
+            </div>
+        </div>
+        <div>
+            <label class="contact-label" for="email-name">Email</label>
+            <div class="contact-label-div">
+                <input class="contact-input" id="email" name="email" type="email" required="" autocomplete="email">
+            </div>
+        </div>
+        <input type="hidden" id="platform" name="platform" value="linux">
+        <input type="text" id="website" class="trial-website" name="website"/>
+        <p id="trial-msg" class="trial-msg-ok"></p>
+        <div class="contact-submit-div">
+              <button class="contact-btn" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+<p></br></p>
+<p>Last Update: April 2025</p>
+<script src="../js/trial-request.js"></script>
               
             </div>
           </div><footer>
